@@ -1,7 +1,6 @@
 // index.js
 
 require('./app/index')  
-
 const express = require('express')  
 const app = express()  
 var exphbs  = require('express-handlebars');
@@ -45,6 +44,8 @@ app.engine('.hbs', exphbs({
 
 app.set('view engine', '.hbs')  
 app.set('views', path.join(__dirname, 'views'))  
+app.use(express.static(path.join(__dirname + '/public')));
+
 
 app.get('/home', (request, response)=>{
 	response.render('home',{})
@@ -63,18 +64,36 @@ app.get('/participants-questionnaire', (request, response)=>{
 })
 
 app.get('/research-answers', (request, response)=>{
-	response.render('research-answers',{})
+   response.render('research-answers',{})
+  })
+
+
+app.get('/db-questions', (request, response)=>{
+    const results = [];
+    pg.connect(conString, function (err,client) {
+    if (err) {
+      console.log("CANT CONNECT TO DB");
+    }
+   const query = client.query('SELECT * FROM public.questions');
+   query.on('row', (row) => {
+      results.push(row);
+            console.log(results);
+      });
+
+ })
+	response.json([{"question_id": 1,"question": "How many nodes does the graph have","one": "1"}]);
 })
 
-app.get('/research-questions', (request, response)=>{
-	response.render('research-questions',{})
-})
+//
 
 app.get('/welcome', (request, response)=>{
 	response.render('welcome',{})
 })
 
+app.get('/research-questions', (request, response)=>{
+  response.render('research-questions',{})
+})
+
 app.get('/thank-you', (request, response)=>{
 	response.render('thank-you',{})
 })
-

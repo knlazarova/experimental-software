@@ -10,6 +10,7 @@
   "author": "Kristina Lazarova",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.5.8",
     "express": "^4.14.0",
     "lodash": "^4.16.4"
   },
