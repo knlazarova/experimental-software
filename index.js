@@ -10,6 +10,14 @@ const path = require('path')
 const pg = require('pg')  
 const conString = 'postgres://knlaz:knlaz@localhost:5432/knlaz' // make sure to match your own database's credentials
 
+app.set('view engine', '.hbs')  
+app.set('views', path.join(__dirname, 'views'))  
+app.use(express.static(path.join(__dirname + '/public')));
+
+app.use('/img',express.static(path.join(__dirname, 'public/images')));
+app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
+app.use('/css',express.static(path.join(__dirname, 'public/stylesheets')));
+
 const participants = []
 var name;
 var id;
@@ -42,10 +50,6 @@ app.engine('.hbs', exphbs({
   layoutsDir: path.join(__dirname, 'views/layouts')
 }))
 
-app.set('view engine', '.hbs')  
-app.set('views', path.join(__dirname, 'views'))  
-app.use(express.static(path.join(__dirname + '/public')));
-
 
 app.get('/home', (request, response)=>{
 	response.render('home',{})
@@ -69,22 +73,24 @@ app.get('/research-answers', (request, response)=>{
 
 
 app.get('/db-questions', (request, response)=>{
-    const results = [];
     pg.connect(conString, function (err,client) {
     if (err) {
       console.log("CANT CONNECT TO DB");
     }
-   const query = client.query('SELECT * FROM public.questions');
-   query.on('row', (row) => {
+   client.query('SELECT * FROM public.questions;', [], function(err,result){
+      /*query.on('row', (row) => {
       results.push(row);
-            console.log(results);
-      });
-
+            console.log(results);*/
+          
+      if (err){
+        console.log('errorrrrrrrrrrrrrrrrrrrr')
+      }
+      response.json(result.rows);
+     //response.json("[{\"question_id\": 1,\"question\": \"How many nodes does the graph have\",\"one\": \"1\"}]");
  })
-	response.json([{"question_id": 1,"question": "How many nodes does the graph have","one": "1"}]);
 })
-
-//
+})
+//[{"question_id": 1,"question": "How many nodes does the graph have","one": "1"}]
 
 app.get('/welcome', (request, response)=>{
 	response.render('welcome',{})
