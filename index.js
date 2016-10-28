@@ -9,10 +9,13 @@ const path = require('path')
 'use strict'
 const pg = require('pg')  
 const conString = 'postgres://knlaz:knlaz@localhost:5432/knlaz' // make sure to match your own database's credentials
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.set('view engine', '.hbs')  
 app.set('views', path.join(__dirname, 'views'))  
-app.use(express.static(path.join(__dirname + '/public')));
+//app.use(express.static(path.join(__dirname + '/public')));
 
 app.use('/img',express.static(path.join(__dirname, 'public/images')));
 app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
@@ -35,6 +38,21 @@ app.post('/participants', function (err,client) {
   })
 
 })
+
+app.post('/research-answers-db', function(req, res, next) {
+  const researchAnswers = req.body;
+  pg.connect(conString, function(err,client,done){
+    if (err){
+      console.log('cannot connect to db')
+    }
+    client.query('INSERT INTO participants_answers values ($1, $2, true);', [researchAnswers.question_id, researchAnswers.participant_id], function(err, result){
+      if (err){
+        console.log('theres been an error')
+      }
+      res.sendStatus(200);
+    })
+  })
+});
 
 app.listen(port, (err) => {  
   if (err) {

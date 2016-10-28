@@ -5,29 +5,51 @@ app.config(function($interpolateProvider) {
   $interpolateProvider.endSymbol('}');
 });
 
-app.controller('myCtrl', function($scope, questionService) {
+app.controller('myCtrl', function($scope, $http, questionService) {
 	questionService.getQuestions().then(function(data){
 		$scope.questions=data;
-		console.log(JSON.stringify(data));
 		$scope.question=$scope.questions[0];
 	}).catch(function(){
 		$scope.error = 'unable to get the questions';
 	})
 	var questionNumber = 0;
-	//$scope.questionImage = 'images/' + $scope.question.image;
+	//enable the Next button
+	$("input:radio").change(function () {
+		$("#nextButton").attr("disabled", false);
+	});
+	
+	$scope.participantAnswers = {};
+
 	$scope.nextQuestion = function(){
-		console.log('in nextQuestion')
-		if (questionNumber + 1 < $scope.questions.length){
+		// get the selected value
+
+		var currentAnswer = $("input:checked").val();
+		$scope.participantAnswers["correct"] = currentAnswer;
+		//participantAnswers = participantAnswers + currentAnswer;
+		// Uncheck radio buttons
+		$("input:radio").attr("checked",false);
+		$scope.participantAnswers["question_id"] = $scope.question.question_id;
+		console.log("question id: ",  $scope.question.question_id)
+		if (questionNumber + 2 < $scope.questions.length){
 			questionNumber = questionNumber+1;
 			$scope.question = $scope.questions[questionNumber];
-			//$scope.questionImage = "images/"+$scope.question.image;
-			//console.log($scope.questionImage);
+	
 		}
 		else{
-			console.log('in elsee')
-			//next turns into submit and sends data to db
+			document.getElementById("nextButton").style.display = "none";
+			document.getElementById("submitButton").style.display= "block";
+			//enable the submit button as this is the last question
+			$("input:radio").change(function () {
+		    	$("#submitButton").attr("disabled", false);
+	});
+				
 		}
-		
+	}
+	$scope.submitQuestions = function(){
+		//console.log('submitQuestions', participantAnswers);
+		$http.post('http://localhost:3000/research-answers-db', $scope.participantAnswers)/*.then(
+			console.log('success'); 
+			console.log('failed'));*/
 	}
 });
 
@@ -45,37 +67,3 @@ app.factory('questionService', function($http, $q){
 		getQuestions: getQuestions
 	};
 });
-
-	/* $scope.firstName = "John";
-	 $scope.lastName = "Doe";
-	$http({
-  method: 'GET',
-  url: 'http://localhost:3000/db-questions'
-}).then(function successCallback(response) {
-    // this callback will be called asynchronously
-    // when the response is available
-    $scope.questions = response.data; 
-
-    console.log('success', response.data);
-  }, function errorCallback(response) {
-    // called asynchronously if an error occurs
-    // or server returns response with an error status.
-    console.log('theres been an error')
-  });
-   
-    
-
-});*/
-
-// function doOnSuccessCallback(response) {
-//     var log = [];  
-//     angular.forEach(response.data, function(item, key) {
-//           console.log('I found this!' + response.config.newItem + " " + item.title);
-//           if(item.title == response.config.newItem){
-//             console.log('matching ' + item);
-//             this.push(item);
-//         }
-//     }, log);
-//     console.log(log);
-//     return log; 
-//   }

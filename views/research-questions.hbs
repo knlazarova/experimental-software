@@ -1,6 +1,6 @@
 <div ng-app="myApp" ng-controller="myCtrl">
   
-<form style="margin-top:4%;border: 2px solid #ccc; border-radius: 4px; padding: 3% 3%;">
+<form id="form" style="margin-top:4%;border: 2px solid #ccc; border-radius: 4px; padding: 3% 3%;">
 
 <div class="progress">
   <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
@@ -10,9 +10,8 @@
 </div>
 
 <div>
-<img ng-src="{question.image}"></img>
-
-  <fieldset class="form-group">
+<img ng-src="img/{question.image}"></img>
+  <fieldset class="form-group" id="form-group">
     <legend ng-bind="question.question"> </legend>
     <div class="form-check">
       <label class="form-check-label">
@@ -28,23 +27,21 @@
     </div>
   <div class="form-check">
       <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" >
        <span ng-bind="question.three"></span> 
       </label>
     </div>
   <div class="form-check">
       <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4" >
         <span ng-bind="question.four"></span> 
       </label>
     </div>
     
   </fieldset>
-  <button class="btn btn-default navbar-btn" ng-click="nextQuestion()">Next</button>
-
-
+  <input type="submit" value = "Next" id="nextButton" class="btn btn-default navbar-btn" ng-click="nextQuestion()" disabled="disabled"></input>
+  <input type="submit" value = "Submit" id="submitButton" class="btn btn-default navbar-btn" ng-click="submitQuestions()" disabled="disabled" style="display:none;"></input>
 </form>
 </div>
 </div>
-<script src="js/questions_controller.js"></script>
-<img ng-src="/img/{{ image }}"></img></br> 
+<script src="js/questions_controller.js"></script> 
