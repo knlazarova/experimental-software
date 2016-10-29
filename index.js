@@ -25,7 +25,7 @@ const participants = []
 var name;
 var id;
 
-app.post('/participants', function (err,client) {
+/*app.post('/participants', function (err,client) {
 	pg.connect(conString, function (err,client) {
     if (err) {
     	console.log("CANT CONNECT TO DB");
@@ -37,20 +37,29 @@ app.post('/participants', function (err,client) {
     })
   })
 
-})
+})*/
 
 app.post('/research-answers-db', function(req, res, next) {
   const researchAnswers = req.body;
+  console.log('about to post to db', req.body);
   pg.connect(conString, function(err,client,done){
     if (err){
       console.log('cannot connect to db')
     }
-    client.query('INSERT INTO participants_answers values ($1, $2, true);', [researchAnswers.question_id, researchAnswers.participant_id], function(err, result){
-      if (err){
+
+    for (var i = researchAnswers.length - 1; i >= 0; i--) {
+    client.query('INSERT INTO participants_answers values ($1, $2, $3, $4);', 
+        [researchAnswers[i].question_id, researchAnswers[i].participant_id, 
+        researchAnswers[i].correct, researchAnswers[i].time], function(err, result){
+    if (err){
         console.log('theres been an error')
+        return res.send();
       }
+      return res.send();
       res.sendStatus(200);
-    })
+    }) //end of client query
+}  
+
   })
 });
 
