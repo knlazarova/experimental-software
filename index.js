@@ -25,19 +25,28 @@ const participants = []
 var name;
 var id;
 
-/*app.post('/participants', function (err,client) {
+app.post('/participants-info', function (req, res, next) {
+  const participant = req.body;
+  console.log('sending participant info: ',req.body)
 	pg.connect(conString, function (err,client) {
     if (err) {
     	console.log("CANT CONNECT TO DB");
     	return next(err)
       // pass the error to the express error handler
     }
-    client.query('INSERT INTO participants (id, name) VALUES (1, \'bla\');', [], function (err, result) {
+    client.query('INSERT INTO participant_info (email, participant_name, uni_degree, age) VALUES ($1, $2, $3, $4);', 
+      [participant.email, participant.name, participant.uniDegree, participant.age], function (err, result) {
     //this done callback signals the pg driver that the connection can be closed or returned to the connection pool
+    
+     if (err){
+        console.log('theres been an error')
+        return res.sendStatus(500);
+      }
+      return res.sendStatus(200);
     })
   })
 
-})*/
+})
 
 app.post('/research-answers-db', function(req, res, next) {
   const researchAnswers = req.body;
@@ -53,7 +62,7 @@ app.post('/research-answers-db', function(req, res, next) {
         researchAnswers[i].correct, researchAnswers[i].time], function(err, result){
     if (err){
         console.log('theres been an error')
-        return res.send();
+        res.send();
       }
       return res.send();
       res.sendStatus(200);
@@ -98,23 +107,39 @@ app.get('/research-answers', (request, response)=>{
    response.render('research-answers',{})
   })
 
+app.get('/get-participantId', (request, response)=>{
+    pg.connect(conString, function (err,client) {
+    if (err) {
+      console.log("CANT CONNECT TO DB");
+    }
+   
+   client.query('SELECT participant_id FROM public.participant_info WHERE participant_id (select max(participant_id) from public.participant_info)', [], function(err,result){     
+      if (err){
+        console.log('errorrrrrrrrrrrrrrrrrrrr')
+      }
+      response.json(result);
+ })
+
+})
+})
 
 app.get('/db-questions', (request, response)=>{
     pg.connect(conString, function (err,client) {
     if (err) {
       console.log("CANT CONNECT TO DB");
     }
-   client.query('SELECT * FROM public.questions;', [], function(err,result){
-      /*query.on('row', (row) => {
-      results.push(row);
-            console.log(results);*/
-          
+
+    var getQuestions = client.query('SELECT * FROM public.questions;');
+   // var getParticipantId = client.query('SELECT participant_id FROM public.participant_info')
+   
+   client.query('SELECT * FROM public.questions;', [], function(err,result){     
       if (err){
         console.log('errorrrrrrrrrrrrrrrrrrrr')
       }
       response.json(result.rows);
      //response.json("[{\"question_id\": 1,\"question\": \"How many nodes does the graph have\",\"one\": \"1\"}]");
  })
+
 })
 })
 //[{"question_id": 1,"question": "How many nodes does the graph have","one": "1"}]

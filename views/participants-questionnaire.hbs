@@ -1,9 +1,5 @@
-<html>
-  <head>
-    <title>Experimental Software</title>
-  </head>
- 
-<form style="margin-top:4%;border: 2px solid #ccc; border-radius: 4px; padding: 3% 3%;">
+<div ng-app="myApp" ng-controller="questionnaireCtrl">
+<div style="margin-top:4%;border: 2px solid #ccc; border-radius: 4px; padding: 3% 3%;">
 
 <div class="progress">
   <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
@@ -11,14 +7,13 @@
     40% Complete
   </div>
 </div>
-
 <p> Please answer the questions. </p> 
 </br>
    
    <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
@@ -31,11 +26,10 @@
   </div>
     <div class="form-group">
     <label for="degree">University Degree</label>
-    <input class="form-control" id="degree">
+    <input class="form-control" id="uniDegree">
   </div>
-
-  
-  <button type="submit" class="btn btn-default navbar-btn">Submit</button>
+  <button ng-click="submitQuestionnaire()" type="submit" class="btn btn-default navbar-btn">Submit</button>
 </form>
-
-</html>
+</div>
+</div>
+<script src="js/questionnaire_controller.js"></script> 
