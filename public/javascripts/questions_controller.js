@@ -41,11 +41,13 @@ app.factory('getId', ['$http', '$q', function($http, $q){
 }]);
 
 app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId', function($scope, $http,  $window, questionService, getId){
-	console.log('in controller')
-		questionService.getQuestions().then(function(data){
-		$scope.questions=data;
-		$scope.question=$scope.questions[0];
-	}).catch(function(){
+	
+	// record start time
+	var startTime = new Date();
+	questionService.getQuestions().then(function(data){
+	$scope.questions=data;
+	$scope.question=$scope.questions[0];
+}).catch(function(){
 		$scope.error = 'unable to get the questions';
 	})
 	getId.getId().then(function(idData){
@@ -62,12 +64,17 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId
 	$scope.participantAnswers = new Array();
 	//data will be $scope.question
 	function registerAnswer(question, participant){
+		
 		var trialObject = {}
+		var endTime = new Date();
+		var timeTaken = endTime-startTime
+		// in sec
+		timeTaken /= 1000
 		var currentAnswer = $("input:checked").val();
 		trialObject["question_id"] =  question.question_id;
 		trialObject["participant_id"] = participant.participant_id;
 		trialObject["correct"] = currentAnswer;
-		trialObject["time"] = 13;
+		trialObject["time"] = timeTaken;
 		return trialObject;
 		console.log("trialObject:", trialObject);
 	}
@@ -78,6 +85,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId
 		console.log("registerAnswers: ", registerAnswer($scope.question, $scope.participant_id));
 		// Uncheck radio buttons
 		$("input:radio").attr("checked",false);
+		var startTime = new Date();
 		//$scope.participantAnswers["question_id"] = $scope.question.question_id;
 		console.log("question id: ",  $scope.question.question_id)
 		if (questionNumber < $scope.questions.length - 2){

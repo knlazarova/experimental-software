@@ -4,10 +4,11 @@ app.controller('questionnaireCtrl', ['$scope', '$http', '$window', function($sco
 	
 		$scope.submitQuestionnaire = function(){
 		$scope.participantsInfo = {}
-		$scope.participantsInfo['email'] = document.getElementById('email').value
-		$scope.participantsInfo['name'] = document.getElementById('name').value
-		$scope.participantsInfo['uniDegree'] = document.getElementById('uniDegree').value
-		$scope.participantsInfo['age'] = document.getElementById('age').value
+		//$scope.participantsInfo['email'] = document.getElementById('email').value
+		$scope.participantsInfo['email'] = $scope.email;
+		$scope.participantsInfo['name'] = $scope.name
+		$scope.participantsInfo['uniDegree'] = $scope.uniDegree
+		$scope.participantsInfo['age'] = $scope.age
 		
 		$http.post('http://localhost:3000/participants-info', $scope.participantsInfo).then(
 			function(response){
