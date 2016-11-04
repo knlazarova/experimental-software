@@ -39,7 +39,7 @@ app.post('/participants-info', function (req, res, next) {
     //this done callback signals the pg driver that the connection can be closed or returned to the connection pool
     
      if (err){
-        console.log('theres been an error')
+        console.log('theres been an error in inserting participant_info to db')
         return res.sendStatus(500);
       }
       return res.sendStatus(200);
@@ -55,13 +55,12 @@ app.post('/research-answers-db', function(req, res, next) {
     if (err){
       console.log('cannot connect to db')
     }
-
     for (var i = researchAnswers.length - 1; i >= 0; i--) {
     client.query('INSERT INTO participants_answers values ($1, $2, $3, $4);', 
         [researchAnswers[i].question_id, researchAnswers[i].participant_id, 
         researchAnswers[i].correct, researchAnswers[i].time], function(err, result){
     if (err){
-        console.log('theres been an error')
+        console.log('theres been an error in inserting participants answers to db')
         res.send();
       }
       return res.send();
@@ -113,11 +112,14 @@ app.get('/get-participantId', (request, response)=>{
       console.log("CANT CONNECT TO DB");
     }
    
-   client.query('SELECT participant_id FROM public.participant_info WHERE participant_id (select max(participant_id) from public.participant_info)', [], function(err,result){     
+   client.query('SELECT participant_id FROM public.participant_info WHERE participant_id=(Select max(participant_id) from public.participant_info)', [], function(err,result){     
       if (err){
-        console.log('errorrrrrrrrrrrrrrrrrrrr')
+        console.log('An error occured when trying to retrieve the participant ID')
+        return response.sendStatus(500);
       }
-      response.json(result);
+      //console.log("json(result): ", response.json(result));
+      return response.json(result.rows);
+
  })
 
 })
@@ -128,15 +130,15 @@ app.get('/db-questions', (request, response)=>{
     if (err) {
       console.log("CANT CONNECT TO DB");
     }
-
     var getQuestions = client.query('SELECT * FROM public.questions;');
    // var getParticipantId = client.query('SELECT participant_id FROM public.participant_info')
-   
    client.query('SELECT * FROM public.questions;', [], function(err,result){     
       if (err){
         console.log('errorrrrrrrrrrrrrrrrrrrr')
+        return response.sendStatus(500);
       }
-      response.json(result.rows);
+      
+      return response.json(result.rows);
      //response.json("[{\"question_id\": 1,\"question\": \"How many nodes does the graph have\",\"one\": \"1\"}]");
  })
 
