@@ -118,7 +118,4 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId
 		//go to thank-you
 		$window.location.href = '/thank-you';
 	}
-
-
 }]);
-

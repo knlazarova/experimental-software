@@ -1,42 +1,28 @@
-<html>
-  <head>
-    <title>Experimental Software</title>
-  </head>
-	
-	< <div style=" overflow:auto;margin:4% 4% 4% 4%;border: 2px solid #ccc;">
+ <div ng-app="myApp" ng-controller="questionnaireAnswersCtrl">
+ <div style=" overflow:auto;margin:4% 4% 2% 2%;border: 2px solid #ccc;">
   
   <table class="table table-striped">
   <thead>
     <tr>
       <th>ParticipantID</th>
+      <th>Email</th>
+      <th>Name</th>
       <th>Age</th>
-      <th>Nationality</th>
       <th>Studying</th>
       <!-- add more questions dinamically depending on what's in the DB -->
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1234</th>
-      <td>19</td>
-      <td>English</td>
-      <td>Maths</td>
-    </tr>
-    <tr>
-      <th scope="row">1234</th>
-        <td>19</td>
-      <td>English</td>
-      <td>Maths</td>
-    </tr>
-    <tr>
-      <th scope="row">1234</th>
-              <td>19</td>
-      <td>English</td>
-      <td>Maths</td>
+    <tr ng-repeat="record in answers">
+      <th scope="row" ng-bind="record.participant_id"></th>
+      <td>{record.email}</td>
+      <td>{record.participant_name}</td>
+      <td>{record.age}</td>
+      <td>{record.uni_degree}</td>
     </tr>
   </tbody>
 </table>
-<a href="#">Export as csv</a>
+</div>
 </div>
 
-</html>
+<script src="js/questionnaire-answers-controller.js"></script> 

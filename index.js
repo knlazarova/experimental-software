@@ -21,10 +21,6 @@ app.use('/img',express.static(path.join(__dirname, 'public/images')));
 app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
 app.use('/css',express.static(path.join(__dirname, 'public/stylesheets')));
 
-const participants = []
-var name;
-var id;
-
 app.post('/participants-info', function (req, res, next) {
   const participant = req.body;
   console.log('sending participant info: ',req.body)
@@ -103,7 +99,45 @@ app.get('/participants-questionnaire', (request, response)=>{
 })
 
 app.get('/research-answers', (request, response)=>{
-   response.render('research-answers',{})
+  response.render('research-answers',{})
+})
+
+app.get('/research-answers-db', (request, response)=>{
+    pg.connect(conString, function (err,client) {
+    if (err) {
+      console.log("CANT CONNECT TO DB");
+    }
+   
+   client.query('SELECT * FROM public.participants_answers', [], function(err,result){     
+      if (err){
+        console.log('An error occured when trying to retrieve participants research answers');
+        return response.sendStatus(500);
+      }
+      //console.log("json(result): ", response.json(result));
+      return response.json(result.rows);
+
+ })
+
+})
+  })
+
+app.get('/questionnaire-answers-db', (request,response) =>{
+    pg.connect(conString, function (err,client) {
+    if (err) {
+      console.log("CANT CONNECT TO DB");
+    }
+   
+   client.query('SELECT * FROM public.participant_info', [], function(err,result){     
+      if (err){
+        console.log('An error occured when trying to retrieve participants research answers');
+        return response.sendStatus(500);
+      }
+      //console.log("json(result): ", response.json(result));
+      return response.json(result.rows);
+
+ })
+
+})
   })
 
 app.get('/get-participantId', (request, response)=>{

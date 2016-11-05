@@ -1,7 +1,7 @@
 \pdfoutput=1
 
 \documentclass{l4proj}
-
+\usepackage{float}
 %
 % put any packages here
 %
@@ -47,7 +47,58 @@ The database system chosen for the project is PostgreSQL. Considering the size o
 
 * maybe database schema will be added here *  
 
+\section{Development Process}
+\subsection{User Stories}
+
+The first step of the implementation was understanding the requirements and creating user stories. Some of the most important user stories are:
+
+\begin{verbatim}
+As a researcher, I want to be able to see participant's answers, so that I can analyse the data.
+As a researcher, I want to keep participant's scores anonymous, so that my experiment comply with ethics requirements.
+As a participant, I want to be able to see graphs and associated questions, so that I can complete the experiment.
+As a participant, I want to be unable to go the next question, before completing the present question first, so that I am certain that I haven't missed a question.
+\end{verbatim}
+
+\subsection{Wire-frames}
+After the requirements gathering analysis, development of wire-frames followed. Balsamiq Mockups 3 is the software used for the creation of wire-frames. An example of the research question page can be found in figure \ref{researchQuestion}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[]{researchQuestion.PNG}
+\caption{Research Question Wire-frame}
+\label{researchQuestion}
+\end{figure}
  
+After discussing the wire-frames it appeared that some important features are missing. One of those features was a participants training session. The aim of the experiment is to test which graph is more readable for people who do not have regular exposure to such data visualisation. Therefore, it is important to make the participants aware of how to read each graph before the actual experiment. This way, the requirements specification became an iterative process during which a better understanding of the product evolved.
+
+\subsection{System Design}
+Designing the system was the next stage in the process.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{abstractDesign.png}
+\caption{An abstract representation of the system design}
+\label{abstractDesign}
+\end{figure}
+
+Figure \ref{abstractDesign} shows an abstract view of the system design. There is an Actor who will either be a participant in the study or a researcher. They will interact with the front-end which will be in the form of a web application in a browser. The front end will communicate with the back-end which will be implemented in Node.js. The back-end will make requests to the database to retrieve and send information. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{moreSpecificDesign.png}
+\caption{A more specific representation of the system design}
+\label{moreSpecificDesign}
+\end{figure}
+
+Figure \ref{moreSpecificDesign} displays a more detailed version of the system design. This particular design has been implemented to separate the different concerns in this specific system. When the Actor interacts with the application, the front-end will send information to the Controllers. There are many controllers because there is a controller for each page with front-end functionality. The Controller component decides what should the next action be according to the user input. It has control over the front-end logic and sending requests to the service if information from the database or the server is requested. For example, the answers to all questions are kept in the front-end until a "Submit" button is clicked on. This action triggers a request to the Service. The Service component works with the back-end logic. It can send and retrieve data from the database and keep the information in the Repository. The Service also deals with the requests for the different web-pages. Also it ensures that the project dependencies are loaded.   
+
+\subsection{Implementation}
+The development process was split into front-end and back-end. Without using any frameworks, the front-end Hhtml pages were created following the wire-frames. Bootstrap was added to the html to improve the UI design and make it look more appealing for the participant. 
+
+By this time, it was clear that Node.js will be used to create a server so the next step was to implement it. The decision to use Express as a framework with Node.js followed and the html pages were mapped to a handlebars or hbs files. 
+
+The following couple of weeks were dedicate on work on the database system: creating database schema, and tables, and work on connecting it with the server. 
+
 \section{Challenges}
 \begin{verbatim}
 		Spring idea failed
@@ -130,7 +181,7 @@ The quick brown fox jumped over the lazy dog.
 %\vspace{-7mm}
 \begin{figure}
 \centering
-\includegraphics[height=9.2cm,width=13.2cm]{uroboros.pdf}
+%\includegraphics[height=9.2cm,width=13.2cm]{uroboros.pdf}
 \vspace{-30mm}
 \caption{An alternative hierarchy of the algorithms.}
 \label{uroborus}
@@ -163,6 +214,15 @@ The quick brown fox jumped over the lazy dog.
 %              %
 %%%%%%%%%%%%%%%%
 \begin{appendices}
+
+\chapter{Database Schema}
+
+\begin{verbatim}
+participants_answers(question_id, participant_id, answer, time)
+participants_info(participant_id,participant_name, email, uni_degree, age)
+questions(question_id, question, one, two, three, four, correct, image)
+\end{verbatim}
+
 
 \chapter{Running the Programs}
 An example of running from the command line is as follows:
