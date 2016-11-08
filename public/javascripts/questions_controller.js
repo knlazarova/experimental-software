@@ -73,7 +73,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId
 		var currentAnswer = $("input:checked").val();
 		trialObject["question_id"] =  question.question_id;
 		trialObject["participant_id"] = participant.participant_id;
-		trialObject["correct"] = currentAnswer;
+		trialObject["answer"] = currentAnswer;
 		trialObject["time"] = timeTaken;
 		return trialObject;
 		console.log("trialObject:", trialObject);
