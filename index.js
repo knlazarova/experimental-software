@@ -102,6 +102,11 @@ app.get('/research-answers', (request, response)=>{
   response.render('research-answers',{})
 })
 
+app.get('/training', (request, response)=>{
+  response.render('training',{})
+})
+
+
 app.get('/research-answers-db', (request, response)=>{
     pg.connect(conString, function (err,client) {
     if (err) {
