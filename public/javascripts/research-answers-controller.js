@@ -23,10 +23,10 @@ app.factory('answerService', ['$http', '$q', function($http, $q){
 }]);
 
 app.controller('researchAnswersCtrl', ['$scope', '$http','answerService', function($scope, $http, answerService){
-
 	answerService.getAnswers().then(function(data){
+	//assign the answers to data
 	$scope.answers=data;
 }).catch(function(){
-		$scope.error = 'unable to get the questions';
+		$scope.error = 'unable to get the answers';
 	})
 }]);

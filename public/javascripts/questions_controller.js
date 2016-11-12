@@ -75,8 +75,19 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId
 		trialObject["participant_id"] = participant.participant_id;
 		trialObject["answer"] = currentAnswer;
 		trialObject["time"] = timeTaken;
+		if (question.correct == currentAnswer){
+			trialObject["correct"] = "yes";
+		} else{
+			trialObject["correct"] = "no";
+		}
 		return trialObject;
 		console.log("trialObject:", trialObject);
+	}
+
+	function isCorrect (question, participant){
+
+
+
 	}
 
 	$scope.nextQuestion = function(){
@@ -88,8 +99,6 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId
 		$("#nextButton").attr("disabled", true);
 		var startTime = new Date();
 
-		//$scope.participantAnswers["question_id"] = $scope.question.question_id;
-		console.log("question id: ",  $scope.question.question_id)
 		if (questionNumber < $scope.questions.length - 2){
 			questionNumber = questionNumber+1;
 			$scope.question = $scope.questions[questionNumber];
@@ -110,7 +119,6 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId
 	}
 	$scope.submitQuestions = function(){	
 		$scope.participantAnswers.push(registerAnswer($scope.question, $scope.participant_id));
-		console.log(JSON.stringify($scope.participantAnswers));
 		$http.post('http://localhost:3000/research-answers-db', $scope.participantAnswers).then(
 			function(response){
 				console.log('success')
