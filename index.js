@@ -98,6 +98,11 @@ app.get('/participants-questionnaire', (request, response)=>{
 	response.render('participants-questionnaire',{})
 })
 
+app.get('/consent-form', (request, response)=>{
+  response.render('consent-form',{})
+})
+
+
 app.get('/research-answers', (request, response)=>{
   response.render('research-answers',{})
 })

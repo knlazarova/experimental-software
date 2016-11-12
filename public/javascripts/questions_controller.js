@@ -85,7 +85,9 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId
 		console.log("registerAnswers: ", registerAnswer($scope.question, $scope.participant_id));
 		// Uncheck radio buttons
 		$("input:radio").attr("checked",false);
+		$("#nextButton").attr("disabled", true);
 		var startTime = new Date();
+
 		//$scope.participantAnswers["question_id"] = $scope.question.question_id;
 		console.log("question id: ",  $scope.question.question_id)
 		if (questionNumber < $scope.questions.length - 2){
@@ -98,6 +100,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId
 		// show the submit button and hide the next button
 			document.getElementById("nextButton").style.display = "none";
 			document.getElementById("submitButton").style.display= "block";
+
 			//enable the submit button on select
 			$("input:radio").change(function () {
 		    	$("#submitButton").attr("disabled", false);
