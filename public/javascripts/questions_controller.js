@@ -76,9 +76,9 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', 'getId
 		trialObject["answer"] = currentAnswer;
 		trialObject["time"] = timeTaken;
 		if (question.correct == currentAnswer){
-			trialObject["correct"] = "yes";
+			trialObject["correct"] = "yes"
 		} else{
-			trialObject["correct"] = "no";
+			trialObject["correct"] = "no"
 		}
 		return trialObject;
 		console.log("trialObject:", trialObject);
