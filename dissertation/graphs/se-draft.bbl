@@ -1,0 +1,71 @@
+\begin{thebibliography}{10}
+
+\bibitem{borner2015investigating}
+Katy B{\"o}rner, Adam Maltese, Russell~Nelson Balliet, and Joe Heimlich.
+\newblock Investigating aspects of data visualization literacy using 20
+  information visualizations and 273 science museum visitors.
+\newblock {\em Information Visualization}, page 1473871615594652, 2015.
+
+\bibitem{card1999readings}
+Stuart~K Card, Jock~D Mackinlay, and Ben Shneiderman.
+\newblock {\em Readings in information visualization: using vision to think}.
+\newblock Morgan Kaufmann, 1999.
+
+\bibitem{dinkla2012compressed}
+Kasper Dinkla, Michel~A Westenberg, and Jarke~J van Wijk.
+\newblock Compressed adjacency matrices: untangling gene regulatory networks.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  18(12):2457--2466, 2012.
+
+\bibitem{fekete2008value}
+Jean-Daniel Fekete, Jarke~J Van~Wijk, John~T Stasko, and Chris North.
+\newblock The value of information visualization.
+\newblock In {\em Information visualization}, pages 1--18. Springer, 2008.
+
+\bibitem{grammel2010information}
+Lars Grammel, Melanie Tory, and Margaret-Anne Storey.
+\newblock How information visualization novices construct visualizations.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  16(6):943--952, 2010.
+
+\bibitem{hsu2012evaluation}
+Chun-Cheng Hsu.
+\newblock Evaluation criteria for blog design and analysis of causal
+  relationships using factor analysis and dematel.
+\newblock {\em Expert Systems with Applications}, 39(1):187--193, 2012.
+
+\bibitem{king2016cognitive}
+John King, Kathy Sonderer, and Kevin Lynch.
+\newblock Cognitive benefits of a simple visual metrics architecture.
+\newblock In {\em International Conference on HCI in Business, Government and
+  Organizations}, pages 319--329. Springer, 2016.
+
+\bibitem{longabaugh2012combing}
+William~JR Longabaugh.
+\newblock Combing the hairball with biofabric: a new approach for visualization
+  of large networks.
+\newblock {\em BMC bioinformatics}, 13(1):1, 2012.
+
+\bibitem{Steichen:2013:UIV:2449396.2449439}
+Ben Steichen, Giuseppe Carenini, and Cristina Conati.
+\newblock User-adaptive information visualization: Using eye gaze data to infer
+  visualization tasks and user cognitive abilities.
+\newblock In {\em Proceedings of the 2013 International Conference on
+  Intelligent User Interfaces}, IUI '13, pages 317--328, New York, NY, USA,
+  2013. ACM.
+
+\bibitem{shiLuiLi}
+Kuikui~Liu\"{o}s Xiujin~Shi\'{a}s and Yue Li\"{e}s.
+\newblock {Integrated Architecture for Web Application Development Based on
+  Spring Framework and Activiti Engine}.
+\newblock {\em The International Conference on E-Technologies and Business on
+  the Web (EBW2013)}, pages 52--56, 2013.
+
+\bibitem{Zhang:2015:VTC:2713579.2713583}
+Hao Zhang, Maoyuan Sun, Danfeng~(Daphne) Yao, and Chris North.
+\newblock Visualizing traffic causality for analyzing network anomalies.
+\newblock In {\em Proceedings of the 2015 ACM International Workshop on
+  International Workshop on Security and Privacy Analytics}, IWSPA '15, pages
+  37--42, New York, NY, USA, 2015. ACM.
+
+\end{thebibliography}
