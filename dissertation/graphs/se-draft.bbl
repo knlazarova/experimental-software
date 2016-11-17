@@ -1,5 +1,18 @@
 \begin{thebibliography}{10}
 
+\bibitem{abello2006ask}
+James Abello, Frank Van~Ham, and Neeraj Krishnan.
+\newblock Ask-graphview: A large scale graph visualization system.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  12(5):669--676, 2006.
+
+\bibitem{alper2013weighted}
+Basak Alper, Benjamin Bach, Nathalie Henry~Riche, Tobias Isenberg, and
+  Jean-Daniel Fekete.
+\newblock Weighted graph comparison techniques for brain connectivity analysis.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, pages 483--492. ACM, 2013.
+
 \bibitem{borner2015investigating}
 Katy B{\"o}rner, Adam Maltese, Russell~Nelson Balliet, and Joe Heimlich.
 \newblock Investigating aspects of data visualization literacy using 20
@@ -11,16 +24,36 @@ Stuart~K Card, Jock~D Mackinlay, and Ben Shneiderman.
 \newblock {\em Readings in information visualization: using vision to think}.
 \newblock Morgan Kaufmann, 1999.
 
+\bibitem{dang2015pathwaymatrix}
+Tuan~N Dang, Paul Murray, and Angus~G Forbes.
+\newblock Pathwaymatrix: visualizing binary relationships between proteins in
+  biological pathways.
+\newblock In {\em BMC proceedings}, volume~9, page~S3. BioMed Central Ltd,
+  2015.
+
 \bibitem{dinkla2012compressed}
 Kasper Dinkla, Michel~A Westenberg, and Jarke~J van Wijk.
 \newblock Compressed adjacency matrices: untangling gene regulatory networks.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   18(12):2457--2466, 2012.
 
+\bibitem{dwyer2013edge}
+Tim Dwyer, Nathalie~Henry Riche, Kim Marriott, and Christopher Mears.
+\newblock Edge compression techniques for visualization of dense directed
+  graphs.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  19(12):2596--2605, 2013.
+
 \bibitem{fekete2008value}
 Jean-Daniel Fekete, Jarke~J Van~Wijk, John~T Stasko, and Chris North.
 \newblock The value of information visualization.
 \newblock In {\em Information visualization}, pages 1--18. Springer, 2008.
+
+\bibitem{gansner2005topological}
+Emden~R Gansner, Yehuda Koren, and Stephen~C North.
+\newblock Topological fisheye views for visualizing large graphs.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  11(4):457--468, 2005.
 
 \bibitem{grammel2010information}
 Lars Grammel, Melanie Tory, and Margaret-Anne Storey.
@@ -45,6 +78,13 @@ William~JR Longabaugh.
 \newblock Combing the hairball with biofabric: a new approach for visualization
   of large networks.
 \newblock {\em BMC bioinformatics}, 13(1):1, 2012.
+
+\bibitem{niederer2015survey}
+Christina Niederer, Wolfgang Aigner, and Alexander Rind.
+\newblock Survey on visualizing dynamic, weighted, and directed graphs in the
+  context of data-driven journalism.
+\newblock {\em Proceedings of the International Summer School on Visual
+  Computing}, pages 49--58, 2015.
 
 \bibitem{Steichen:2013:UIV:2449396.2449439}
 Ben Steichen, Giuseppe Carenini, and Cristina Conati.

@@ -8,6 +8,7 @@ const port = 3000
 const path = require('path')  
 'use strict'
 const pg = require('pg')  
+
 const conString = 'postgres://knlaz:knlaz@localhost:5432/knlaz' // make sure to match your own database's credentials
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,7 +16,6 @@ app.use(bodyParser.json());
 
 app.set('view engine', '.hbs')  
 app.set('views', path.join(__dirname, 'views'))  
-//app.use(express.static(path.join(__dirname + '/public')));
 
 app.use('/img',express.static(path.join(__dirname, 'public/images')));
 app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
@@ -81,9 +81,12 @@ app.engine('.hbs', exphbs({
   layoutsDir: path.join(__dirname, 'views/layouts')
 }))
 
-
 app.get('/home', (request, response)=>{
-	response.render('home',{})
+  response.render('home',{})
+})
+
+app.get('/participant-number', (request, response)=>{
+	response.render('participant-number',{})
 })
 
 app.get('/login', (request, response)=>{

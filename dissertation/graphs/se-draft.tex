@@ -66,8 +66,7 @@ Furthermore, PathwayMatrix is another visualisation tool that represents specifi
 \chapter{Introduction}
 Introduction to the specific area of my research
 
-
-Brain connectivity visualisations are in the form of weighted graphs which are node-link graphs in which each edge is given a numerical weight. Alper et al \cite{alper2013weighted} compared augmented adjacency matrix with node-link visualization by conducting a controlled experiment. They found that matrix-based graphs outperform node-linked graphs. 
+Brain connectivity visualisations are in the form of weighted graphs which are node-link graphs in which each edge is given a numerical weight. Alper et al \cite{alper2013weighted} compared augmented adjacency matrix with node-link visualization by conducting a controlled experiment. They found that matrix-based graphs outperform node-linked graphs. It was concluded that for weight graphs, node-link representations are less readable and more error-prone when compared to matrices. On the other side, node-link graphs are adjustable to a specific spacial representation which might also be insightful when reading the graph. Overall, matrix-based graphs had higher accuracy.  
 
 \chapter{Implementation details}
 
@@ -87,10 +86,15 @@ The database system chosen for the project is PostgreSQL. Considering the size o
 The first step of the implementation was understanding the requirements and creating user stories. Some of the most important user stories are:
 
 \begin{verbatim}
-As a researcher, I want to be able to see participant's answers, so that I can analyse the data.
-As a researcher, I want to keep participant's scores anonymous, so that my experiment comply with ethics requirements.
-As a participant, I want to be able to see graphs and associated questions, so that I can complete the experiment.
-As a participant, I want to be unable to go the next question, before completing the present question first, so that I am certain that I haven't missed a question.
+As a researcher, I want to be able to see participant's answers, 
+	so that I can analyse the data.
+As a researcher, I want to keep participant's scores anonymous, 
+	so that my experiment comply with ethics requirements.
+As a participant, I want to be able to see graphs and associated questions, 
+	so that I can complete the experiment.
+As a participant, I want to be unable to go the next question 
+	before completing the present question first, 
+	so that I am certain that I haven't missed a question.
 \end{verbatim}
 
 \subsection{Wire-frames}
