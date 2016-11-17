@@ -1,11 +1,15 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', [])
+app.factory('ParticipantNumber', function(){
+	return{
+		participantNumber : 0
+	}
+})
 
-
-app.controller('numberCtrl', ['$scope', '$http', '$window', function($scope, $http, $window){
-	
+app.controller('numberCtrl', ['$scope', '$http', '$window', '$rootScope', 'ParticipantNumber', function($scope, $http, $window, $rootScope, ParticipantNumber){
 		$scope.startExperiment = function(){
-		var participantNumber = $scope.participantNumber;
-		console.log('the participant number: ',participantNumber)
-		//$window.location.href = '/welcome';
+		ParticipantNumber.participantNumber = $scope.participantNumber;
+		console.log('the participant number: ', $rootScope.participantNumber)
+
+		$window.location.href = '/participants-questionnaire';
 	}
 }]);

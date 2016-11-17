@@ -3,10 +3,11 @@
 <form>
   <div class="form-group">
     <label for="particpantNumber">Please enter participant number</label>
-    <input type="participantNumber" class="form-control" ng-value="participantNumber" id="participantNumber" style="width:6%">
+    <input type="participantNumber" class="form-control" ng-model="participantNumber" id="participantNumber" style="width:8%">
   </div>
-  <input type="submit" value = "Start" id="start" class="btn btn-default navbar-btn" ng-click="startExperiment()"></input>
+  <input type="submit" value = "Start" id="start" class="btn btn-default navbar-btn" ng-click="startExperiment(participantNumber)"></input>
 </form>
 
 </div>
-<script src="js/participant-number-controller.js"></script> 
+<!--<script src="js/participant-number-controller.js"></script> -->
+<script src="js/questionnaire_controller.js"></script> 

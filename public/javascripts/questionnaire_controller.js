@@ -1,10 +1,18 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngCookies'])
 
-app.controller('questionnaireCtrl', ['$scope', '$http', '$window', function($scope, $http, $window){
-	
-		$scope.submitQuestionnaire = function(){
+app.controller('numberCtrl', ['$scope', '$http', '$window', '$cookies',  function($scope, $http, $window, $cookies){
+		$scope.startExperiment = function(num){
+			$cookies.put("partNumber", num);
+			console.log("Cookie: " + $cookies.get("partNumber"));
+		//$window.location.href = '/welcome';
+	}
+}]);
+
+app.controller('questionnaireCtrl', ['$scope', '$http', '$window', '$cookies',  function($scope, $http, $window, $cookies){
+  	console.log("partNumber", $cookies.get("partNumber"))
+	$scope.submitQuestionnaire = function(){
 		$scope.participantsInfo = {}
-		//$scope.participantsInfo['email'] = document.getElementById('email').value
+		$scope.participantsInfo['participantId'] = $cookies.get("partNumber")
 		$scope.participantsInfo['email'] = $scope.email;
 		$scope.participantsInfo['name'] = $scope.name
 		$scope.participantsInfo['uniDegree'] = $scope.uniDegree
@@ -17,9 +25,7 @@ app.controller('questionnaireCtrl', ['$scope', '$http', '$window', function($sco
 		function(response){
 			console.log('failed')
 		});
-		//go to research questions
-		console.log($window);
-		console.log();
-		$window.location.href = '/research-questions';
+		//go to debrief page
+		$window.location.href = '/thank-you';
 	}
-}]);
+}])
