@@ -49,7 +49,6 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		$scope.questions=data;
 		//get latin square
 		latinSquare.getLatinSquare().then(function(latin){
-		//console.log("latin square:", latin)
 		$scope.orderedQuestions = new Array();
 		var latinSquareNumber = 0
 		var latinSquareData=latin
@@ -58,24 +57,19 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 				$scope.sequenceQuestions = latinSquareData[object]['order'].split(',')
 			}
 		}
-
-
+		// match the sequence of questions for the participant ID
 		for( i=0; i<$scope.sequenceQuestions.length; i++){
 			var orderedQuestionsId = $scope.sequenceQuestions[i]
 			console.log(orderedQuestionsId)
 			for( k=0; k<$scope.questions.length; k++){
-				console.log("Question: ",$scope.questions[k]['question_id']);
-				console.log("Id that we want: ",parseInt(orderedQuestionsId));
+				//console.log("Question: ",$scope.questions[k]['question_id']);
+				//console.log("Id that we want: ",parseInt(orderedQuestionsId));
 				if($scope.questions[k]['question_id'] === parseInt(orderedQuestionsId)){
 					$scope.orderedQuestions.push($scope.questions[k]);
 					break;
 				}
-			}
-			
+			}	
 		}
-
-		console.log('orederedQuestions.', ($scope.orderedQuestions))
-	
 		$scope.question = $scope.orderedQuestions[0]
 	}).catch(function(){
 		$scope.error = 'unable to get latin square';
@@ -83,7 +77,6 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 	}).catch(function(){
 		$scope.error = 'unable to get the questions';
 	})
-
 	console.log("participant num from questions controller" + $cookies.get("partNumber"))
 	//get latinSquare
 
@@ -110,7 +103,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		trialObject["type"] = question.type;
 		trialObject["size"] = question.size;
 		trialObject["layout"] = question.layout;
-		trialObject["questionDomain"] = question.questionDomain;
+		trialObject["domain_question"] = question.domain_question;
 
 		if (question.correct == currentAnswer){
 			trialObject["correct"] = "yes"
@@ -124,13 +117,13 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 	$scope.nextQuestion = function(){
 		// get the selected value
 		$scope.participantAnswers.push(registerAnswer($scope.question, $scope.participant_id));
-		//console.log("registerAnswers: ", registerAnswer($scope.question, $scope.participant_id));
 		// Uncheck radio buttons
 		$("input:radio").attr("checked",false);
 		$("#nextButton").attr("disabled", true);
 		var startTime = new Date();
 		//there are more than one questions left
-		if (questionNumber < $scope.questions.length - 2){
+		//$scope.orderedQuestions.length
+		if (questionNumber < 4 - 2){
 			questionNumber = questionNumber+1;
 			$scope.question = $scope.orderedQuestions[questionNumber];
 		}
