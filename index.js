@@ -181,6 +181,21 @@ app.get('/db-questions', (request, response)=>{
   })
 })
 
+app.get('/latin-square', (request, response)=>{
+    pg.connect(conString, function (err,client) {
+    if (err) {
+      console.log("CAN\'T CONNECT TO DB");
+    }
+   client.query('SELECT * FROM public.latin_square;', [], function(err,result){     
+      if (err){
+        console.log('An error occured while trying to retrieve latin square from the database')
+        return response.sendStatus(500);
+      }
+      return response.json(result.rows);
+    })
+  })
+})
+
 app.get('/welcome', (request, response)=>{
 	response.render('welcome',{})
 })

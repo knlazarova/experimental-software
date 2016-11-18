@@ -4,7 +4,7 @@ app.controller('numberCtrl', ['$scope', '$http', '$window', '$cookies',  functio
 		$scope.startExperiment = function(num){
 			$cookies.put("partNumber", num);
 			console.log("Cookie: " + $cookies.get("partNumber"));
-		//$window.location.href = '/welcome';
+		$window.location.href = '/welcome';
 	}
 }]);
 

@@ -23,37 +23,70 @@ app.factory('questionService', ['$http', '$q', function($http, $q){
 	};
 }]);
 
-// app.factory('getId', ['$http', '$q', function($http, $q){
-// 	console.log('in factory id')
-// 	var getId = function(){
-// 		var defer = $q.defer();
-// 		$http.get('http://localhost:3000/get-participantId').then(function(response){
-// 			defer.resolve(response.data);
-// 		}, function(response){
-// 			console.log("error in factory getID");
-// 			defer.reject(response);
-// 		});
-// 		return defer.promise;
-// 	};
-// 	return{
-// 		getId: getId
-// 	};
-// }]);
+app.factory('latinSquare', ['$http', '$q', function($http, $q){
+	var getLatinSquare = function(){
+		var defer = $q.defer();
+		$http.get('http://localhost:3000/latin-square').then(function(response){
+			defer.resolve(response.data);
+		}, function(response){
+			defer.reject(response);
+		});
+		return defer.promise;
+	};
+	return{
+		getLatinSquare: getLatinSquare
+	};
+}]);
 
-app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cookies', function($scope, $http,  $window, questionService, $cookies){
+
+app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cookies', 'latinSquare', function($scope, $http,  $window, questionService, $cookies, latinSquare){
 	// record start time
 	var startTime = new Date();
-	//get questions data
-	questionService.getQuestions().then(function(data){
-	$scope.questions=data;
-	$scope.question=$scope.questions[0];
-}).catch(function(){
-		$scope.error = 'unable to get the questions';
-	})
 	//get the participant id
 	$scope.participant_id=$cookies.get("partNumber")
-	console.log("participant num from questions controller":, $cookies.get("partNumber"))
+	//get questions data
+	questionService.getQuestions().then(function(data){
+		$scope.questions=data;
+		//get latin square
+		latinSquare.getLatinSquare().then(function(latin){
+		//console.log("latin square:", latin)
+		$scope.orderedQuestions = new Array();
+		var latinSquareNumber = 0
+		var latinSquareData=latin
+		for(var object in latinSquareData){
+			if($scope.participant_id == latinSquareData[object]['id']){
+				$scope.sequenceQuestions = latinSquareData[object]['order'].split(',')
+			}
+		}
+
+
+		for( i=0; i<$scope.sequenceQuestions.length; i++){
+			var orderedQuestionsId = $scope.sequenceQuestions[i]
+			console.log(orderedQuestionsId)
+			for( k=0; k<$scope.questions.length; k++){
+				console.log("Question: ",$scope.questions[k]['question_id']);
+				console.log("Id that we want: ",parseInt(orderedQuestionsId));
+				if($scope.questions[k]['question_id'] === parseInt(orderedQuestionsId)){
+					$scope.orderedQuestions.push($scope.questions[k]);
+					break;
+				}
+			}
+			
+		}
+
+		console.log('orederedQuestions.', ($scope.orderedQuestions))
 	
+		$scope.question = $scope.orderedQuestions[0]
+	}).catch(function(){
+		$scope.error = 'unable to get latin square';
+	})
+	}).catch(function(){
+		$scope.error = 'unable to get the questions';
+	})
+
+	console.log("participant num from questions controller" + $cookies.get("partNumber"))
+	//get latinSquare
+
 
 	var questionNumber = 0;
 	//enable the Next button
@@ -74,6 +107,11 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		trialObject["participant_id"] = $scope.participant_id
 		trialObject["answer"] = currentAnswer;
 		trialObject["time"] = timeTaken;
+		trialObject["type"] = question.type;
+		trialObject["size"] = question.size;
+		trialObject["layout"] = question.layout;
+		trialObject["questionDomain"] = question.questionDomain;
+
 		if (question.correct == currentAnswer){
 			trialObject["correct"] = "yes"
 		} else{
@@ -86,7 +124,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 	$scope.nextQuestion = function(){
 		// get the selected value
 		$scope.participantAnswers.push(registerAnswer($scope.question, $scope.participant_id));
-		console.log("registerAnswers: ", registerAnswer($scope.question, $scope.participant_id));
+		//console.log("registerAnswers: ", registerAnswer($scope.question, $scope.participant_id));
 		// Uncheck radio buttons
 		$("input:radio").attr("checked",false);
 		$("#nextButton").attr("disabled", true);
@@ -94,11 +132,11 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		//there are more than one questions left
 		if (questionNumber < $scope.questions.length - 2){
 			questionNumber = questionNumber+1;
-			$scope.question = $scope.questions[questionNumber];
+			$scope.question = $scope.orderedQuestions[questionNumber];
 		}
 		else{
-		questionNumber = $scope.questions.length - 1;
-		$scope.question = $scope.questions[questionNumber];
+		questionNumber =$scope.orderedQuestions.length - 1;
+		$scope.question = $scope.orderedQuestions[questionNumber];
 		// show the submit button and hide the next button
 			document.getElementById("nextButton").style.display = "none";
 			document.getElementById("submitButton").style.display= "block";
