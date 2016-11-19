@@ -122,8 +122,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		$("#nextButton").attr("disabled", true);
 		var startTime = new Date();
 		//there are more than one questions left
-		//$scope.orderedQuestions.length
-		if (questionNumber < 4 - 2){
+		if (questionNumber < $scope.orderedQuestions.length - 2){
 			questionNumber = questionNumber+1;
 			$scope.question = $scope.orderedQuestions[questionNumber];
 		}

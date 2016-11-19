@@ -202,7 +202,7 @@ app.get('/welcome', (request, response)=>{
 })
 
 app.get('/research-questions', (request, response)=>{
-  response.render('research-questions',{})
+  response.render('research-questions',{layout: 'questionLayout.hbs'})
 })
 
 app.get('/thank-you', (request, response)=>{

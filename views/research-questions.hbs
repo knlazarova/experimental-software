@@ -1,49 +1,74 @@
 <div ng-app="myApp" ng-controller="myCtrl">
-  
-<form id="form" style="margin-top:4%; padding: 3% 3%;">
+<head>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-cookies.min.js"></script>
 
-<div class="progress">
-  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
-  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-    40% Complete
-  </div>
-</div>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<div>
-<div style="height: auto; width: auto;">
-<img ng-src="img/{question.image}" ></img>
-</div>
-  <fieldset class="form-group" id="form-group">
-    <legend ng-bind="question.question"> </legend>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <body>
+</head>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+        <div style="height: 760px; width: 880px">
+          <img ng-src="img/{question.image}" style="height: auto; width: auto" ></img>
+        </div>  
+      </div>
+    <div class="col-sm-4">
+    <form id="form" style="margin-top:97%; padding: 2% 2%;">
+    <fieldset class="form-group" id="form-group">
+      <legend ng-bind="question.question"> </legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" ng-value="question.one">
+          <span ng-bind="question.one"></span>        
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" ng-value="question.two" >
+          <span ng-bind="question.two"></span> 
+        </label>
+      </div>
     <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" ng-value="question.one">
-        <span ng-bind="question.one"></span>        
-      </label>
-    </div>
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" ng-value="question.three" >
+         <span ng-bind="question.three"></span> 
+        </label>
+      </div>
     <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" ng-value="question.two" >
-        <span ng-bind="question.two"></span> 
-      </label>
-    </div>
-  <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" ng-value="question.three" >
-       <span ng-bind="question.three"></span> 
-      </label>
-    </div>
-  <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" ng-value="question.four" >
-        <span ng-bind="question.four"></span> 
-      </label>
-    </div>
-    
-  </fieldset>
-  <input type="submit" value = "Next" id="nextButton" class="btn btn-default navbar-btn" ng-click="nextQuestion()" disabled="disabled"></input>
-  <input type="submit" value = "Submit" id="submitButton" class="btn btn-default navbar-btn" ng-click="submitQuestions()" disabled="disabled" style="display:none"></input>
-</form>
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" ng-value="question.four" >
+          <span ng-bind="question.four"></span> 
+        </label>
+      </div>
+    </fieldset>
+    <input type="submit" value = "Next" id="nextButton" class="btn btn-default navbar-btn" ng-click="nextQuestion()" disabled="disabled"></input>
+    <input type="submit" value = "Submit" id="submitButton" class="btn btn-default navbar-btn" ng-click="submitQuestions()" disabled="disabled" style="display:none"></input>
+  </form>
 </div>
 </div>
+ </div>
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+
+    </div>
+
 <script src="js/questions_controller.js"></script> 
