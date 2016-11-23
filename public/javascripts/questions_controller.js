@@ -40,11 +40,10 @@ app.factory('latinSquare', ['$http', '$q', function($http, $q){
 
 
 app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cookies', 'latinSquare', function($scope, $http,  $window, questionService, $cookies, latinSquare){
-	// record start time
-	var startTime = new Date();
 	//get the participant id
 	$scope.participant_id=$cookies.get("partNumber")
 	//get questions data
+	var startTime;
 	questionService.getQuestions().then(function(data){
 		$scope.questions=data;
 		//get latin square
@@ -71,6 +70,8 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 			}	
 		}
 		$scope.question = $scope.orderedQuestions[0]
+			// record start time
+		startTime = new Date();
 	}).catch(function(){
 		$scope.error = 'unable to get latin square';
 	})
@@ -93,8 +94,10 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		var endTime = new Date();
 		// total time it took to answer the question
 		var timeTaken = endTime-startTime
+
 		// convert into sec
 		timeTaken /= 1000
+		console.log(timeTaken)
 		var currentAnswer = $("input:checked").val();
 		trialObject["question_id"] =  question.question_id;
 		trialObject["participant_id"] = $scope.participant_id
@@ -120,9 +123,10 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		// Uncheck radio buttons
 		$("input:radio").attr("checked",false);
 		$("#nextButton").attr("disabled", true);
-		var startTime = new Date();
+		startTime = new Date();
 		//there are more than one questions left
-		if (questionNumber < $scope.orderedQuestions.length - 2){
+		//$scope.orderedQuestions.length - 2
+		if (questionNumber < 4){
 			questionNumber = questionNumber+1;
 			$scope.question = $scope.orderedQuestions[questionNumber];
 		}

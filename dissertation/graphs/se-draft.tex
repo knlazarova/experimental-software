@@ -7,7 +7,7 @@
 %
 
 \begin{document}
-\title{Are matrix-based or node-linked graphs more readable when representing causal relationships for social and health data?}
+\title{Are matrix-based or node-link graphs more readable when representing causal relationships for social and health data?}
 \author{Kristina Lazarova}
 \date{March, 2017}
 \maketitle
@@ -131,7 +131,7 @@ Figure \ref{abstractDesign} shows an abstract view of the system design. There i
 Figure \ref{moreSpecificDesign} displays a more detailed version of the system design. This particular design has been implemented to separate the different concerns in this specific system. When the Actor interacts with the application, the front-end will send information to the Controllers. There are many controllers because there is a controller for each page with front-end functionality. The Controller component decides what should the next action be according to the user input. It has control over the front-end logic and sending requests to the service if information from the database or the server is requested. For example, the answers to all questions are kept in the front-end until a "Submit" button is clicked on. This action triggers a request to the Service. The Service component works with the back-end logic. It can send and retrieve data from the database and keep the information in the Repository. The Service also deals with the requests for the different web-pages. Also it ensures that the project dependencies are loaded.   
 
 \subsection{Implementation}
-The development process was split into front-end and back-end. Without using any frameworks, the front-end Hhtml pages were created following the wire-frames. Bootstrap was added to the html to improve the UI design and make it look more appealing for the participant. 
+The development process was split into front-end and back-end. Without using any frameworks, the front-end Html pages were created following the wireframes. Bootstrap was added to the html to improve the UI design and make it look more appealing for the participant. Furthermore, a hierarchical page set up was implemented by having all html pages extending one layout file. This also helped avoid repeated code as needed libraries were imported only once and all other files inherited them. A considerable amount of time was spent on developing the graphs and converting node-link graphs into matrix-based graphs. The different sizes were evolving from each other, which means that the information contained in the small graph was present in the medium one. Close to piloting the experiment, the front end had to be drastically changed in order to fit the large graphs on one screen.
 
 By this time, it was clear that Node.js will be used to create a server so the next step was to implement it. The decision to use Express as a framework with Node.js followed and the html pages were mapped to a handlebars or hbs files. 
 
@@ -148,49 +148,39 @@ In the beginning of this project the Java framework Spring was going to be used 
 
 A new research for web-application frameworks followed. Node.js backend was chosen because of its event-driven, non-blocking I/O model which creates an efficient and lightweight server-side of the application. Another challenge appeared when trying to incorporate AngularJS with Node.js. Usually in AngularJS one uses curly braces to reference data structure from the AngularJS controller. However, Node.js also uses curly brackets to reference information from the backend in the frontend. After a long research  it was found that Node.js overrides the use of curly braces and the application is not displaying Angular data as it expects it come from the backend. Unfortunately, an appropriate error message does exist and it all had to be discovered during the development process. Instead of using curly brackets one can also use "ng-bind" and achieve the same result. This approached solved the issue until "ng-bind" information was need in "ng-src" to display the appropriate graph image. It is not possible to use "ng-bind" inside "ng-src" so the present solution at the time was no longer solving the problem. Therefore, the Angular configurations had be altered to use a different symbol. Implementing this solved the problem entirely. 
 
+Another issue was the size of the graphs. During the implementation process it was necessary that a scroll bar appears in order to show the real size of the graphs. This was inconvenient for reading the graphs, and participants were going to need more time to read these graphs. Therefore, this was going to be a confounding variable in the experiment. In order to avoid this issue, the front-end pages had to be restructured. The bootstrap navigation bar had to be removed and the question had to be displayed on the left instead of below the graph. This also meant that this particular sequence of pages had to extend a different layout page, which does not contain the navigation bar and has a different bootstrap grid.
 
 \section{Software reliability testing}
 
 \chapter{Evaluation}
 \section{Design}
-\section{Participants}
-\section{Procedure}
-\section{Results}
-\section{Discussion}
 
-\chapter{}
+This is a within subject design experiment with two conditions. In the first one participants answer questions related to causal relationships in node-link graphs and in the second one they are asked to answer questions representing similar type of information on matrix-based representations. Each condition has three factors - size, layout, and question domain. Figure \ref{experimentalDesign} illustrates the pattern under which graphs were created. The three different sizes were small (10 nodes), medium (20 nodes) and large(30 nodes). For each of these, there were three different layouts for both matrix-based and node-link graphs. The matrix-based layouts are alphabetical, in degree descending and out degree descending. The node-link layouts are hierarchical, orthogonal, and series parallel.  There was a direct relationship question and an indirect causal relationship question asked for each of the created graphs.
 
-
-
-%\vspace{-7mm}
-\begin{figure}
+\begin{figure}[H]
 \centering
-%\includegraphics[height=9.2cm,width=13.2cm]{uroboros.pdf}
-\vspace{-30mm}
-\caption{An alternative hierarchy of the algorithms.}
-\label{uroborus}
+\includegraphics[width=15cm]{experimentalObjects.png}
+\caption{Experimental Design}
+\label{experimentalDesign}
 \end{figure}
 
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
+\section{Stimuli}
+The specified sequence of questions with matched layouts, question themes, and different sizes was still likely to influence the results of the experiment because of an exposure effect of that particular sequence. Therefore, to ensure that all participants will receive the questions in a different order Latin square randomization was used. Latin square was used to randomise the sequence of questions and eliminate the possibility of the questions sequence affecting the results. The first four questions of the experiment are trial questions which do not count towards the final results. 
+Node-link graphs were created using yEd, and the equivalent matrix-based representations were created using software which converts XGML node-link graphs into matrix-based graphs. Both representations were displayed in their real size on the left side of the screen and the corresponding question was on the right. Participants were not able to go to the next question before they answered the current one.
 
-\section{The Lazy Dog}
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
+\section{Participants}
+There were [] participants who took part in the experiment, aged between [-]. The excluding criteria restricted people specialized in the subjects of Maths, Engineering and Computing Science from participating. The reason for this is that these fields are likely to include preparation in reading graphs. In addition, findings are expected to be representative for health and social sector, who are not likely to have background in those degrees.
 
-The quick brown fox jumped over the lazy dog.
-The quick brown  jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
-The quick brown fox jumped over the lazy dog.
+\section{Procedure}
+
+In order to have a more environmentally valid experiment, the study was conducted only on the experimenter's laptop in their presence. The participants were asked to sit on a chair and complete the experiment in a calm, silent environment. They had to read through an information sheet, explaining what is to following in the next 30 minutes, consent from, asking them to agree to participate in the study, and training showing them examples of how to solve the upcoming 36 research questions. At the end of the experiment there was a short demographic questionnaire and a debrief.
+
+\section{Results}
+
+\section{Discussion}
+
+
+
 
 %%%%%%%%%%%%%%%%
 %              %
