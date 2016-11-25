@@ -85,17 +85,13 @@ The database system chosen for the project is PostgreSQL. Considering the size o
 
 The first step of the implementation was understanding the requirements and creating user stories. Some of the most important user stories are:
 
-\begin{verbatim}
-As a researcher, I want to be able to see participant's answers, 
-	so that I can analyse the data.
-As a researcher, I want to keep participant's scores anonymous, 
-	so that my experiment comply with ethics requirements.
-As a participant, I want to be able to see graphs and associated questions, 
-	so that I can complete the experiment.
-As a participant, I want to be unable to go the next question 
-	before completing the present question first, 
-	so that I am certain that I haven't missed a question.
-\end{verbatim}
+\begin{itemize}
+   \item As a researcher, I want to be able to see participant's answers to questions, so that I can analyse the data.
+   \item As a participant, I want to be able to see a graph and a questions at a time, so that I can complete the experiment.
+   \item As a researcher, I want to keep participant's scores anonymous, so that the experiment comply with ethics requirements.
+   \item As a participant, I want to be unable to go the next question before completing the present question first, so that I am certain that I haven't missed a question.
+   \item As a researcher,
+\end{itemize}
 
 \subsection{Wire-frames}
 After the requirements gathering analysis, development of wire-frames followed. Balsamiq Mockups 3 is the software used for the creation of wire-frames. An example of the research question page can be found in figure \ref{researchQuestion}.
@@ -155,7 +151,7 @@ Another issue was the size of the graphs. During the implementation process it w
 \chapter{Evaluation}
 \section{Design}
 
-This is a within subject design experiment with two conditions. In the first one participants answer questions related to causal relationships in node-link graphs and in the second one they are asked to answer questions representing similar type of information on matrix-based representations. Each condition has three factors - size, layout, and question domain. Figure \ref{experimentalDesign} illustrates the pattern under which graphs were created. The three different sizes were small (10 nodes), medium (20 nodes) and large(30 nodes). For each of these, there were three different layouts for both matrix-based and node-link graphs. The matrix-based layouts are alphabetical, in degree descending and out degree descending. The node-link layouts are hierarchical, orthogonal, and series parallel.  There was a direct relationship question and an indirect causal relationship question asked for each of the created graphs.
+This is a within subject design experiment with two conditions. In the first one participants answer questions related to causal relationships in node-link graphs and in the second one they are asked to answer similar questions on matrix-based representation. Each condition has three factors - size, layout, and question domain. Figure \ref{experimentalDesign} illustrates the pattern which was used create the questions and the graphs. The domain questions are healthy and unhealthy gym behaviour, drinking issues, and student exams. The three different sizes were small (10 nodes), medium (20 nodes) and large(30 nodes). For each of these, there were three different layouts for both matrix-based and node-link graphs. The matrix-based layouts are alphabetical, in degree descending and out degree descending. The node-link layouts are hierarchical, orthogonal, and series parallel.  There was a direct relationship question and an indirect causal relationship question asked for each of the created graphs. The first four questions of the experiment are trial questions which do not count towards the final results.
 
 \begin{figure}[H]
 \centering
@@ -165,15 +161,31 @@ This is a within subject design experiment with two conditions. In the first one
 \end{figure}
 
 \section{Stimuli}
-The specified sequence of questions with matched layouts, question themes, and different sizes was still likely to influence the results of the experiment because of an exposure effect of that particular sequence. Therefore, to ensure that all participants will receive the questions in a different order Latin square randomization was used. Latin square was used to randomise the sequence of questions and eliminate the possibility of the questions sequence affecting the results. The first four questions of the experiment are trial questions which do not count towards the final results. 
-Node-link graphs were created using yEd, and the equivalent matrix-based representations were created using software which converts XGML node-link graphs into matrix-based graphs. Both representations were displayed in their real size on the left side of the screen and the corresponding question was on the right. Participants were not able to go to the next question before they answered the current one.
+The specified sequence of questions with matched layouts, question themes, and different sizes was likely to influence the results of the experiment because of an exposure effect of that particular sequence. Therefore, to ensure that all participants receive the questions in a different order, Latin square randomization was used. The sequence of questions was different for each participant and the possibility of the questions sequence affecting the results was eliminated.
+  
+Node-link graphs were created using yEd, and the equivalent matrix-based representations were created using software which converts XGML node-link graphs into matrix-based graphs. As long as the graphs are from one domain questions, they all represent the same information. However, all questions require different information to be read from the graphs in order to avoid learning effect. At the same time the the graphs represent the same information which ensures that the complexity of the data is the same. Both types of representations are displayed in their real size on the left side of the screen and the corresponding question is on the right. Special attention is paid to the fonts of the letters and retaining the original size of the image. Participants were not able to go to the next question before they answered the current one. 
+
+\section{Pilot}
+
+It was essential to conduct a pilot in order to make sure that the software does not misbehave. In addition, the pilot brought light into how people who have never been exposed to the graphs before react on them. There were 3 participants in the pilot. All of them said that the training in the beginning of the experiment is sufficient at explaining how to read the graphs. One of the participants, however, wanted to confirm with the experimenter that the correct direction of reading the graphs is from left to top. This is why the first 4 sessions in the beginning of the experiment are trials during which the participants can ask questions in order to understand how to read the graphs and their answers are not recorded. 
+
+All participants in the pilot said that the tasks are clear, graphs font size is readable, and different layouts and sizes are appropriately displaying the data. One participant mentioned that in the orthogonal layout in one of the node-link graphs, the label is on the arrow which makes it hard to read. The reason for this is that both labels and arrows are in black colour. Their note was taken into consideration and changes were made to make the label easy to read. One out of three participants said that they got bored during the experiment. The same participants complained that their eyes hurt at the 7th question and did not finish the experiment. 
+
+Furthermore, some of the participants mentioned that it is hard to find the label you are looking for and they guessed the answer to the question by logical reasoning. To avoid this in the experiment, a note will be made to tell participants that there is no logical relationship between the causal relationships and they should not attempt to guess the correct answer. It was also noted, that when a particular node has more than one causal relationship, it is much harder to follow a path, than in a complex matrix-based graph with many relationships.
+
+The pilot was very helpful at spotting technical issues. It was found that in one question the correct answer was being evaluated to incorrect because of a typo in the csv file that populated the database. Another technical issue found was the time recording. The timing was starting and stopping when required, but the moment where the time taken was recorded a wrong startTime variable was evaluated. This was a scope issue, which was fixed for the real experiment.  
+
+ 
 
 \section{Participants}
 There were [] participants who took part in the experiment, aged between [-]. The excluding criteria restricted people specialized in the subjects of Maths, Engineering and Computing Science from participating. The reason for this is that these fields are likely to include preparation in reading graphs. In addition, findings are expected to be representative for health and social sector, who are not likely to have background in those degrees.
 
 \section{Procedure}
 
-In order to have a more environmentally valid experiment, the study was conducted only on the experimenter's laptop in their presence. The participants were asked to sit on a chair and complete the experiment in a calm, silent environment. They had to read through an information sheet, explaining what is to following in the next 30 minutes, consent from, asking them to agree to participate in the study, and training showing them examples of how to solve the upcoming 36 research questions. At the end of the experiment there was a short demographic questionnaire and a debrief.
+In order to have a more environmentally valid experiment, the study was conducted only on the experimenter's laptop in their presence. The participants were asked to sit on a chair and complete the experiment in a calm, silent environment. They had to read through an information sheet, explaining what is to following in the next 30 minutes, consent from, asking them to agree to participate in the study, and training showing them examples of how to solve the upcoming 36 research questions. At the end of the experiment participants were shown a short demographic questionnaire and a debrief.
+
+
+
 
 \section{Results}
 

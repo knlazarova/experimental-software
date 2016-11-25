@@ -64,7 +64,7 @@ app.post('/research-answers-db', function(req, res, next) {
       console.log('cannot connect to db')
     }
     //add the answers to the research questions to the database
-    for (var i = researchAnswers.length - 1; i >= 0; i--) {
+    for (var i = researchAnswers.length - 1; i >= 4; i--) {
     client.query('INSERT INTO participants_answers values ($1, $2, $3, $4, $5, $6, $7, $8, $9);', 
         [researchAnswers[i].question_id, parseInt(researchAnswers[i].participant_id), 
         researchAnswers[i].answer, researchAnswers[i].time, researchAnswers[i].correct, 
