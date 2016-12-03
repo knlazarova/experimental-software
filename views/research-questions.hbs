@@ -17,7 +17,6 @@
   <body>
 </head>
 
-
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
@@ -31,44 +30,38 @@
       <legend ng-bind="question.question"> </legend>
       <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" ng-value="question.one">
+          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="optionsRadios1" ng-value="question.one">
           <span ng-bind="question.one"></span>        
         </label>
       </div>
       <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" ng-value="question.two" >
+          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="optionsRadios2" ng-value="question.two" >
           <span ng-bind="question.two"></span> 
         </label>
       </div>
     <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" ng-value="question.three" >
+          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="optionsRadios3" ng-value="question.three" >
          <span ng-bind="question.three"></span> 
         </label>
       </div>
     <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" ng-value="question.four" >
+          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="optionsRadios4" ng-value="question.four" >
           <span ng-bind="question.four"></span> 
         </label>
       </div>
     </fieldset>
-    <input type="submit" value = "Next" id="nextButton" class="btn btn-default navbar-btn" ng-click="nextQuestion()" disabled="disabled"></input>
-    <input type="submit" value = "Submit" id="submitButton" class="btn btn-default navbar-btn" ng-click="submitQuestions()" disabled="disabled" style="display:none"></input>
+   <!-- <input type="submit" value = "Next" id="nextButton" class="btn btn-default navbar-btn" ng-click="nextQuestion()" disabled="disabled"></input>
+    <input type="submit" value = "Submit" id="submitButton" class="btn btn-default navbar-btn" ng-click="submitQuestions()" disabled="disabled" style="display:none"></input> -->
   </form>
 </div>
 </div>
  </div>
-
     </div>
-
     </div>
-
-
     </div>
-
-
     </div>
 
 <script src="js/questions_controller.js"></script> 

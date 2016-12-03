@@ -44,6 +44,10 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 	$scope.participant_id=$cookies.get("partNumber")
 	//get questions data
 	var startTime;
+	var questionNumber = 0;
+	$scope.isNext = true;
+	$scope.participantAnswers = new Array();
+	$("input:radio").attr("checked",false);
 	questionService.getQuestions().then(function(data){
 		$scope.questions=data;
 		//get latin square
@@ -70,7 +74,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 			}	
 		}
 		$scope.question = $scope.orderedQuestions[0]
-			// record start time
+		// record start time
 		startTime = new Date();
 	}).catch(function(){
 		$scope.error = 'unable to get latin square';
@@ -79,27 +83,25 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		$scope.error = 'unable to get the questions';
 	})
 	console.log("participant num from questions controller" + $cookies.get("partNumber"))
-	//get latinSquare
-
-
-	var questionNumber = 0;
+	
 	//enable the Next button
-	$("input:radio").change(function () {
-		$("#nextButton").attr("disabled", false);
-	});
-	$scope.participantAnswers = new Array();
+	// $("input:radio").change(function () {
+	// 	$("#nextButton").attr("disabled", false);
+	// });
+
 	//data will be $scope.question
-	function registerAnswer(question, participant){
+	$scope.registerAnswer = function(question, participant){
 		var trialObject = {}
 		var endTime = new Date();
 		// total time it took to answer the question
 		var timeTaken = endTime-startTime
-
 		// convert into sec
 		timeTaken /= 1000
 		console.log(timeTaken)
 		var currentAnswer = $("input:checked").val();
+		console.log("currentAnswer", currentAnswer)
 		trialObject["question_id"] =  question.question_id;
+
 		trialObject["participant_id"] = $scope.participant_id
 		trialObject["answer"] = currentAnswer;
 		trialObject["time"] = timeTaken;
@@ -113,44 +115,60 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		} else{
 			trialObject["correct"] = "no"
 		}
-		return trialObject;
 		console.log("trialObject:", trialObject);
+		return trialObject;
+		
 	}
 
 	$scope.nextQuestion = function(){
+		console.log("is next:", $scope.isNext)
 		// get the selected value
-		$scope.participantAnswers.push(registerAnswer($scope.question, $scope.participant_id));
+		$scope.participantAnswers.push($scope.registerAnswer($scope.question, $scope.participant_id));
+		console.log("in nextQuestion function")
 		// Uncheck radio buttons
 		$("input:radio").attr("checked",false);
-		$("#nextButton").attr("disabled", true);
+		//$("#nextButton").attr("disabled", true);
 		startTime = new Date();
 		//there are more than one questions left
-		if (questionNumber < $scope.orderedQuestions.length - 2){
+		//
+		if (questionNumber < $scope.orderedQuestions.length - 1){
 			questionNumber = questionNumber+1;
+			//console.log("questionNumber", questionNumber)
 			$scope.question = $scope.orderedQuestions[questionNumber];
+			console.log("scope question: ", $scope.question)
 		}
 		else{
-		questionNumber =$scope.orderedQuestions.length - 1;
-		$scope.question = $scope.orderedQuestions[questionNumber];
+
+			 //console.log("is next:", $scope.isNext)
+			//questionNumber =$scope.orderedQuestions.length - 1;
+			//$scope.question = $scope.orderedQuestions[questionNumber];
+			console.log("about to call submitQuestions")
+			$scope.submitQuestions();
 		// show the submit button and hide the next button
-			document.getElementById("nextButton").style.display = "none";
-			document.getElementById("submitButton").style.display= "block";
+			// document.getElementById("nextButton").style.display = "none";
+			// document.getElementById("submitButton").style.display= "block";
 			//enable the submit button on select
-			$("input:radio").change(function () {
-		    	$("#submitButton").attr("disabled", false);
-			});
+			// $("input:radio").change(function () {
+		 //    	$("#submitButton").attr("disabled", false);
+			// });
+			 
 		}
 	}
+
+	//send the answers to the database
 	$scope.submitQuestions = function(){	
-		$scope.participantAnswers.push(registerAnswer($scope.question, $scope.participant_id));
+		console.log("in submitQuesitons")
+		//$scope.participantAnswers.push($scope.registerAnswer($scope.question, $scope.participant_id));
 		$http.post('http://localhost:3000/research-answers-db', $scope.participantAnswers).then(
 			function(response){
 				console.log('success')
+				//go to thank-you
+				$window.location.href = '/participants-questionnaire';
 		},
 		function(response){
 			console.log('failed')
 		});
-		//go to thank-you
-		$window.location.href = '/participants-questionnaire';
+		
+		
 	}
 }]);
