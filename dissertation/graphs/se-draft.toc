@@ -18,10 +18,10 @@
 \contentsline {section}{\numberline {4.2}Stimuli}{10}
 \contentsline {section}{\numberline {4.3}Pilot}{11}
 \contentsline {section}{\numberline {4.4}Participants}{12}
-\contentsline {section}{\numberline {4.5}Procedure}{12}
-\contentsline {section}{\numberline {4.6}Results}{12}
-\contentsline {section}{\numberline {4.7}Discussion}{12}
-\contentsline {chapter}{Appendices}{13}
-\contentsline {chapter}{\numberline {A}Database Schema}{14}
-\contentsline {chapter}{\numberline {B}Running the Programs}{15}
-\contentsline {chapter}{\numberline {C}Generating Random Graphs}{16}
+\contentsline {section}{\numberline {4.5}Procedure}{13}
+\contentsline {section}{\numberline {4.6}Results}{13}
+\contentsline {section}{\numberline {4.7}Discussion}{13}
+\contentsline {chapter}{Appendices}{14}
+\contentsline {chapter}{\numberline {A}Database Schema}{15}
+\contentsline {chapter}{\numberline {B}Running the Programs}{16}
+\contentsline {chapter}{\numberline {C}Generating Random Graphs}{17}
