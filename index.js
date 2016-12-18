@@ -146,25 +146,6 @@ app.get('/questionnaire-answers-db', (request,response) =>{
   })
 })
 
-// app.get('/get-participantId', (request, response)=>{
-//     pg.connect(conString, function (err,client) {
-//     if (err) {
-//       console.log("CANT CONNECT TO DB");
-//     }
-   
-//    client.query('SELECT participant_id FROM public.participant_info WHERE participant_id=(Select max(participant_id) from public.participant_info)', [], function(err,result){     
-//       if (err){
-//         console.log('An error occured when trying to retrieve the participant ID')
-//         return response.sendStatus(500);
-//       }
-//       //console.log("json(result): ", response.json(result));
-//       return response.json(result.rows);
-
-//  })
-
-// })
-// })
-
 app.get('/db-questions', (request, response)=>{
     pg.connect(conString, function (err,client) {
     if (err) {

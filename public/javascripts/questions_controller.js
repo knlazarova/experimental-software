@@ -1,6 +1,5 @@
 var app = angular.module('myApp', ['ngCookies']);
 
-
 app.config(function($interpolateProvider) {
   $interpolateProvider.startSymbol('{');
   $interpolateProvider.endSymbol('}');
@@ -38,7 +37,6 @@ app.factory('latinSquare', ['$http', '$q', function($http, $q){
 	};
 }]);
 
-
 app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cookies', 'latinSquare', function($scope, $http,  $window, questionService, $cookies, latinSquare){
 	//get the participant id
 	$scope.participant_id=$cookies.get("partNumber")
@@ -65,8 +63,6 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 			var orderedQuestionsId = $scope.sequenceQuestions[i]
 			console.log(orderedQuestionsId)
 			for( k=0; k<$scope.questions.length; k++){
-				//console.log("Question: ",$scope.questions[k]['question_id']);
-				//console.log("Id that we want: ",parseInt(orderedQuestionsId));
 				if($scope.questions[k]['question_id'] === parseInt(orderedQuestionsId)){
 					$scope.orderedQuestions.push($scope.questions[k]);
 					break;
@@ -84,11 +80,6 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 	})
 	console.log("participant num from questions controller" + $cookies.get("partNumber"))
 	
-	//enable the Next button
-	// $("input:radio").change(function () {
-	// 	$("#nextButton").attr("disabled", false);
-	// });
-
 	//data will be $scope.question
 	$scope.registerAnswer = function(question, participant){
 		var trialObject = {}
@@ -138,27 +129,12 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 			console.log("scope question: ", $scope.question)
 		}
 		else{
-
-			 //console.log("is next:", $scope.isNext)
-			//questionNumber =$scope.orderedQuestions.length - 1;
-			//$scope.question = $scope.orderedQuestions[questionNumber];
-			console.log("about to call submitQuestions")
-			$scope.submitQuestions();
-		// show the submit button and hide the next button
-			// document.getElementById("nextButton").style.display = "none";
-			// document.getElementById("submitButton").style.display= "block";
-			//enable the submit button on select
-			// $("input:radio").change(function () {
-		 //    	$("#submitButton").attr("disabled", false);
-			// });
-			 
+			$scope.submitQuestions();			 
 		}
 	}
 
 	//send the answers to the database
 	$scope.submitQuestions = function(){	
-		console.log("in submitQuesitons")
-		//$scope.participantAnswers.push($scope.registerAnswer($scope.question, $scope.participant_id));
 		$http.post('http://localhost:3000/research-answers-db', $scope.participantAnswers).then(
 			function(response){
 				console.log('success')
@@ -168,7 +144,5 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		function(response){
 			console.log('failed')
 		});
-		
-		
 	}
 }]);
