@@ -24,6 +24,11 @@ Stuart~K Card, Jock~D Mackinlay, and Ben Shneiderman.
 \newblock {\em Readings in information visualization: using vision to think}.
 \newblock Morgan Kaufmann, 1999.
 
+\bibitem{cardno2014data}
+A.J. Cardno, P.S. Ingham, A.~Lewin, and A.K. Singh.
+\newblock Data visualization methods, July~10 2014.
+\newblock US Patent App. 14/200,903.
+
 \bibitem{dang2015pathwaymatrix}
 Tuan~N Dang, Paul Murray, and Angus~G Forbes.
 \newblock Pathwaymatrix: visualizing binary relationships between proteins in
@@ -44,6 +49,14 @@ Tim Dwyer, Nathalie~Henry Riche, Kim Marriott, and Christopher Mears.
 \newblock {\em IEEE transactions on visualization and computer graphics},
   19(12):2596--2605, 2013.
 
+\bibitem{etemadpour2015perception}
+Ronak Etemadpour, Robson Motta, Jose~Gustavo de~Souza~Paiva, Rosane Minghim,
+  Maria Cristina~Ferreira de~Oliveira, and Lars Linsen.
+\newblock Perception-based evaluation of projection methods for
+  multidimensional data visualization.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  21(1):81--94, 2015.
+
 \bibitem{fekete2008value}
 Jean-Daniel Fekete, Jarke~J Van~Wijk, John~T Stasko, and Chris North.
 \newblock The value of information visualization.
@@ -55,11 +68,36 @@ Emden~R Gansner, Yehuda Koren, and Stephen~C North.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   11(4):457--468, 2005.
 
+\bibitem{ghoniem2004comparison}
+Mohammad Ghoniem, J-D Fekete, and Philippe Castagliola.
+\newblock A comparison of the readability of graphs using node-link and
+  matrix-based representations.
+\newblock In {\em Information Visualization, 2004. INFOVIS 2004. IEEE Symposium
+  on}, pages 17--24. Ieee, 2004.
+
+\bibitem{goodman2012principles}
+Alyssa~A Goodman.
+\newblock Principles of high-dimensional data visualization in astronomy.
+\newblock {\em Astronomische Nachrichten}, 333(5-6):505--514, 2012.
+
+\bibitem{gorodov2013analytical}
+Evgeniy~Yur'evich Gorodov and Vasiliy~Vasil'evich Gubarev.
+\newblock Analytical review of data visualization methods in application to big
+  data.
+\newblock {\em Journal of Electrical and Computer Engineering}, 2013:22, 2013.
+
 \bibitem{grammel2010information}
 Lars Grammel, Melanie Tory, and Margaret-Anne Storey.
 \newblock How information visualization novices construct visualizations.
 \newblock {\em IEEE transactions on visualization and computer graphics},
   16(6):943--952, 2010.
+
+\bibitem{hanken2016developing}
+Taylor Hanken, Sam Young, Karen Smilowitz, George Chiampas, and David
+  Waskowski.
+\newblock Developing a data visualization system for the bank of america
+  chicago marathon (chicago, illinois usa).
+\newblock {\em Prehospital and Disaster Medicine}, pages 1--6, 2016.
 
 \bibitem{hsu2012evaluation}
 Chun-Cheng Hsu.
@@ -93,6 +131,12 @@ Ben Steichen, Giuseppe Carenini, and Cristina Conati.
 \newblock In {\em Proceedings of the 2013 International Conference on
   Intelligent User Interfaces}, IUI '13, pages 317--328, New York, NY, USA,
   2013. ACM.
+
+\bibitem{thattai2016systems}
+Balaji~T Thattai, Karthikeyan Shanmugam, Chi Yao, and Yee~Lang Lau.
+\newblock Systems and methods for generating data visualization applications,
+  February~24 2016.
+\newblock US Patent App. 15/052,449.
 
 \bibitem{shiLuiLi}
 Kuikui~Liu\"{o}s Xiujin~Shi\'{a}s and Yue Li\"{e}s.

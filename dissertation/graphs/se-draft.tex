@@ -36,11 +36,25 @@ Information visualisation systems are most helpful when a set of data is being e
 //examples, why is visualisation good and areas in which it helps
 
 
+Data visualisation has been been used in a number of fields. For example, it can be successfully used in the Bank of America Chicago Marathon, which is one of the biggest marathons in the world \cite{hanken2016developing}. Large amounts of live data are gathered to establish some of the main principles for event management information visualization.  Some of the main benefits from these practices are keeping track of the progress of the participants, communicating information between the agencies organizing the marathon efficiently, and improve medical preparedness. Moreover, astronomical researchers have been suggested to benefit from data visualization techniques \cite{goodman2012principles}. One such method is linked views in which a user is able to select, highlight and include or exclude points from display and analysis from various data visualisation dimensions. For example, a valuable visualisation for astrologists can be interactive exploration of relationships between data points in statistical graphs and locations in live 3D space. Another instance of beneficial data visualisation is "Geographic Information System" tools which are used in demographics and geography. For example, Engage3D provides the functionality of exploring layers of maps in a linked-view systems. 
+
+Inventions in this field have been continuously made in order to improve the representations. For example, a heatmap represents a graphical illustration that evaluates conical distribution values around data points based on a respective data value that has associated respective data point \cite{cardno2014data}. Various implementations of a heatmap were developed and discussed in order to enable easy future work with heatmaps suited for a particularly needed implementation.
+
+
+There have been data visualisation issue connected with Big Data \cite{gorodov2013analytical}. First, visual noise is the phenomenon of having so much data points on the screen that the user cannot see them as separate points which leads to visibility loss. Second, large images are dependent on the device resolution abilities. However, even if add together many devices for partial data visualisation to represent a more detailed illustration or a larger amount of data, human perception will eventually reach its limit. Therefore, after a certain point people will not be able understand the representations or their analysis. A third problem is Information Loss which is caused by the previous issues because of data filtration and aggregation. These techniques are likely to hide information and mislead to people analysing the data. Another problem is High Performance Requirements especially in dynamic visualization. In addition, the visualisation might be accompanied by high rate of image change and lead to people being unable to react to the number of data changes. 
+
+A Big Data visualization method is suggested to be TreeMap \cite{gorodov2013analytical} which is a hierarchical way of representing data by rectangles. Some advantages of this method are that the hierarchical matching clearly shows data relations and extreme outliers are visible. The disadvantages related to this method are that the data must be hierarchical which makes it unsuitable for examining time patterns, for example. 
+
+
 //readability
 
 A well known issue with data visualisation is that sometimes it is challenging for people to understand it. A study aimed to examine familiarity of museum visitors with different visualisation techniques \cite{borner2015investigating}. They included charts, maps, graphs, and networks to reveal how familiar people are with them. It was found that even though most participants were interested in science and art they have difficulties naming and reading the visualizations. It was concluded that people are interested in visualisation techniques, but have significant difficulties in naming and understanding them. 
 
 In order to solve this issue, another research area has focused on understanding how information visualization novices think and the approaches that can facilitate their learning. A study used sales data to find the barriers for novices when reading iterative visualisation construction and the way they think about visualisation specifications \cite{grammel2010information}. They found that the biggest barriers were interpreting questions into data factors, visual mappings, and understanding the visual representations. It was found that there is a need for instruments that suggest possible visualizations, facilitate help with learning, and are integrated with tool support for the whole analytic process. Furthermore, recent research acknowledged that individual differences between people will have influence on the way they interpret graphical representations \cite{Steichen:2013:UIV:2449396.2449439}. They suggested that visualization performance can be improved by personalising visuals according to one's needs, abilities and preferences.
+
+Very little is known about the way users understand and read data visualisations and how they interact with different layouts \cite{etemadpour2015perception}. It is interesting to explore if there are layouts which provoke better task performance and better response time. Etemadpour and colleagues \cite{etemadpour2015perception} conducted a research to find out more about performance in similarity based layouts that are generated by multidimensional projections. The results suggested that projection performance is task-dependent and depends on the nature of the data. Therefore, they concluded that the same data layout can have different performance on different tasks and that performance will also be influenced by the characteristics of the data.
+
+
 
 \section{Causal Relationships}
 
@@ -55,6 +69,8 @@ Node-link graphs consist of nodes which are connected by edges. Large amount of 
 
 Data driven journalism is also concerned with difficulties in showing directed relationships in large datasets \cite{niederer2015survey}.
 
+Nodes have also been used to represent "visual programming language" or workflow and processing functions \cite{thattai2016systems}. The system translates the user input into "a sequence of data language", which will then be transformed into "service commands" that will be executed. The dependencies between the nodes and data flows are illustrated as interconnections between the vertices on the graphical user interface. 
+
 \section{Matrix-based Graphs}
 
 An Adjacency matrix is frequently used to represent a network \cite{longabaugh2012combing}. If a network consists of n nodes, the matrix will consists n x n grid of cells. This is considered to be an unambiguous way of representing data. However, some of its disadvantages are that the area increases quadratically and as large networks are sparse there will mainly empty space on the matrix.  
@@ -63,10 +79,15 @@ A new technique called Compressed Adjacency Matrices was introduced in 2012 for 
 
 Furthermore, PathwayMatrix is another visualisation tool that represents specific relations between proteins in a pathway \cite{dang2015pathwaymatrix}. The implementation of the tool consists of adjacent matrices that interact with each other. Additional features were added to facilitate the data analysis. This visualisation software received positive feedback in the specific area of representing relations in proteins pathways. Consequently, there is no one best representations technique. Depending on the dataset specifications, the complexity and size of the data there might be many or only few sufficient ways to visualise it.       
 
+A performance comparison between square and triangular matrices has been conducted to  
 \chapter{Introduction}
 Introduction to the specific area of my research
 
 Brain connectivity visualisations are in the form of weighted graphs which are node-link graphs in which each edge is given a numerical weight. Alper et al \cite{alper2013weighted} compared augmented adjacency matrix with node-link visualization by conducting a controlled experiment. They found that matrix-based graphs outperform node-linked graphs. It was concluded that for weight graphs, node-link representations are less readable and more error-prone when compared to matrices. On the other side, node-link graphs are adjustable to a specific spacial representation which might also be insightful when reading the graph. Overall, matrix-based graphs had higher accuracy.  
+
+The main advantages of a matrix-based graph are that it has no overlapping and can be ordered. Therefore, it was predicted that tasks involving link finding and node finding will be better performed in matrix-based graphs rather than node-link graphs. Furthermore, node-link and matrix-based graphs were compared \cite{ghoniem2004comparison}. They also predicted that counting nodes should be equally difficult on both, while counting links and finding the most connected node should be easier in matrix-based representations. Node-link graphs should be better when building a path between two nodes. The reason for this is that matrix based graphs have the nodes represented twice which introduces extra complexity. Ghoniem and colleagues \cite{ghoniem2004comparison} also hypothesised that node-link graphs will be easier to work with when dealing with graphs with a small amount of graphs. In their experiment they had three sizes of graphs - 20, 50, and 100 nodes. They tested 36 participants and measured their performance on various tasks such as finding paths, neighbours, nodes and links between nodes. They found that performance in node-link graphs decreases as the size of the graph increases. This pattern was confirmed for all of the tasks except for finding path, where node-link graphs regardless of the size and density showed better results.
+
+The present research aims to compare readability in different layouts in node-link and matrix-based graphs representing causal relationships. Following the literature review it is intriguing to explore which representations will show better performance and whether this will be modulated by factors such as layout, question domain, size and task.
 
 \chapter{Implementation details}
 
@@ -164,6 +185,8 @@ This is a within subject design experiment with two conditions. In the first one
 The specified sequence of questions with matched layouts, question themes, and different sizes was likely to influence the results of the experiment because of an exposure effect of that particular sequence. Therefore, to ensure that all participants receive the questions in a different order, Latin square randomization was used. The sequence of questions was different for each participant and the possibility of the questions sequence affecting the results was eliminated.
   
 Node-link graphs were created using yEd, and the equivalent matrix-based representations were created using software which converts XGML node-link graphs into matrix-based graphs. As long as the graphs are from one domain questions, they all represent the same information. However, all questions require different information to be read from the graphs in order to avoid learning effect. At the same time the the graphs represent the same information which ensures that the complexity of the data is the same. Both types of representations are displayed in their real size on the left side of the screen and the corresponding question is on the right. Special attention is paid to the fonts of the letters and retaining the original size of the image. Participants were not able to go to the next question before they answered the current one. 
+
+
 
 \section{Pilot}
 
