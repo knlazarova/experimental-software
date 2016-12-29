@@ -105,11 +105,24 @@ Chun-Cheng Hsu.
   relationships using factor analysis and dematel.
 \newblock {\em Expert Systems with Applications}, 39(1):187--193, 2012.
 
+\bibitem{keller2006matrices}
+Ren{\'e} Keller, Claudia~M Eckert, and P~John Clarkson.
+\newblock Matrices or node-link diagrams: which visual representation is better
+  for visualising connectivity models?
+\newblock {\em Information Visualization}, 5(1):62--76, 2006.
+
 \bibitem{king2016cognitive}
 John King, Kathy Sonderer, and Kevin Lynch.
 \newblock Cognitive benefits of a simple visual metrics architecture.
 \newblock In {\em International Conference on HCI in Business, Government and
   Organizations}, pages 319--329. Springer, 2016.
+
+\bibitem{liu2015effects}
+Xiaotong Liu and Han-Wei Shen.
+\newblock The effects of representation and juxtaposition on graphical
+  perception of matrix visualization.
+\newblock In {\em Proceedings of the 33rd annual ACM conference on Human
+  factors in computing systems}, pages 269--278. ACM, 2015.
 
 \bibitem{longabaugh2012combing}
 William~JR Longabaugh.
@@ -123,6 +136,11 @@ Christina Niederer, Wolfgang Aigner, and Alexander Rind.
   context of data-driven journalism.
 \newblock {\em Proceedings of the International Summer School on Visual
   Computing}, pages 49--58, 2015.
+
+\bibitem{pearl2010introduction}
+Judea Pearl.
+\newblock An introduction to causal inference.
+\newblock {\em The international journal of biostatistics}, 6(2), 2010.
 
 \bibitem{Steichen:2013:UIV:2449396.2449439}
 Ben Steichen, Giuseppe Carenini, and Cristina Conati.
