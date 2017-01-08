@@ -92,6 +92,17 @@ Lars Grammel, Melanie Tory, and Margaret-Anne Storey.
 \newblock {\em IEEE transactions on visualization and computer graphics},
   16(6):943--952, 2010.
 
+\bibitem{greenland2003quantifying}
+Sander Greenland.
+\newblock Quantifying biases in causal models: classical confounding vs
+  collider-stratification bias.
+\newblock {\em Epidemiology}, 14(3):300--306, 2003.
+
+\bibitem{greenland1999causal}
+Sander Greenland, Judea Pearl, and James~M Robins.
+\newblock Causal diagrams for epidemiologic research.
+\newblock {\em Epidemiology}, pages 37--48, 1999.
+
 \bibitem{hanken2016developing}
 Taylor Hanken, Sam Young, Karen Smilowitz, George Chiampas, and David
   Waskowski.
@@ -104,6 +115,12 @@ Chun-Cheng Hsu.
 \newblock Evaluation criteria for blog design and analysis of causal
   relationships using factor analysis and dematel.
 \newblock {\em Expert Systems with Applications}, 39(1):187--193, 2012.
+
+\bibitem{janszky2010janus}
+Imre Janszky, Anders Ahlbom, and Anna~C Svensson.
+\newblock The janus face of statistical adjustment: confounders versus
+  colliders.
+\newblock {\em European journal of epidemiology}, 25(6):361--363, 2010.
 
 \bibitem{keller2006matrices}
 Ren{\'e} Keller, Claudia~M Eckert, and P~John Clarkson.
@@ -142,6 +159,12 @@ Judea Pearl.
 \newblock An introduction to causal inference.
 \newblock {\em The international journal of biostatistics}, 6(2), 2010.
 
+\bibitem{sheny2007path}
+Zeqian Sheny and Kwan-Liu Maz.
+\newblock Path visualization for adjacency matrices.
+\newblock In {\em Proceedings of the 9th Joint Eurographics/IEEE VGTC
+  conference on Visualization}, pages 83--90. Eurographics Association, 2007.
+
 \bibitem{Steichen:2013:UIV:2449396.2449439}
 Ben Steichen, Giuseppe Carenini, and Cristina Conati.
 \newblock User-adaptive information visualization: Using eye gaze data to infer
@@ -150,11 +173,23 @@ Ben Steichen, Giuseppe Carenini, and Cristina Conati.
   Intelligent User Interfaces}, IUI '13, pages 317--328, New York, NY, USA,
   2013. ACM.
 
+\bibitem{suttorp2015graphical}
+Marit~M Suttorp, Bob Siegerink, Kitty~J Jager, Carmine Zoccali, and Friedo~W
+  Dekker.
+\newblock Graphical presentation of confounding in directed acyclic graphs.
+\newblock {\em Nephrology Dialysis Transplantation}, 30(9):1418--1423, 2015.
+
 \bibitem{thattai2016systems}
 Balaji~T Thattai, Karthikeyan Shanmugam, Chi Yao, and Yee~Lang Lau.
 \newblock Systems and methods for generating data visualization applications,
   February~24 2016.
 \newblock US Patent App. 15/052,449.
+
+\bibitem{ware1999visualizing}
+Colin Ware, Eric Neufeld, and Lyn Bartram.
+\newblock Visualizing causal relations.
+\newblock In {\em Proceedings of IEEE Information Visualization}, volume~99,
+  1999.
 
 \bibitem{shiLuiLi}
 Kuikui~Liu\"{o}s Xiujin~Shi\'{a}s and Yue Li\"{e}s.

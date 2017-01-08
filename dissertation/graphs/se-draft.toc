@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {1.1}Data Visualisation}{1}
 \contentsline {section}{\numberline {1.2}Causal Relationships}{2}
 \contentsline {section}{\numberline {1.3}Node-Link Graphs}{3}
-\contentsline {section}{\numberline {1.4}Matrix-based Graphs}{3}
+\contentsline {section}{\numberline {1.4}Matrix-based Graphs}{4}
 \contentsline {chapter}{\numberline {2}Introduction}{5}
 \contentsline {chapter}{\numberline {3}Implementation details}{7}
 \contentsline {section}{\numberline {3.1}Software tools and technologies}{7}
