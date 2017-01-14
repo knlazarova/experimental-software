@@ -228,6 +228,14 @@ In order to have a more environmentally valid experiment, the study was conducte
 
 \section{Results}
 
+\subsection{Data Analysis Methodology}
+
+Correct data analysis is vital for the successful completion of a research based project. This is it was decided to complete a pilot of the data analysis methodology with fake data before all participants were tested. The results of 20 participants were faked. As this is a repeated measures experiment the data layout need to be in wide format with participant's data represented on each row. However, the way the database is being populated is in long format. Therefore, this was going to cause issues later when the time for the actual data analysis comes. This is why, SQL queries were written to wrangle the data in a layout that is suitable for analysis. R Studio was used to do the statistical analysis. First, the Anderson-Darling normality test was conducted to check whether the time data was normally distributed. Additional reading, suggested that R Studio has other normality tests which are more popular and have better reputation. One such test is Shapiro-Wilks Normality Test. Both tests showed a p-value of less than 0.05 which rejected the Null hypothesis that the data is normally distributed. R Studio has a very easy way of plotting histograms by using the hist() function. This is very helpful to visualise the distribution of the values. If the data values were normally distributed then a repeated measures t-test was going to be run to see whether there is a significant difference between the time taken to read the two types of graphs. However, as the data was found to be not normally distributed, a non-parametric test had to be used. The non-parametric equivalent of repeated measures t-test is Wilcoxon. R Studio has a library with this test so only one command had to be executed to see whether there is a significant difference between node-link and matrix-based graphs.
+
+The type of visualisation is the main aspect being investigated. However, there are also other research questions that can be studied. For example, the different sizes and layouts of each type of graph can be compared. Furthermore, there is also a measurement of correct answers and this is a different type of data - boolean, which would require a different statistical data analysis. For example, in the fake data there were 45 percent error rate in the matrix-based graphs and 16 percent errors in the node-link graphs. 
+
+
+
 \section{Discussion}
 
 

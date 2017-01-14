@@ -20,6 +20,7 @@
 \contentsline {section}{\numberline {4.4}Participants}{14}
 \contentsline {section}{\numberline {4.5}Procedure}{15}
 \contentsline {section}{\numberline {4.6}Results}{15}
+\contentsline {subsection}{\numberline {4.6.1}Data Analysis Methodology}{15}
 \contentsline {section}{\numberline {4.7}Discussion}{15}
 \contentsline {chapter}{Appendices}{16}
 \contentsline {chapter}{\numberline {A}Database Schema}{17}
