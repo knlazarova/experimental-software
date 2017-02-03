@@ -2,6 +2,9 @@
 
 \documentclass{l4proj}
 \usepackage{float}
+\usepackage{hyperref}
+\usepackage{lscape}
+\usepackage{rotating}
 %
 % put any packages here
 %
@@ -129,7 +132,7 @@ After the requirements gathering analysis, development of wire-frames followed. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[]{researchQuestion.PNG}
+\includegraphics[width=9cm,height=7cm]{researchQuestion.PNG}
 \caption{Research Question Wire-frame}
 \label{researchQuestion}
 \end{figure}
@@ -179,10 +182,14 @@ Another issue was the size of the graphs. During the implementation process it w
 
 \section{Software reliability testing}
 
-\chapter{Evaluation}
+\chapter{Experiment}
 \section{Design}
 
-This is a within subject design experiment with two conditions. In the first one participants answer questions related to causal relationships in node-link graphs and in the second one they are asked to answer similar questions on matrix-based representation. Each condition has three factors - size, layout, and question domain. Figure \ref{experimentalDesign} illustrates the pattern which was used create the questions and the graphs. The domain questions are healthy and unhealthy gym behaviour, drinking issues, and student exams. The three different sizes were small (10 nodes), medium (20 nodes) and large(30 nodes). For each of these, there were three different layouts for both matrix-based and node-link graphs. The matrix-based layouts are alphabetical, in degree descending and out degree descending. The node-link layouts are hierarchical, orthogonal, and series parallel.  There was a direct relationship question and an indirect causal relationship question asked for each of the created graphs. The first four questions of the experiment are trial questions which do not count towards the final results.
+This is a within subject design experiment with two conditions. In the first condition participants answer questions related to causal relationships in node-link graphs, while in the second one they are asked to answer questions on matrix-based representation. Each condition has four levels - size, layout, question type and question domain. The dependent variables were time taken to answer each question and correctness of the answer. The participants were also given a questionnaire which requires subjective answers about their graph preferences and how they enjoy solving logical problems in general. 
+
+\section{Stimuli}
+
+Figure \ref{experimentalDesign} illustrates the pattern which was used create the questions and the graphs. The domain questions are healthy and unhealthy gym behaviour, drinking issues, and student exams. The three different sizes were small (10 factors), medium (20 factors) and large (30 factors). There are three different layouts for each type of representation. The matrix-based layouts are alphabetical, in degree descending and out degree descending. The node-link layouts are hierarchical, orthogonal, and series parallel.  There was a direct relationship question and an indirect causal relationship question asked for each of the created graphs. The first six questions of the experiment are trial questions which do not count towards the final results. They are added to the 36 experimental questions generating a total of 42 questions.
 
 \begin{figure}[H]
 \centering
@@ -191,46 +198,42 @@ This is a within subject design experiment with two conditions. In the first one
 \label{experimentalDesign}
 \end{figure}
 
-\section{Stimuli}
-The specified sequence of questions with matched layouts, question themes, and different sizes was likely to influence the results of the experiment because of an exposure effect of that particular sequence. Therefore, to ensure that all participants receive the questions in a different order, Latin square randomization was used. The sequence of questions was different for each participant and the possibility of the questions sequence affecting the results was eliminated.
+
+The specified sequence of questions with matched layouts, question themes, and different sizes was likely to influence the results of the experiment because of an exposure effect of that particular sequence. Therefore, to ensure that all participants receive the questions in a different order, Latin square /cite{winer1962latin} randomization was used. The sequence of questions was different for each participant and the possibility of the questions sequence affecting the results was eliminated.
   
-Node-link graphs were created using yEd, and the equivalent matrix-based representations were created using software which converts XGML node-link graphs into matrix-based graphs. As long as the graphs are from one domain questions, they all represent the same information. However, all questions require different information to be read from the graphs in order to avoid learning effect. At the same time the the graphs represent the same information which ensures that the complexity of the data is the same. Both types of representations are displayed in their real size on the left side of the screen and the corresponding question is on the right. Special attention is paid to the fonts of the letters and retaining the original size of the image. Participants were not able to go to the next question before they answered the current one. 
-
-
+Node-link graphs \ref{nodeLinkGraph} were created using yEd and the equivalent matrix-based representations were generated using software which converts XGML node-link graphs into matrix-based graphs \ref{matrixBasedGraph}. As long as the graphs are from the same domain question and size, they represent the same information. However, all questions require different information to be read from the graphs to avoid learning effect. The fact that the graphs represent the same information ensures that the complexity of the data is the same. Both types of representations were displayed in their real size on the left side of the screen and the corresponding question was on the right. A special attention was paid to the letter's font size and retaining the original size of the image on one screen. Participants were not able to go to the next question before they answered the current one. In addition, to measure answer time more accurately, there was no "Next" button. Once a participant clicked on an answer it was automatically submitted and the next question was loaded on the page. Figure \ref{exampleQuestion} in Appendix C shows an example of a trial question.
 
 \section{Pilot}
 
-Conducting a pilot was an essential part of this study. It brought light into how people who have never been exposed to the graphs and the software before interact with them. It was vital to learn whether the tasks are clear and the software is easy to use. Three volunteers took part in the pilot. They were asked to sit on a chair in a silent environment and complete the experiment starting from the information sheet and finishing with the debrief form. At the end the participants were asked questions regarding the training, the clearness and enjoyment of the tasks. All participants said that the training in the beginning of the experiment is sufficient at explaining how to read the graphs. One of the participants, however, wanted to confirm with the experimenter that the correct direction for reading the graphs is from left to top. This is why, it was decided to turn the first three questions in trial questions that the participants are aware of and informed that they can ask as many questions as they need in order to answer the questions. The second three questions (4,5,6) are also going to be trial questions in order to give them more practice questions but they won't be explicitly informed about that. Consequently, during the first six questions would be expected to fully learn how to interpret the graphs and their answers will not be recorded and included in the results. 
+Conducting a pilot was an essential part of this study. It brought light into how people who have never been exposed to the graphs and the software before interact with them. It was vital to learn whether the tasks are clear and the software is easy to use. Three volunteers took part in the pilot. They were asked to sit on a chair in a silent environment and complete the experiment starting from the information sheet and finishing with the debrief form. At the end the participants were asked questions regarding the training, the clearness and enjoyment of the tasks. All participants said that the training in the beginning of the experiment is sufficient at explaining how to read the graphs. One of the participants, however, required confirmation that the correct direction of reading the graphs is from left to top. This is why, it was decided to make the first three questions trials in which the participants can ask as many questions as they need to understand how to read the graphs. The second three questions (4,5,6) were also going to be practice questions but they were not going to be explicitly informed about it. Consequently, during the first six tasks the participants were expected to fully learn how to interpret the graphs and their answers were not recorded in the results. 
 
-An interesting problem regarding the nature of the trial questions was also considered. Initially, it was suggested that the trial instances are always the first 4 questions of each sequence. However, as those questions would not be accounted for in the results and the Latin Square randomizes each sequence, this was going to lead to uneven number of answer for each type of graph. If this was to happen, the results of the experiment were going to be negatively influenced. In order to avoid this, 6 new questions were created using a combination of layouts, sizes and domains that has not been used for the original 36 questions. A mixture of different sizes and types was included to ensure that the participants have exposure to the main challenges of the experiment during the practice trials. These 6 questions were going to be added at the beginning of each sequence so that all participants are exposed to the same trial questions.  
+An interesting problem regarding the nature of the trial questions was also considered. Initially, it was suggested that the trial instances are always the first questions of each sequence. However, as those questions would not be accounted for in the results and the Latin Square randomizes each sequence, this was going to lead to uneven number of answer for each type of graph. If this was to happen, the results of the experiment were going to be negatively influenced. In order to avoid this, 6 new questions were created using a combination of layouts, sizes and domains that has not been used for the original 36 questions. A mixture of different sizes and types was included to ensure that the participants have exposure to the main challenges of the experiment during the practice trials. These 6 questions were going to be added at the beginning of each sequence so that all participants are exposed to the same trial questions.  
 
-All participants in the pilot said that the tasks are clear, the graphs font size is readable, and different layouts and sizes are appropriately displaying the data. One participant mentioned that in the organic layout in one of the node-link graphs, the label is on the arrow which makes it hard to read. The reason for this is that both labels and arrows are in black colour. Their note was taken into consideration but if changes are made to align the arrow and the label differently this would alter the organic yEd layout. Consequently, the results will provide information about a manually created layout similar to the organic yEd layout. Another solution of this issue is to change the label names to letters instead of actual factors such as "depression", and "pass exams". However, this was going to influence the complexity of the experiment and the participant's level of interest. Thus, no changes were made to the organic layout.
+All participants in the pilot said that the tasks are clear, the graphs' font size is readable, and different layouts and sizes are appropriately displaying the data. One participant mentioned that in the node-link organic layout, the label is on the arrow which makes it hard to read. The reason for this is that both labels and arrows are in black colour. Their note was taken into consideration but if changes are made to align the arrow and the label differently this would alter the organic yEd layout. Consequently, the results will provide information about a manually created layout similar to the organic yEd layout. Another solution of this issue was to change the label names to individual letters like "A" instead of actual factor labels such as "depression", and "pass exams". However, this was going to influence the complexity of the experiment and the participant's level of interest. Thus, no changes were made to the organic layout.
 
-Furthermore, the pilot brought light into how entertaining the tasks are. It is vital to have the participants engaged with the tasks to ensure that they are concentrated and not easily distracted by third factors. Two participants said that the experiment was interesting and were eager to answer the questions. They said that the topics were easy to understand and it was interesting to find the causal relationship. One participant said that they do not consider the task to be very interesting, but they were in a hurry for another meeting and likely to look for an excuse to leave earlier.  
+Furthermore, the pilot brought light into how entertaining the tasks are. It is vital to have the participants engaged with the tasks to ensure that they are concentrated and not easily distracted by third factors. Two participants said that the experiment was interesting and were eager to answer the questions. They said that the topics were easy to understand and it was interesting to find the causal relationship. One participant said that they did not consider the task to be very interesting, but they were in a hurry for another meeting and likely to look for an excuse to leave earlier.  
 
-One volunteer in the pilot mentioned that sometimes it is hard to find the label you are looking for and they guessed the answer to the question by logical reasoning. To avoid this problem in the experiment, a note will be made to tell participants that there is no logical relationship between the causal relationships and they should not attempt to guess the correct answer. This is supposed to encourage them to look for the labels rather than guess the correct answer. It was also noted, that when a particular node has more than one causal relationship, it is much harder to follow a path, than in a complex matrix-based graph with many relationships. It will be interesting to see whether this observation will be confirmed by the experimental results.
+One volunteer in the pilot mentioned that sometimes it is hard to find the label you are looking for and they guessed the answer to the question by logical reasoning. To avoid this problem in the experiment, a note was be made to tell participants that there is no logical relationship between the causal relationships and they should not attempt to guess the correct answer. This is supposed to encourage them to look for the labels rather than guess the correct answer. It was also noted, that when a particular node has more than one causal relationship, it is much harder to follow a path, than in a complex matrix-based graph with many relationships. It will be interesting to see whether this observation will be confirmed by the experimental results.
 
-The pilot was also extremely helpful for spotting technical issues. If it was not conducted and some of these problems were not accounted for, they were going to have catastrophic influence on the results. First, it was found that in one question the correct answer was being evaluated to incorrect because of a typo in the csv file that populated the database. In addition, the answers were not written in a consistent way, which meant that the participants might had been influenced to choose the answer that is written differently from the rest of the answers. In order to fix these problems, the database table with the questions had to be deleted, and the csv file containing the questions' information needed to be reviewed. Finally, the database table had to be populated again with the updated data. 
+The pilot was also extremely helpful for spotting technical issues. If it was not conducted and some of these problems were not accounted for, they were going to have catastrophic influence on the results. First, it was found that in one question the correct answer was being evaluated to incorrect because of a typo in the csv file that was used to populate the database. In addition, the answers were not written in a consistent way, which meant that the participants might had been influenced to choose the answer that is written differently from the rest of the answers. In order to fix these problems, the database table with the questions had to be deleted, and the csv file containing the questions' information needed to be reviewed. Finally, the database table had to be populated again with the updated data. 
 
 Another technical issue found was concerned with the time recorder. It was found that the timing was starting and stopping when required, but the record of the time taken for a particular question was wrong. The issue was found to be caused by a wrong startTime variable during the timeTaken calculation. This was a scope issue, which was fixed for the real experiment. Moreover, in order to submit their answers the participants had to click a "Next" button. The timer used to stop once this button is clicked, record the time taken for the current answer, and start the timer for the next question. However, it was found that this extra click influences the recorded time and it would be more appropriate to have the time start and stop ones the participants choose an answer. This led to the decision to completely remove the "Next" button and submit the answers when one of the radio buttons has been selected. On that click the next graph and question would be loaded. It is not natural for the participants to expect clicking on a radio button to submit their answer, and show the next question, but they will be instructed about this feature in the information sheet and will have 6 trial questions to get used to that functionality. 
  
 In general, the pilot helped in identifying small issues regarding the graphs layout and the manner in which questions were asked. Other bigger issues, that were going to influence the results, were also found such as typos leading to wrong evaluation of correctness and inaccurate time recorder. The pilot also inspired a new way in which the trial questions should be created and accounted for. The present experiment would not have been as accurate and precise if the pilot was not conducted. If the changes that it provoked implementing were to be found in the process of testing participants, the testing had to be started all over again and new participants had to be recruited.
 
 \section{Participants}
-There were [] participants who took part in the experiment, aged between [-]. The excluding criteria restricted people specialized in the subjects of Maths, Engineering and Computing Science from participating. The reason for this is that these fields are likely to include preparation in reading graphs. In addition, findings are expected to be representative for health and social sector, who are not likely to have background in those degrees.
+There were 30 participants who took part in the experiment, aged between 20 and 29 years. The excluding criteria restricted people specialized in the subjects of Maths, Engineering and Computing Science from participating. The reason for this is that these fields are likely to include preparation in reading graphs. In addition, findings are expected to be representative for health and social sector, who are not likely to have background in those degrees.
 
 \section{Procedure}
 
-In order to have a more environmentally valid experiment, the study was conducted only on the experimenter's laptop in their presence. The participants were asked to sit on a chair and complete the experiment in a calm, silent environment. They had to read through an information sheet, explaining what is to following in the next 30 minutes, consent from, asking them to agree to participate in the study, and training showing them examples of how to solve the upcoming 36 research questions. At the end of the experiment participants were shown a short demographic questionnaire and a debrief.
-
-
+In order to have a more environmentally valid experiment, the study was conducted only on the experimenter's laptop in their presence. The participants were asked to sit on a chair and complete the experiment in a calm, silent environment. Participants were recruited either in Glasgow University library or by posts in social media websites. The experiment was conducted in GU library in quiet group study areas. The participants had to read through an information sheet, explaining what is to follow in the next 30 minutes, consent from, asking them to agree to participate in the study, and a training showing them examples of how to solve the upcoming 42 research questions. At the end of the experiment participants were shown a short demographic questionnaire and a debrief form.
 
 
 \section{Results}
 
 \subsection{Data Analysis Methodology}
 
-Correct data analysis is vital for the successful completion of a research based project. This is it was decided to complete a pilot of the data analysis methodology with fake data before all participants were tested. The results of 20 participants were faked. As this is a repeated measures experiment the data layout need to be in wide format with participant's data represented on each row. However, the way the database is being populated is in long format. Therefore, this was going to cause issues later when the time for the actual data analysis comes. This is why, SQL queries were written to wrangle the data in a layout that is suitable for analysis. R Studio was used to do the statistical analysis. First, the Anderson-Darling normality test was conducted to check whether the time data was normally distributed. Additional reading, suggested that R Studio has other normality tests which are more popular and have better reputation. One such test is Shapiro-Wilks Normality Test. Both tests showed a p-value of less than 0.05 which rejected the Null hypothesis that the data is normally distributed. R Studio has a very easy way of plotting histograms by using the hist() function. This is very helpful to visualise the distribution of the values. If the data values were normally distributed then a repeated measures t-test was going to be run to see whether there is a significant difference between the time taken to read the two types of graphs. However, as the data was found to be not normally distributed, a non-parametric test had to be used. The non-parametric equivalent of repeated measures t-test is Wilcoxon. R Studio has a library with this test so only one command had to be executed to see whether there is a significant difference between node-link and matrix-based graphs.
+Correct data analysis is vital for the successful completion of a research based project. This is why it was decided to complete a pilot of the data analysis methodology with fake data before all participants were tested. For this reason, the results of 20 participants were faked. As this is a repeated measures experiment the data layout need to be in wide format with participant's data represented on each row. However, the way the database is being populated is in long format. Therefore, this was going to cause issues later when the time for the actual data analysis comes. This is why, SQL queries were written to wrangle the data in a layout that is suitable for analysis. R Studio was used to do the statistical analysis. First, the Anderson-Darling normality test was conducted to check whether the time data was normally distributed. Additional reading, suggested that R Studio has other normality tests which are more popular and have better reputation. One such test is Shapiro-Wilks Normality Test. Both tests showed a p-value of less than 0.05 which rejected the Null hypothesis that the data is normally distributed. R Studio has a very easy way of plotting histograms by using the hist() function. This is very helpful to visualise the distribution of the values. If the data values were normally distributed then a repeated measures t-test was going to be run to see whether there is a significant difference between the time taken to read the two types of graphs. However, as the data was found to be not normally distributed, a non-parametric test had to be used. The non-parametric equivalent of repeated measures t-test is Wilcoxon. R Studio has a library with this test so only one command had to be executed to see whether there is a significant difference between node-link and matrix-based graphs.
 
 The type of visualisation is the main aspect being investigated. However, there are also other research questions that can be studied. For example, the different sizes and layouts of each type of graph can be compared. Furthermore, there is also a measurement of correct answers and this is a different type of data - boolean, which would require a different statistical data analysis. For example, in the fake data there were 45 percent error rate in the matrix-based graphs and 16 percent errors in the node-link graphs. 
 
@@ -264,17 +267,34 @@ An example of running from the command line is as follows:
 \end{verbatim}
 This will apply $BBMC$ with $style = 1$ to the first brock200 DIMACS instance allowing 14400 seconds of cpu time.
 
-\chapter{Generating Random Graphs}
-\label{sec:randomGraph}
-We generate Erd\'{o}s-R\"{e}nyi random graphs $G(n,p)$ where $n$ is the number of vertices and
-each edge is included in the graph with probability $p$ independent from every other edge. It produces
-a random graph in DIMACS format with vertices numbered 1 to $n$ inclusive. It can be run from the command line as follows to produce 
-a clq file
-\begin{verbatim}
-      > java RandomGraph 100 0.9 > 100-90-00.clq
-\end{verbatim}
-\end{appendices}
+\chapter{Graphs}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{drinkingIssuesLargeHier.jpg}
+\caption{Large node-link graph in hierarchical layout}
+\label{nodeLinkGraph}
+\end{figure}
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{studentLargeAlpha.PNG}
+\caption{Large matrix-based graph in alphabetical layout}
+\label{matrixBasedGraph}
+\end{figure}
+
+
+\begin{sidewaysfigure}[ht]
+\centering
+\includegraphics[width=24cm]{exampleQuestion.PNG}
+\caption{Example of an experimental question}
+\label{exampleQuestion}
+\end{sidewaysfigure}
+
+
+\end{appendices}
 %%%%%%%%%%%%%%%%%%%%
 %   BIBLIOGRAPHY   %
 %%%%%%%%%%%%%%%%%%%%

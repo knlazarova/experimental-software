@@ -1,6 +1,6 @@
 // index.js
 
-require('./app/index')  
+//require('./app/index')  
 const express = require('express')  
 const app = express()  
 var exphbs  = require('express-handlebars');
