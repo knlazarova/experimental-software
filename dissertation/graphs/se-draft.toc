@@ -23,7 +23,8 @@
 \contentsline {subsection}{\numberline {4.6.1}Data Analysis Methodology}{15}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Experimental Results}{16}{subsection.4.6.2}
 \contentsline {section}{\numberline {4.7}Discussion}{16}{section.4.7}
-\contentsline {chapter}{Appendices}{17}{section*.3}
-\contentsline {chapter}{\numberline {A}Database Schema}{18}{Appendix.a.A}
-\contentsline {chapter}{\numberline {B}Running the Programs}{19}{Appendix.a.B}
-\contentsline {chapter}{\numberline {C}Graphs}{20}{Appendix.a.C}
+\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}
+\contentsline {chapter}{Appendices}{20}{section*.3}
+\contentsline {chapter}{\numberline {A}Database Schema}{21}{Appendix.a.A}
+\contentsline {chapter}{\numberline {B}Running the Programs}{22}{Appendix.a.B}
+\contentsline {chapter}{\numberline {C}Graphs}{23}{Appendix.a.C}

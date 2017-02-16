@@ -1,0 +1,24 @@
+matrixAll,nodeAll,,nodeHierAverage,nodeParallelAvg,nodeOrganic,,
+23.595,23.627,,18.62,25.49,26.77,,
+,,,,,,,
+large_nl,large matrix,,,Large_NODE,,,
+31.11,30.06,,HierLarge,ParallelLarge,OrganicLarge,"Friedman chi-squared = 14.87, df = 2, p-value = 0.0005904","[1] ""Multiple comparisons between groups after Friedman test"""
+,,,22.11,38.02,33.22,,
+smallMedNL,matrixSM,,,,,,$p.value
+19.88,20.36,,,Large_MATRIX,,,[1] 0.05
+,,,AlphaLarge,InDDlarge,OutDDLarge,,
+,,,33.67,28.88,30.63,,$dif.com
+,,,,,,,    obs.dif critical.dif difference
+matrix_path_average_time,node_path_average_time,"Wilcoxon rank sum test
+data:  pathAll$node_path_average_time and pathAll$matrix_path_average_time
+W = 224, p-value = 0.03702",node_direct_average_time,matrix_direct_average_time,"Wilcoxon rank sum test
+
+data:  directAVG$matrix_direct_average_time and directAVG$node_direct_average_time
+W = 148, p-value = 0.0003521
+alternative hypothesis: true location shift is not equal to 0
+",,1-2      24     16.23676       TRUE
+34.81,31.04,,16.898,13.288,,,1-3      21     16.23676       TRUE
+,,,,,,,2-3       3     16.23676      FALSE
+,,,,,,,
+node_path_large,matrix_path_large,,,,,,
+39.82,46.51,,,,,,
