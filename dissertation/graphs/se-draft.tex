@@ -6,7 +6,9 @@
 \usepackage{lscape}
 \usepackage{rotating}
 \usepackage{multirow}
+\usepackage{booktabs,caption}
 \usepackage[table,xcdraw]{}
+
 
 %
 % put any packages here
@@ -249,11 +251,11 @@ The fake data analysis took longer than expected due to the unforeseen circumsta
 
 \subsection{Experimental Results}
 
-The data analysis was first done for direct questions and then the same scrip was used to do the analysis for path questions. Therefore, the results section also consists of two different blocks of analysed data relating to each type of question
+The data analysis was first done for direct questions and then the same scrip was used to do the analysis for path questions. Therefore, the results section also consists of two different blocks of analysed data relating to each type of question.
 
 \subsubsection{Direct Questions}
 
-The research nature of the experiment allowed for thorough data analysis of different factors in the graphs. The results showed that regardless of the graph layout and size the matrix-based graphs (Mean=14.15) have better performance than node-link graphs (Mean=16.85) for direct questions \ref{nodevsmatrixdirect} with p-value = 0.0128 \ref{directResults}. 
+The research nature of the experiment allowed for thorough data analysis of different factors in the graphs. The results showed that regardless of the graph layout and size the matrix-based graphs (M = 14.15) have better performance than node-link graphs (M = 16.85) for direct questions (Fig\ref{nodevsmatrixdirect}) with p-value = 0.0128 (Table\ref{directResults}). 
 
 \begin{figure}[H]
 \centering
@@ -262,7 +264,7 @@ The research nature of the experiment allowed for thorough data analysis of diff
 \label{nodevsmatrixdirect}
 \end{figure}
 
-When different sizes of each graph type were compared significant difference was found only for the large graphs comparison with matrix-based large graphs (Mean=16.03) being easier to read than node-link graphs(M=24.76) \ref{largenodevsmartrixdirect}. Wilcoxon test showed a p-value of 5.633e-07. 
+When different sizes of each graph type were compared significant difference was found only for the large graphs comparison with matrix-based large graphs (M = 16.03) being easier to read than node-link graphs(M = 24.76). Figure\ref{largenodevsmartrixdirect} shows the mean values of each each representations. Wilcoxon test showed a p-value of 5.633e-07. 
 
 \begin{figure}[H]
 \centering
@@ -271,20 +273,20 @@ When different sizes of each graph type were compared significant difference was
 \label{largenodevsmartrixdirect}
 \end{figure}
 
-Node-link layouts were compared in each size group. In small size the parallel layout was found the have the worst performance (Mean = 14.20) and hierarchical layout was found to have the best performance (Mean = 9.65) \ref{}. Friedman test calculated a p-value of 0.0013* with significant post-hoc tests between all pairs \ref{directResults}. In the medium size measures, the parallel layout had the worst performance time of 15.62, but when Friedman test was conducted no difference between the three layouts was found. The node-link large size performance time for hierarchical (M=17.96), parallel (M=38.86), and organic (M=17.46) layouts \ref{nodelinkdirectlayouts} was significantly different and has p-value = 3.261e-06* \ref{directResults}. 
+Node-link layouts were compared in each size group. Figure\ref{nodelinkdirectlayouts} illustrates the difference in mean values in all node-link layouts and sizes. In small size the parallel layout was found the have the worst performance (M = 14.20) and hierarchical layout was found to have the best performance (M = 9.65). Friedman test calculated a p-value of 0.0013* with significant post-hoc tests between all pairs (Table\ref{directResults}). In the medium size measures, the parallel layout had the worst performance time of 15.62 on average, but when Friedman test was conducted no statistical difference between the three layouts was found with p-value = 0.6575. The node-link large size performance time for hierarchical (M=17.96), parallel (M=38.86), and organic (M=17.46) layouts \ref{nodelinkdirectlayouts} was significantly different and has p-value = 3.261e-06*. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{nodelinkdirectlayouts.pdf}
 \caption{Direct Question: Node-link layout comparison in all size groups}
-\label{largenodevsmartrixdirect}
+\label{nodelinkdirectlayouts}
 \end{figure}
 
-
+The matrix-based based graphs were not found to have consistent performance differences between the various layouts when direct question was asked. Significant difference was found in the medium size with out degree descending layout (M=12.70) outperforming in degree descending (M=14.64) and alphabetical layouts (M=14.86). As far as the small and the large sizes are concerned p-value was shown to be insignificant.
 
 \begin{table}[H]
 \centering
-\caption{Direct}
+\caption{Direct Question comparisons}
 \label{directResults}
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
@@ -316,14 +318,34 @@ inDD         & \multicolumn{2}{c|}{outDD} & \multicolumn{3}{c|}{}               
 inDD 15.34   & outDD 14.76  & alpha 18.00 & \multicolumn{3}{c|}{}                   & \multicolumn{1}{l|}{0.355}    \\ \hline
 \end{tabular}
 \end{table}
-
+\noindent H - hierarchical\newline P - parallel\newline O - organic \newline inDD - in degree descending\newline outDD - out degree descending\newline alpha - alphabetical
 
 \subsubsection{Path Questions}
 
+The path question results showed different pattern. The Wilcoxon comparison between the matrix-based (M=47.37) and node-link (M=39.51) representations of any size and layout showed a better performance for node-link graphs with p-value=0.02847*. In the small group size of this question type, matrix-based representations (M=23.09) were outperformed by node-link graphs (M=27.83). Wilcoxon test reported a p-value of 0.03997* (Table\ref{pathResults}). No difference was found in the medium size graphs, but in the large size group matrix-based graphs (M=47.38) showed worse performance when compared to node-link graphs (M=39.51). Wilcoxon test found a p-value of 0.02847*. The node-link layout comparison showed that for small sizes the hierarchical layout (M=27.31) has worst performance, followed by the parallel layout (M=22.43) and the organic layout (M=19.62). Friedman test found a significant difference between the layouts with p-value=5.943e-06*. However, in the medium size group the layouts showed different results (Figure\ref{nodePathLayouts}). The organic layout (M=48.55) performed significantly worse than the parallel (M=26.44) and the hierarchical (M=23.54) \ref{pathResults}. These results were consistent with the large group size layouts where the organic layout (M=47.88) showed worse performance than parallel (M=39.20) and hierarchical (M=31.44) layouts.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{nodePathLayouts.pdf}
+\caption{Path Question: Node-link layout comparison in all size groups}
+\label{nodePathLayouts}
+\end{figure}
+
+Among the matrix layouts significant difference was found in the small and large size groups. When the size is small, alphabetical layout (M=23.79) outperformed out degree descending (M=29.50) and in degree descending (30.20) layouts \ref{matrixpathlayouts}. A Friedman test found a significant difference between the three layouts with p-value=0.0003245*. In the medium size group, the alphabetical layout was confirmed to have best performance (M=27.29) when compared to in degree descending layout (M=29.07), but not statistical difference was found when compared to out degree descending layout (M=28.68) with p-value= 0.26. No significant difference was found among the layouts in large size. All p-values for path question can be found in Figure \ref{pathResults} 
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{matrixpathlayouts.pdf}
+\caption{Path Question: Matrix-based layout comparison in all size groups}
+\label{matrixpathlayouts}
+\end{figure}
+
 \begin{table}[H]
 \centering
-\caption{Path}
-\label{my-label}
+\caption{Path Question comparisons}
+\label{pathResults}
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
 \multicolumn{3}{|c|}{\textbf{Matrix}}     & \multicolumn{3}{c|}{\textbf{Node-link}} & \textbf{P-value} \\ \hline
@@ -360,7 +382,7 @@ inDD         & \multicolumn{2}{c|}{outDD} & \multicolumn{3}{c|}{}               
 inDD 45.45   & outDD 48.93  & alpha 47.7  & \multicolumn{3}{c|}{}                   & 0.356            \\ \hline
 \end{tabular}
 \end{table}
-
+\noindent H - hierarchical\newline P - parallel\newline O - organic \newline inDD - in degree descending\newline outDD - out degree descending\newline alpha - alphabetical
 
 \chapter{Discussion}
 

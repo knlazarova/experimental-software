@@ -22,11 +22,11 @@
 \contentsline {section}{\numberline {4.6}Results}{15}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Data Analysis Methodology}{15}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Experimental Results}{16}{subsection.4.6.2}
-\contentsline {subsubsection}{Direct Questions}{17}{section*.3}
-\contentsline {subsubsection}{Path Questions}{21}{section*.4}
-\contentsline {chapter}{\numberline {5}Discussion}{22}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusion}{22}{section.5.1}
-\contentsline {chapter}{Appendices}{23}{section*.5}
-\contentsline {chapter}{\numberline {A}Database Schema}{24}{Appendix.a.A}
-\contentsline {chapter}{\numberline {B}Running the Programs}{25}{Appendix.a.B}
-\contentsline {chapter}{\numberline {C}Graphs}{26}{Appendix.a.C}
+\contentsline {subsubsection}{Direct Questions}{17}{section*.7}
+\contentsline {subsubsection}{Path Questions}{20}{section*.12}
+\contentsline {chapter}{\numberline {5}Discussion}{24}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusion}{24}{section.5.1}
+\contentsline {chapter}{Appendices}{25}{section*.16}
+\contentsline {chapter}{\numberline {A}Database Schema}{26}{Appendix.a.A}
+\contentsline {chapter}{\numberline {B}Running the Programs}{27}{Appendix.a.B}
+\contentsline {chapter}{\numberline {C}Graphs}{28}{Appendix.a.C}
