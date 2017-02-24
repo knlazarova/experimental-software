@@ -195,11 +195,47 @@ This is a within subject design experiment with two conditions. In the first con
 
 \section{Stimuli}
 
-Figure \ref{experimentalDesign} illustrates the pattern which was used create the questions and the graphs. The domain questions were healthy and unhealthy gym behaviour, drinking issues, and student exams. The three different sizes were small (10 factors), medium (20 factors) and large (30 factors). There were three different layouts for each type of representation. The matrix-based layouts were alphabetical, in degree descending and out degree descending. The node-link layouts were hierarchical, orthogonal, and series parallel.  There was a direct relationship question and an indirect causal relationship question asked for each of the created graphs. The first six questions of the experiment were training questions which did not count towards the final results. The characteristics of the graphs in these questions were chosen to be different from the graphs in the experimental questions. They were added to the beginning of the experiment which generated a total of 42 questions.
+To prepare the experimental stimuli, a variety of graph factors had to be addressed. First, the information complexity in all graphs had to be equal to prevent if from influencing performance time. Consequently, node-link graphs were created in yEd 3.16.1 and then converted into matrix-based representations using an XGML translation software created in Glasgow University. This is how equivalently complex node-link and matrix-based representations were created. As long as the graphs were from the same domain question and size, they represented the same information. However, each question was carefully structured to require different information to be read from the graphs to avoid learning effect. 
+
+Furthermore, in order to create a large number of graphs, three different question themes were introduced - drinking issues, exams, and healthy/unhealthy gym behaviour. To gain a deeper understanding of which are the most influential characteristics of a graph different layouts and sizes were also implemented. The three different sizes were small, medium, and large. A small node-link graph consists of 10 vertices and 10 or 9 edges \ref{sportSmallOrganicS}. The equivalent matrix-based representation has 10 rows, 10 columns and 10 or 9 darker squares showing the causal relationships between factors \ref{studentSmallInDDS}. The medium size representations had 20 factors or 20 vertices (node-link graphs) and 20 row and columns (matrix-based graph). The large graphs had 30 variables or 30 vertices in node-link graphs and 30 row and columns in matrix representations. 
+
+
+\begin{figure}[tbp]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{images/sportSmallOrganic.jpg}
+    \caption{Small Node-link Graph}
+	\label{sportSmallOrganicS}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{images/studentSmallInDD.PNG}
+    \caption{Small Matrix-based Graph}
+	\label{studentSmallInDDS}
+  \end{minipage}
+\end{figure}
+
+For each type of representation different layouts were implemented. The matrix-based layouts were alphabetical, indegree descending and outdegree descending \ref{matrixLayout}. The alphabetical layout had the row and column factors in alphabetical order. The indegree descending layout finds the number of edges that are coming into each vertex and sorts them in descending order. The outdegree descending layouts calculates the amount of edges going out of each vertex and applies descending order.  The node-link layouts were hierarchical, orthogonal, and series parallel \ref{nodeLayouts}. yEd applies an algorithm for the creation of each layout. The hierarchical layout represents precedence relation in directed graphs. Series parallel graphs have one sink and source which are created recursively to generate the series parallel graph. The organic layout has well-balanced spread out distribution of nodes. Figure \ref{experimentalDesign} shows the pattern which was followed to create 36 graphs with equal amount of combinations of sizes, layouts and question domains. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=18cm]{images/matrixLayout.png}
+\caption{Matrix Layouts}
+\label{matrixLayout}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=15cm]{images/nodeLayouts.png}
+\caption{Node-link Layouts}
+\label{nodeLayouts}
+\end{figure}
+
+There was a direct relationship question and an indirect causal relationship question asked for each of the created graphs. The direct question was requiring the participant to answer a question of the type "Factor X is causing which of the following factors" followed by four multiple choice answers only one of which was correct. The path question was asking which of the following causal relationships is correct, followed by four multiple choice answers of the type "factor A $->$ factor B $->$ factor C". The first six questions of the experiment were training questions which did not count towards the final results. The characteristics of the graphs in these questions were chosen to be different from the graphs in the experimental questions. They were added to the beginning of the experiment which generated a total of 42 questions.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{experimentalObjects.png}
+\includegraphics[width=18cm]{experimentalObjects.png}
 \caption{Experimental Design}
 \label{experimentalDesign}
 \end{figure}
@@ -207,9 +243,9 @@ Figure \ref{experimentalDesign} illustrates the pattern which was used create th
 
 The specified sequence of questions with matched layouts, question themes, and different sizes was likely to influence the results of the experiment because of the exposure effect of that particular sequence. Therefore, to ensure that all participants receive the questions in a different order, Latin square /cite{winer1962latin} randomization was used. The sequence of questions was different for each participant and the possibility of the questions sequence affecting the results was eliminated.
   
-Node-link graphs \ref{nodeLinkGraph} were created using yEd and the equivalent matrix-based representations were generated using software which converts XGML node-link graphs into matrix-based graphs \ref{matrixBasedGraph}. As long as the graphs are from the same domain question and size, they represent the same information. However, all questions require different information to be read from the graphs to avoid learning effect. The representation of identical information ensures that the complexity of the data is the same. Both types of representations were displayed in their real size on the left side of the screen and the corresponding question was on the right. A special attention was paid to the letter's font size and retaining the original size of the image on one screen. Participants were not able to go to the next question before they answered the current one. In addition, to measure answer time more accurately, there was no "Next" button. Once a participant clicked on an answer it was automatically submitted and the next question was loaded on the page. Figure \ref{exampleQuestion} in Appendix C shows an example of a trial question.
+All representations were displayed in their real size on the left side of the screen and the corresponding question was on the right. A special attention was paid to the letter's font size and retaining the original size of the image on one screen. Participants were not able to go to the next question before they answered the current one. In addition, to measure answer time more accurately, there was no "Next" button. Once a participant clicked on an answer it was automatically submitted and the next question was loaded on the page. Figure \ref{exampleQuestion} in Appendix C shows an example of a trial question.
 
-A Google Form questionnaire was used to ask participants to reflect back on their experience. Two weeks after the testing has started the participants were sent an email with the subjective questionnaire about their graph preference. 
+Finally, a Google Form questionnaire was used to ask participants to reflect back on their experience. Two weeks after the testing has started the participants were sent an email with the subjective questionnaire about their graph preference. 
 
 \section{Pilot}
 

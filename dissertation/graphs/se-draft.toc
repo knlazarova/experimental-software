@@ -16,21 +16,21 @@
 \contentsline {chapter}{\numberline {4}Experiment}{12}{chapter.4}
 \contentsline {section}{\numberline {4.1}Design}{12}{section.4.1}
 \contentsline {section}{\numberline {4.2}Stimuli}{12}{section.4.2}
-\contentsline {section}{\numberline {4.3}Pilot}{13}{section.4.3}
-\contentsline {section}{\numberline {4.4}Participants}{15}{section.4.4}
-\contentsline {section}{\numberline {4.5}Procedure}{15}{section.4.5}
-\contentsline {section}{\numberline {4.6}Results}{15}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Data Analysis Methodology}{15}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Experimental Results}{16}{subsection.4.6.2}
-\contentsline {subsubsection}{Direct Questions}{17}{section*.7}
-\contentsline {subsubsection}{Path Questions}{20}{section*.12}
-\contentsline {section}{\numberline {4.7}Preference Results}{23}{section.4.7}
-\contentsline {section}{\numberline {4.8}Qualitative Results}{24}{section.4.8}
-\contentsline {chapter}{\numberline {5}Discussion}{26}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusion}{26}{section.5.1}
-\contentsline {chapter}{Appendices}{27}{section*.17}
-\contentsline {chapter}{\numberline {A}Database Schema}{28}{Appendix.a.A}
-\contentsline {chapter}{\numberline {B}Running the Programs}{29}{Appendix.a.B}
-\contentsline {chapter}{\numberline {C}Experimental Stimuli}{30}{Appendix.a.C}
-\contentsline {subsection}{\numberline {C.0.1}Matrix-based}{30}{subsection.a.C.0.1}
-\contentsline {subsection}{\numberline {C.0.2}Node-link}{39}{subsection.a.C.0.2}
+\contentsline {section}{\numberline {4.3}Pilot}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}Participants}{16}{section.4.4}
+\contentsline {section}{\numberline {4.5}Procedure}{16}{section.4.5}
+\contentsline {section}{\numberline {4.6}Results}{17}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Data Analysis Methodology}{17}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Experimental Results}{18}{subsection.4.6.2}
+\contentsline {subsubsection}{Direct Questions}{18}{section*.10}
+\contentsline {subsubsection}{Path Questions}{21}{section*.15}
+\contentsline {section}{\numberline {4.7}Preference Results}{24}{section.4.7}
+\contentsline {section}{\numberline {4.8}Qualitative Results}{25}{section.4.8}
+\contentsline {chapter}{\numberline {5}Discussion}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclusion}{27}{section.5.1}
+\contentsline {chapter}{Appendices}{28}{section*.20}
+\contentsline {chapter}{\numberline {A}Database Schema}{29}{Appendix.a.A}
+\contentsline {chapter}{\numberline {B}Running the Programs}{30}{Appendix.a.B}
+\contentsline {chapter}{\numberline {C}Experimental Stimuli}{31}{Appendix.a.C}
+\contentsline {subsection}{\numberline {C.0.1}Matrix-based}{31}{subsection.a.C.0.1}
+\contentsline {subsection}{\numberline {C.0.2}Node-link}{40}{subsection.a.C.0.2}
