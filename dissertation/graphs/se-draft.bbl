@@ -185,6 +185,12 @@ Balaji~T Thattai, Karthikeyan Shanmugam, Chi Yao, and Yee~Lang Lau.
   February~24 2016.
 \newblock US Patent App. 15/052,449.
 
+\bibitem{tilkov2010node}
+Stefan Tilkov and Steve Vinoski.
+\newblock Node. js: Using javascript to build high-performance network
+  programs.
+\newblock {\em IEEE Internet Computing}, 14(6):80--83, 2010.
+
 \bibitem{ware1999visualizing}
 Colin Ware, Eric Neufeld, and Lyn Bartram.
 \newblock Visualizing causal relations.

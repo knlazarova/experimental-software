@@ -4,33 +4,32 @@
 \contentsline {section}{\numberline {1.3}Node-Link Graphs}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Matrix-based Graphs}{4}{section.1.4}
 \contentsline {chapter}{\numberline {2}Introduction}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Aims and Objectives}{6}{section.2.1}
 \contentsline {chapter}{\numberline {3}Implementation details}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Software tools and technologies}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Development Process}{8}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}User Stories}{8}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Wire-frames}{8}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}System Design}{9}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Implementation}{10}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Challenges}{10}{section.3.3}
-\contentsline {section}{\numberline {3.4}Software reliability testing}{11}{section.3.4}
+\contentsline {section}{\numberline {3.1}Requirements}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Prototype}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Software tools and technologies}{8}{section.3.3}
+\contentsline {section}{\numberline {3.4}System Design}{9}{section.3.4}
+\contentsline {section}{\numberline {3.5}Implementation}{10}{section.3.5}
+\contentsline {section}{\numberline {3.6}Challenges}{10}{section.3.6}
 \contentsline {chapter}{\numberline {4}Experiment}{12}{chapter.4}
 \contentsline {section}{\numberline {4.1}Design}{12}{section.4.1}
 \contentsline {section}{\numberline {4.2}Stimuli}{12}{section.4.2}
 \contentsline {section}{\numberline {4.3}Pilot}{15}{section.4.3}
 \contentsline {section}{\numberline {4.4}Participants}{16}{section.4.4}
 \contentsline {section}{\numberline {4.5}Procedure}{16}{section.4.5}
-\contentsline {section}{\numberline {4.6}Results}{17}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Data Analysis Methodology}{17}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Experimental Results}{18}{subsection.4.6.2}
-\contentsline {subsubsection}{Direct Questions}{18}{section*.10}
-\contentsline {subsubsection}{Path Questions}{21}{section*.15}
-\contentsline {section}{\numberline {4.7}Preference Results}{24}{section.4.7}
-\contentsline {section}{\numberline {4.8}Qualitative Results}{25}{section.4.8}
-\contentsline {chapter}{\numberline {5}Discussion}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclusion}{27}{section.5.1}
-\contentsline {chapter}{Appendices}{28}{section*.20}
-\contentsline {chapter}{\numberline {A}Database Schema}{29}{Appendix.a.A}
-\contentsline {chapter}{\numberline {B}Running the Programs}{30}{Appendix.a.B}
-\contentsline {chapter}{\numberline {C}Experimental Stimuli}{31}{Appendix.a.C}
-\contentsline {subsection}{\numberline {C.0.1}Matrix-based}{31}{subsection.a.C.0.1}
-\contentsline {subsection}{\numberline {C.0.2}Node-link}{40}{subsection.a.C.0.2}
+\contentsline {section}{\numberline {4.6}Results}{16}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Data Analysis Methodology}{16}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Experimental Results}{17}{subsection.4.6.2}
+\contentsline {subsubsection}{Direct Questions}{17}{subsection.4.6.2}
+\contentsline {subsubsection}{Path Questions}{19}{table.caption.11}
+\contentsline {section}{\numberline {4.7}Preference Results}{21}{section.4.7}
+\contentsline {section}{\numberline {4.8}Qualitative Results}{22}{section.4.8}
+\contentsline {section}{\numberline {4.9}Discussion}{22}{section.4.9}
+\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}
+\contentsline {chapter}{Appendices}{24}{section*.16}
+\contentsline {chapter}{\numberline {A}Database Schema}{25}{Appendix.a.A}
+\contentsline {chapter}{\numberline {B}Running the Programs}{26}{Appendix.a.B}
+\contentsline {chapter}{\numberline {C}Experimental Stimuli}{27}{Appendix.a.C}
+\contentsline {subsection}{\numberline {C.0.1}Matrix-based}{27}{subsection.a.C.0.1}
+\contentsline {subsection}{\numberline {C.0.2}Node-link}{36}{subsection.a.C.0.2}
