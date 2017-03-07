@@ -6,6 +6,12 @@ James Abello, Frank Van~Ham, and Neeraj Krishnan.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   12(5):669--676, 2006.
 
+\bibitem{al2014information}
+Jasser Al-Kassab, Zied~M Ouertani, Giovanni Schiuma, and Andy Neely.
+\newblock Information visualization to support management decisions.
+\newblock {\em International Journal of Information Technology \& Decision
+  Making}, 13(02):407--428, 2014.
+
 \bibitem{alper2013weighted}
 Basak Alper, Benjamin Bach, Nathalie Henry~Riche, Tobias Isenberg, and
   Jean-Daniel Fekete.
@@ -146,6 +152,13 @@ William~JR Longabaugh.
 \newblock Combing the hairball with biofabric: a new approach for visualization
   of large networks.
 \newblock {\em BMC bioinformatics}, 13(1):1, 2012.
+
+\bibitem{netzel2014comparative}
+Rudolf Netzel, Michel Burch, and Daniel Weiskopf.
+\newblock Comparative eye tracking study on node-link visualizations of
+  trajectories.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  20(12):2221--2230, 2014.
 
 \bibitem{niederer2015survey}
 Christina Niederer, Wolfgang Aigner, and Alexander Rind.

@@ -9,9 +9,16 @@
 \contentsline {section}{\numberline {3.1}Requirements}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Prototype}{7}{section.3.2}
 \contentsline {section}{\numberline {3.3}Software tools and technologies}{8}{section.3.3}
-\contentsline {section}{\numberline {3.4}System Design}{9}{section.3.4}
-\contentsline {section}{\numberline {3.5}Implementation}{10}{section.3.5}
-\contentsline {section}{\numberline {3.6}Challenges}{10}{section.3.6}
+\contentsline {subsection}{\numberline {3.3.1}The Spring Framework}{8}{subsection.3.3.1}
+\contentsline {subsubsection}{Challenges}{8}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Django}{8}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Node.js}{9}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}AngularJS}{9}{subsection.3.3.4}
+\contentsline {subsubsection}{Challenges}{9}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}PostgreSQL}{9}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}System Design}{10}{section.3.4}
+\contentsline {section}{\numberline {3.5}Implementation}{11}{section.3.5}
+\contentsline {subsubsection}{Challenges}{11}{section.3.5}
 \contentsline {chapter}{\numberline {4}Experiment}{12}{chapter.4}
 \contentsline {section}{\numberline {4.1}Design}{12}{section.4.1}
 \contentsline {section}{\numberline {4.2}Stimuli}{12}{section.4.2}
