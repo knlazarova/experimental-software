@@ -48,6 +48,12 @@ Kasper Dinkla, Michel~A Westenberg, and Jarke~J van Wijk.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   18(12):2457--2466, 2012.
 
+\bibitem{dunne2015readability}
+Cody Dunne, Steven~I Ross, Ben Shneiderman, and Mauro Martino.
+\newblock Readability metric feedback for aiding node-link visualization
+  designers.
+\newblock {\em IBM Journal of Research and Development}, 59(2/3):14--1, 2015.
+
 \bibitem{dwyer2013edge}
 Tim Dwyer, Nathalie~Henry Riche, Kim Marriott, and Christopher Mears.
 \newblock Edge compression techniques for visualization of dense directed

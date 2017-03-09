@@ -464,17 +464,31 @@ The experiment was done in the presence of the researcher to ensure high environ
 
 In general, there was positive feedback about the questions asked and the nature of the topics. Most people found them very familiar and were interested to find the causal relationships. A small amount of people (N=3) mentioned that the font-size of the labels was small and it was difficult to follow the matrix row and columns on the large graphs because of the small size of the squares. The squares and font-size were made as large as possible, but due to the big amount of information that had to be fitted on one screen, some participants still experienced difficulties. One of these participants said that it might have been more difficult for them as they could have eyesight issues. Other participants were explicitly asked after the experiment whether they had experienced any issues and they reported that everything was fine.
 
-\section{Discussion}
+
+\chapter{Discussion}
+
+\section{Results}
 
 The experimental findings showed that for direct questions matrix graphs have better performance than node-link graphs, but for path questions the opposite was true - node-link graphs outperformed matrix-based representations. Direct questions required the participants to find a label and check which factor is being caused by this label. The results of the experiment suggests that it was easier for the participants to find this label on the matrix-based graph. Considering the layouts of the two representations, the matrix has a row and a column while the node-link layout is rather spread out and unevenly distributed on the screen. Consequently, a possible explanation for the better performance of matrix-based graphs for direct questions can be that it is easier for the human eye to find a label in a row rather than on a flat space where factors are spread out in different directions. 
 
 When path questions were concerned node-link graphs outperformed matrix-based graphs. In order to answer a path question in matrix-based graph two selected cells had to be found which could be positioned on two completely different places in the matrix. Therefore, it would take time for the participant to find these two cells. For node-link graphs, however, the participants were required to follow the link between nodes that are positioned next to each other. Therefore, they had to spend time finding only one of the factors. Our results confirmed the findings of Zekian et al \cite{sheny2007path}, who also concluded that node-link representations are better than matrix-based graphs when answering path questions. 
 
-The layout analysis did not manage to find a consistent best performance layout for all sizes. The node-link layouts in the direct question type consistently reported the parallel layout as the worst performance-wise. 
+The layout analysis did not find a consistent best performing layout in node-link and matrix-based graphs. However, a consistent bad performance from particular layouts depending on the size of the graph and type of representation was found. First, in node-link direct questions, the parallel layout was found to take significantly more time to read than the rest of the layouts (Fig.  \ref{nodelinkdirectlayouts}). A deeper investigation revealed that a possible reason for these findings is that the edge length in the parallel layout is longer than the rest of the layouts. To illustrate this, edge length in the causal path in the small early age drinking graph between "drinking parents", "early age drinking", and "depression" in the three different layouts was measured. The edge length in the hierarchical layout was 2.9cm, and the edge length in the organic layout was 3, while the length in the organic layout was 11.9cm. In order to show the difference between the layouts an example that shows the biggest difference in length in this particular graph was chosen. It must be noted that the length difference is not that large in all causal relationships. However, the edge lengths in the parallel layout varies greatly, while the edge lengths in the hierarchical and parallel layouts are very similar - between 1cm and 1.5cm between two nodes. 
+
+Consequently, it was suggested that the length of the edge is a direct predictor of performance. A controlled experiment examined readability of graphs while manipulating the length of the edges \cite{holten2011extended}. There were two edge lengths - short and long. It was found that it took participants significantly longer to answer questions on graphs with long edges when compared to their response time on the short-edge questions. As a result, this study brings a possible explanation for the bad performance of the parallel layout.
+
+Interestingly, however, these results were not found in the path questions. There the parallel layout outperformed the organic one. It was found that in medium and large graphs, the organic layout has significantly worse performance than hierarchical and parallel graphs. Considering the similarity in the mean values between hierarchical and parallel performance, we can investigate the differences between organic layout and hierarchical/parallel. The main visual difference is that the organic layout \ref{drinkingIssuesMedOrganic} is spread out in all directions, and the direction of the edges does not follow a particular pattern. However, in parallel (Fig. \ref{sportMedParallel}) and hierarchical (Fig. \ref{drinkingIssuesSmallHier}) graphs the nodes are ordered into parallel rows and the edges always point from the upper level to the lower level. Therefore, the direction of the edge is proposed to be another important characteristics of the causal graphs that is not found in non-directed graphs.
+
+Path questions require the reader to follow two edges which might be the reason why different performance between the
+
+\section{Node-link readability}
+
+The readability of a node-link graph is characterized by readability metrics. These are means that define the understandability of the graph based on number of nodes and overlapping edges. A well-known method for inducing better readability of node-link graphs is spreading out the nodes evenly, keeping the edges away from the nodes, and edges-lengths equal, and avoid overlapping \cite{dunne2015readability}. However, applying an algorithm to make these amendments to a visualisation might lead to a misleading drawing with changed spatial representation.
 
 
-\chapter{Conclusion}
+\section{Future work}
 
+\section{Conclusion}
 
 %%%%%%%%%%%%%%%%
 %              %

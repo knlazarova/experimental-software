@@ -32,11 +32,14 @@
 \contentsline {subsubsection}{Path Questions}{19}{table.caption.11}
 \contentsline {section}{\numberline {4.7}Preference Results}{21}{section.4.7}
 \contentsline {section}{\numberline {4.8}Qualitative Results}{22}{section.4.8}
-\contentsline {section}{\numberline {4.9}Discussion}{22}{section.4.9}
-\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}
-\contentsline {chapter}{Appendices}{24}{section*.16}
-\contentsline {chapter}{\numberline {A}Database Schema}{25}{Appendix.a.A}
-\contentsline {chapter}{\numberline {B}Running the Programs}{26}{Appendix.a.B}
-\contentsline {chapter}{\numberline {C}Experimental Stimuli}{27}{Appendix.a.C}
-\contentsline {subsection}{\numberline {C.0.1}Matrix-based}{27}{subsection.a.C.0.1}
-\contentsline {subsection}{\numberline {C.0.2}Node-link}{36}{subsection.a.C.0.2}
+\contentsline {chapter}{\numberline {5}Discussion}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Results}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Node-link readability}{24}{section.5.2}
+\contentsline {section}{\numberline {5.3}Future work}{24}{section.5.3}
+\contentsline {section}{\numberline {5.4}Conclusion}{24}{section.5.4}
+\contentsline {chapter}{Appendices}{25}{section*.16}
+\contentsline {chapter}{\numberline {A}Database Schema}{26}{Appendix.a.A}
+\contentsline {chapter}{\numberline {B}Running the Programs}{27}{Appendix.a.B}
+\contentsline {chapter}{\numberline {C}Experimental Stimuli}{28}{Appendix.a.C}
+\contentsline {subsection}{\numberline {C.0.1}Matrix-based}{28}{subsection.a.C.0.1}
+\contentsline {subsection}{\numberline {C.0.2}Node-link}{37}{subsection.a.C.0.2}

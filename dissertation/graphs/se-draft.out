@@ -27,11 +27,14 @@
 \BOOKMARK [2][-]{subsection.4.6.2}{Experimental Results}{section.4.6}% 27
 \BOOKMARK [1][-]{section.4.7}{Preference Results}{chapter.4}% 28
 \BOOKMARK [1][-]{section.4.8}{Qualitative Results}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.9}{Discussion}{chapter.4}% 30
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 31
-\BOOKMARK [0][-]{section*.16}{Appendices}{}% 32
-\BOOKMARK [0][-]{Appendix.a.A}{Database Schema}{}% 33
-\BOOKMARK [0][-]{Appendix.a.B}{Running the Programs}{}% 34
-\BOOKMARK [0][-]{Appendix.a.C}{Experimental Stimuli}{}% 35
-\BOOKMARK [1][-]{subsection.a.C.0.1}{Matrix-based}{Appendix.a.C}% 36
-\BOOKMARK [2][-]{subsection.a.C.0.2}{Node-link}{subsection.a.C.0.1}% 37
+\BOOKMARK [0][-]{chapter.5}{Discussion}{}% 30
+\BOOKMARK [1][-]{section.5.1}{Results}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.2}{Node-link readability}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.3}{Future work}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 34
+\BOOKMARK [0][-]{section*.16}{Appendices}{}% 35
+\BOOKMARK [0][-]{Appendix.a.A}{Database Schema}{}% 36
+\BOOKMARK [0][-]{Appendix.a.B}{Running the Programs}{}% 37
+\BOOKMARK [0][-]{Appendix.a.C}{Experimental Stimuli}{}% 38
+\BOOKMARK [1][-]{subsection.a.C.0.1}{Matrix-based}{Appendix.a.C}% 39
+\BOOKMARK [2][-]{subsection.a.C.0.2}{Node-link}{subsection.a.C.0.1}% 40
