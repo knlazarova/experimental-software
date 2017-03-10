@@ -8,10 +8,10 @@
 \contentsline {chapter}{\numberline {3}Implementation details}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Requirements}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Prototype}{7}{section.3.2}
-\contentsline {section}{\numberline {3.3}Overview of possible software tools}{8}{section.3.3}
+\contentsline {section}{\numberline {3.3}Overview of considered software tools}{8}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Spring}{8}{subsection.3.3.1}
 \contentsline {subsubsection}{Challenges}{8}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Django}{8}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Django}{9}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Node.js}{9}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}AngularJS}{9}{subsection.3.3.4}
 \contentsline {subsubsection}{Challenges}{9}{subsection.3.3.4}

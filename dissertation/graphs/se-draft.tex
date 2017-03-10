@@ -34,7 +34,7 @@
 
 \begin{abstract}
 
-People who work in the social and health policy make decisions based on causality. Causality is usually visualised by node-link graphs, but matrix-based representations have the potential to outperform them because of their concise and clear visual representation. However, matrix-based graphs have not been extensively studied in causal relationship visualisation. Therefore, an experimental software was created to test human performance on reading causal relationships in node-link and matrix-based graphs. To make a thorough investigation of the factors influencing reading time different sizes, layouts and type of questions were created. Response time and correctness of the answer were measured. The results showed that matrix-based graphs outperform node-link representations in direct questions. When path questions are concerned, however, node-link graphs were found to be more readable than matrix-based graphs. The results are related to previous research in readability of data visualisations.
+People who work in the social and health policy make decisions based on causality. Causality is usually visualised by node-link graphs, but matrix-based representations have the potential to outperform them because of their concise and clear visual representation. However, matrix-based graphs have not been extensively studied in causal relationship visualisation. Therefore, an experimental software was created to test human performance of reading causal relationships in node-link and matrix-based graphs. To make a thorough investigation of the factors influencing reading time different sizes, layouts and type of questions were created. Response time and correctness of the answer were measured. The results showed that matrix-based graphs outperform node-link representations in direct questions. When path questions are concerned, however, node-link graphs were found to be more readable than matrix-based graphs. The results are related to previous research in readability of data visualisations.
 
 \end{abstract}
 
@@ -108,16 +108,15 @@ Alper and colleagues \cite{alper2013weighted} compared augmented adjacency matri
 
 Furthermore, it was suggested that adjacency matrices are superior to node-link graphs in representing dense graphs because they are more compact and easier to look at \cite{sheny2007path}. However, they also found that node-link graphs are better for path finding as a path can easily be followed if the arrows are not too tangled. Consequently, as mentioned earlier a unique best InfoVis does not exists. Depending on the data size, data characteristics and question of interest different representations can fit the best performing model. 
 
-
-Adjacency matrices and node-link diagrams have been compared in another study \cite{keller2006matrices} to examine which is more suitable graphical representation for the general public. This research was provoked by the fact that matrices are mainly use in engineering area, while node-link graphs are generally a more popular way of visualisation. The research questions being examined were related to the attributes of the connectivity model influencing readability and which representation is more suitable for particular tasks. In addition, they filled the gap in previous research that did not take into consideration participants' familiarity with the data sets. It was found that error rates and response time are highly influenced by size and density. They confirmed Ghoniem's \cite{ghoniem2004comparison} findings that matrix-based graphs outperform node-link graphs for dense and large graphs, and node-link graphs are more readable for small and sparse graphs. The only exception found is finding the path between two nodes in a graph. Furthermore, experience with the data set showed to has effect on performance. 
+Adjacency matrices and node-link diagrams have been compared in another study \cite{keller2006matrices} to examine which is more suitable graphical representation for the general public. This research was provoked by the fact that matrices are mainly use in engineering area, while node-link graphs are generally a more popular way of visualisation. The research questions being examined were related to the attributes of the connectivity model influencing readability, and which representations were more suitable for particular tasks. In addition, they filled the gap in previous research that did not take into consideration participants' familiarity with the data sets. It was found that error rates and response time are highly influenced by size and density. They confirmed Ghoniem's \cite{ghoniem2004comparison} findings that matrix-based graphs outperform node-link graphs for dense and large graphs, and node-link graphs are more readable for small and sparse graphs. The only exception found is finding the path between two nodes in a graph. Furthermore, experience with the data set showed to have an effect on performance. 
 
 Ghoniem and colleagues \cite{ghoniem2004comparison} made a performance comparison between node-link and matrix-based graphs. They predicted that counting nodes should be equally difficult on the two types of representations, but counting links and finding the most connected node should be easier in matrix-based representations. Node-link graphs were hypothesised to be better when building a path between two nodes. The reason for this is that matrix based graphs have the nodes represented twice which introduces extra complexity. They also hypothesised that node-link graphs will be easier to work with when dealing with graphs with a small amount of nodes. In their experiment they had three sizes of graphs - 20, 50, and 100 nodes. They tested 36 participants and measured their performance on various tasks such as finding paths, neighbours, nodes and links between nodes. They found that performance in node-link graphs decreases as the size of the graph increases. This pattern was confirmed for all of the tasks except for finding path, where node-link graphs regardless of the size and density showed better results.
 
 \section{Aims and Objectives}
 
-The present research question aims to investigate readability of node-link and matrix-based graphs when representing causal relationships. As discussed above the two types of representations have already been compared for non directed networks, but there is a gap in the literature that discusses their performance in causal relationships. Therefore, it is important to investigate whether their readability in directed graphs will be influenced by the same factors as in non-directed visualisations. What is more, deeper knowledge of the difference in their performance can benefit those working in the social and health policy sectors. They need an accurate and efficient way of representing data in order to make a well-informed and quick decisions. The importance of their tasks is caused by the fact that they can directly influence health policies. In addition, the health and safety sector invest large amounts of money based on their interpretation of the causal relationships graphs they posses.
+The present research question aims to investigate readability of node-link and matrix-based graphs when representing causal relationships. As discussed above the two types of representations have already been compared for non-directed networks, but there is a gap in the literature that discusses their performance in causal relationships. Therefore, it is important to investigate whether their readability in directed graphs will be influenced by the same factors as in non-directed visualisations. What is more, deeper knowledge of the difference in their performance can benefit those working in the Social and health policy sectors. They need an accurate and efficient way of representing data in order to make a well-informed and quick decisions. The importance of their tasks is caused by the fact that they can directly influence health policies. In addition, the health and safety sector invest large amounts of money based on their interpretation of the causal relationships graphs they posses.
 
-Therefore, knowing which type of causal visualisation is more efficient and accurate will help the health sector make correct and quick decisions. As discussed earlier there can be a best performing visualisation each type of task. To broaden our understanding of the factors that influence readability different factors can be manipulated during the experiment: type of task, question asked, graph layout and size. In order to find the answer to that research question an experimental software needs to be implemented. It needs to allow the researcher to add the questions of interest with corresponding graphs and the participants to answer them. To measure performance, the software must measure time to answer the question, and whether the answer is correct. The results of the experiment will show whether node-link or matrix-based graph is better when representing causal relationships. Also it will become clear if any significant performance difference is modulated by factor such as layout and size of the graphs. 
+Therefore, knowing which type of causal visualisation is more efficient and accurate will help the health sector make correct and quick decisions. As discussed earlier there can be a best performing visualisation each type of task. To broaden our understanding of the factors that influence readability, different factors can be manipulated during the experiment: type of task, question asked, graph layout and size. In order to find the answer to that research question an experimental software needs to be implemented. The main functionality of the web application will be to present the experimental questions to the participants and then show their results to the researcher. To measure performance, the software must measure time to answer the question, and whether the answer is correct. The results of the experiment will show whether node-link or matrix-based graph is better when representing causal relationships. Also it will become clear if any significant performance differences are modulated by factor such as layout and size of the graphs. 
 
 \chapter{Implementation details}
 
@@ -139,24 +138,24 @@ After the requirements gathering analysis, development of wire-frames followed. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=9cm,height=7cm]{researchQuestion.PNG}
+\includegraphics[width=11cm]{researchQuestion.PNG}
 \caption{Experimental Question wire-frame}
 \label{researchQuestion}
 \end{figure}
  
 Participants were expected to be unaware of how to read the graphs and, therefore, a training page had to be created. It was vital to make sure that the participants are aware of how to read each graph before the actual experiment. This is how the requirements specification became an iterative process during which a better understanding of the product evolved.
 
-\section{Overview of possible software tools}
+\section{Overview of considered software tools}
 
-To choose the appropriate technologies for this project a research on possible software tools was made. The web application frameworks taken into consideration and the database management system are discussed below. 
+To choose the appropriate technologies for this project a research on possible software tools was made. The web application frameworks taken into consideration and the chosen database management system are discussed below. 
 
 \subsection{Spring}
 
-The Java framework Spring was the first considered framework for this project. Spring is among the most widely used frameworks in industry \cite{shiLuiLi}, which was implying that the acquired skills from the project would be highly valuable. This decision was supported by extensive previous experience with Java from developer's point of view and the applicability of the skills to be acquired.
+The Java framework Spring was the first considered framework for this project. Spring is among the most widely used frameworks in industry \cite{shiLuiLi}, which implied that the acquired skills from the project would be highly valuable. This decision was was also inspired by extensive previous experience with Java from developer's point of view. 
 
 \subsubsection{Challenges}
 
-However, one of the reasons why Spring is used in industry is because of the large and complex systems that exist there. The Spring framework works on a very high level of abstraction where developers can easily write configuration files to add dependencies from different project. Therefore, it is considered rather unfriendly for small independent projects like this one and developers with limited Spring experience. The reasoning behind this conclusion was provoked after issues in setting the relative paths to different CSS and JavaScript files. The issue was found to be in the web application configuration file, but also the realisation that Spring is unnecessary abstract for this project appeared.
+However, one of the reasons why Spring is used in industry is because of the large and complex systems that exist there. The Spring framework works on a very high level of abstraction where developers can easily write configuration files to add dependencies from different project. Spring is also considered rather unfriendly for small independent projects like this one and developers with limited Spring experience. This idea was confirmed after issues in setting the relative paths to different CSS and JavaScript files. The problem was found to be in the web application configuration file. However, while fixing this issue Spring was found to be unnecessary abstract for this project.
 
 \subsection{Django}
 
@@ -164,11 +163,11 @@ As a web application framework that is being thought in university, Django was a
 
 \subsection{Node.js}
 
-Node.js was selected on the grounds of being event-driven, non-blocking I/O model which contributes to a very efficient and lightweight software. A Node.js JavaScript engine is used in the Google Chrome browser and has a very good performance \cite{tilkov2010node}. JavaScript servers have incredible performance due to their asynchronous I/O. Node.js appears to be single-threaded from a developer's point of view, as there is no thread management involved in the development process. However, behind the scenes Node.js handles threading, file system events, implements the event loop, feature thread pooling etc. Coming from a Java background, the Maven equivalent in Node.js is NPM. By using NPM commands the developer is able to install variety of different modules to help the implementation process. NPM executes the function of a package manager. Express is the standard server framework for Node.js. It is usually described as a minimal and flexible Node.js web application framework. Many popular frameworks such as KeystoneJS, Kraken and Sails, are built on Express. Consequently, the decision to implemented the back-end of the application with Node.js and JavaScript combined with the Express framework was taken.
+Node.js was selected on the grounds of being event-driven, non-blocking I/O model which contributes to a very efficient and lightweight software. A Node.js JavaScript engine is used in the Google Chrome browser and has a very good performance \cite{tilkov2010node}. JavaScript servers have incredible performance due to their asynchronous I/O. Node.js appears to be single-threaded from a developer's point of view, as there is no thread management involved in the development process. However, behind the scenes Node.js handles threading, file system events, implements the event loop, feature thread pooling etc. Coming from a Java background, the Maven equivalent in Node.js was found to be NPM. By using NPM commands the developer is able to install variety of different modules to help the implementation process. NPM executes the function of a package manager. Express is the standard server framework for Node.js. It is usually described as a minimal and flexible Node.js web application framework. Many popular frameworks such as KeystoneJS, Kraken and Sails, are built on Express. Consequently, the decision to implemented the back-end of the application with Node.js and JavaScript combined with the Express framework was taken.
 
 \subsection{AngularJS}
 
-AngularJS 1 was chosen for management of frontend functionality. Even though there is a newer version of the product, the lack of documentation and support online, was a sufficient reason for using the older AngularJS. It uses HTML as a template and enables the developers to extend it to express the application's components clearly. AngularJS supports features such as data binding and dependency injection which decreases the amount of code that a developer would usually write to implement them. 
+AngularJS 1 was chosen for management of front end functionality. Even though there is a newer version of the product, the lack of documentation and support on-line, was a sufficient reason for using the older AngularJS. It uses HTML as a template and enables the developers to extend it to express the application's components clearly. AngularJS supports features such as data binding and dependency injection which decreases the amount of code that a developer would usually write to implement them. 
 
 \subsubsection{Challenges}
 
@@ -187,7 +186,7 @@ The first table questions had a primary key (PK) question ID, a text field with 
 
 \section{System Design}
 
-Figure \ref{abstractDesign} shows an abstract view of the system design. There is an Actor who will either be a participant in the study or a researcher (\autoref{Requirements}). They will interact with the front-end which will be in the form of a web application in a browser. The front end will communicate with the back-end which will be implemented in Node.js. The back-end will make requests to the database to retrieve and send information. 
+Figure \ref{abstractDesign} shows an abstract view of the system design. There is an Actor who will either be a participant in the study or a researcher (\autoref{Requirements}). They will interact with the front-end which will be in the form of a web application in a browser. The front-end will communicate with the back-end which will be implemented in Node.js. The back-end will make requests to the database to retrieve and send information. 
 
 \begin{figure}[H]
 \centering
@@ -268,7 +267,7 @@ There was a direct relationship question and an indirect causal relationship que
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=18cm]{experimentalObjects.png}
+\includegraphics[width=\textwidth]{experimentalObjects.png}
 \caption{Experimental Design}
 \label{experimentalDesign}
 \end{figure}
@@ -408,7 +407,7 @@ The node-link layout comparison showed that for small sizes the hierarchical lay
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{images/nodePathLayouts.PNG}
+\includegraphics[width=13cm]{images/nodePathLayouts.PNG}
 \caption{Path Question: Node-link layout comparison in all size groups}
 \label{nodePathLayouts}
 \end{figure}
@@ -418,7 +417,7 @@ Among the matrix layouts significant difference was found in the small and large
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{images/matrixpathlayouts.PNG}
+\includegraphics[width=13cm]{images/matrixpathlayouts.PNG}
 \caption{Path Question: Matrix-based layout comparison in all size groups}
 \label{matrixpathlayouts}
 \end{figure}
@@ -480,7 +479,7 @@ In general, there was positive feedback about the questions asked and the nature
 
 The experimental findings showed that for direct questions matrix graphs have better performance than node-link graphs, but for path questions the opposite was true - node-link graphs outperformed matrix-based representations. Direct questions required the participants to find a label and check which factor is being caused by this label. The results of the experiment suggests that it was easier for the participants to find this label on the matrix-based graph. Considering the layouts of the two representations, the matrix has a row and a column while the node-link layout is rather spread out and unevenly distributed on the screen. Consequently, a possible explanation for the better performance of matrix-based graphs for direct questions can be that it is easier for the human eye to find a label in a row rather than on a flat space where factors are spread out in different directions. 
 
-When path questions were concerned node-link graphs outperformed matrix-based graphs. In order to answer a path question in matrix-based graph two selected cells had to be found, which could be positioned on two completely different places in the matrix. Therefore, it would take time for the participant to find these two cells. For node-link graphs, however, the participants were required to follow the link between nodes that are positioned next to each other. Therefore, they had to spend time finding only one of the factors. Our results confirmed the findings of Zekian et al \cite{sheny2007path}, who also concluded that node-link representations are better than matrix-based graphs when answering path questions. In addition, we supported the findings of Ghoniem and colleagues \cite{ghoniem2004comparison} that node-link graphs outperform matrix-based graphs in path questions.
+When path questions were concerned node-link graphs outperformed matrix-based graphs. In order to answer a path question in matrix-based graph two selected cells had to be found, which could be positioned on two completely different places in the matrix. Therefore, it would take time for the participant to find these two cells. For node-link graphs, however, the participants were required to follow the link between nodes that are positioned next to each other. Therefore, they had to spend time finding only one of the factors. Our results confirmed the findings of Zekian et al \cite{sheny2007path}, who also concluded that node-link representations are better than matrix-based graphs when answering path questions for causal visualisations. In addition, we supported the findings of Ghoniem and colleagues \cite{ghoniem2004comparison} that node-link graphs outperform matrix-based graphs in path questions.
 
 The layout analysis did not find a consistent best performing layout in node-link and matrix-based graphs. However, a consistent worst performing layout depending on the size of the graph and type of representation was found. First, in node-link direct questions, the parallel layout was found to take significantly more time to read than the rest of the layouts (Fig.  \ref{nodelinkdirectlayouts}). A deeper investigation revealed that a possible reason for these findings is that the edge length in the parallel layout is longer than the rest of the layouts. To illustrate the difference between layouts, edge length in the causal path in the "small drinking issues" graph between the factors "drinking parents", "early age drinking", and "depression" was measured. The edge length in the hierarchical layout was 2.9cm, and the edge length in the organic layout was 3cm, while the length in the organic layout was 11.9cm. In order to show the difference between the layouts an example that shows the biggest difference in length in this particular graph was chosen. It must be noted that the length difference is not that large in all causal relationships. The graphs were generated by a yEd algorithm and it was out of our control to account for edge lengths. What is more, the goal of the experiment was to examine different yEd layouts. However, the edge lengths in the parallel layout varied greatly, while the edge lengths in the hierarchical and parallel layouts were very similar - between 1cm and 1.5cm between two nodes. 
 
@@ -526,7 +525,11 @@ Matrices are a new way of visualising causal relationships and more research nee
 
 \section{Conclusion}
 
-In a real life environment, when people working in the Social and Health sector are trying to answer a specific question from a matrix-based or node-link visualisation, the implications of our findings have the potential to make their work easier and more efficient. An experimental software was implemented using Node.js, Angular and PostgreSQL to assess readability of node-link and matrix-based graphs. Different layouts, sizes, types of quesitons and question themes were created. Afterwords, 30 participant were tested in a controlled environment.
+Causal relationships can be visualised by node-link and matrix-based graphs. Node-link graphs are well-known visualisations used to illustrate directed and non-directed graphs for long time. However, matrix graphs are a new representation which has recently been involved in visualising causal graphs. The aim of this project was to examine which type of graph is more readable for people. To test that experimental software was implemented using Node.js, Angular and PostgreSQL. Different layouts, sizes, types of questions and question themes were created. 30 participants were tested in a controlled environment. The results proposed that matrix-based representations have better response time for direct questions, while node-link graphs are better performing for path questions. These results were related to previous studies which found similar differences between node-link graphs and matrix-based representations for non-directed graphs. Further investigation can examine the similarities in performance between causal and non-directed graphs. It will be interesting to investigate whether the pointing edge of the node-link graph can contribute to the complexity of the graph and significantly slow down human perception.
+
+To conclude, in a real-life environment, when people working in the Social and Health sector are trying to answer a specific question from a matrix-based or node-link visualisation knowing which is the more efficient way of finding information can help them safe time and money. In addition, data visualisation that is not likely to be misread will help them take the correct decisions according to the data. The implications of the results of the present project brought more light into visualisation of causal relationships and the effectiveness of different layouts.
+
+
 
 
 %%%%%%%%%%%%%%%%
@@ -547,7 +550,7 @@ In a real life environment, when people working in the Social and Health sector 
 
 \chapter{Experimental Stimuli}
 
-\begin{sidewaysfigure}[H]
+\begin{sidewaysfigure}[ht]
 \centering
 \includegraphics[width=24cm]{exampleQuestion.PNG}
 \caption{Example of an experimental question}
