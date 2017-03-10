@@ -8,8 +8,8 @@
 \BOOKMARK [0][-]{chapter.3}{Implementation details}{}% 8
 \BOOKMARK [1][-]{section.3.1}{Requirements}{chapter.3}% 9
 \BOOKMARK [1][-]{section.3.2}{Prototype}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.3}{Software tools and technologies}{chapter.3}% 11
-\BOOKMARK [2][-]{subsection.3.3.1}{The Spring Framework}{section.3.3}% 12
+\BOOKMARK [1][-]{section.3.3}{Overview of possible software tools}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.3.1}{Spring}{section.3.3}% 12
 \BOOKMARK [2][-]{subsection.3.3.2}{Django}{section.3.3}% 13
 \BOOKMARK [2][-]{subsection.3.3.3}{Node.js}{section.3.3}% 14
 \BOOKMARK [2][-]{subsection.3.3.4}{AngularJS}{section.3.3}% 15
@@ -28,13 +28,13 @@
 \BOOKMARK [1][-]{section.4.7}{Preference Results}{chapter.4}% 28
 \BOOKMARK [1][-]{section.4.8}{Qualitative Results}{chapter.4}% 29
 \BOOKMARK [0][-]{chapter.5}{Discussion}{}% 30
-\BOOKMARK [1][-]{section.5.1}{Results}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.2}{Node-link readability}{chapter.5}% 32
-\BOOKMARK [1][-]{section.5.3}{Future work}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 34
-\BOOKMARK [0][-]{section*.16}{Appendices}{}% 35
-\BOOKMARK [0][-]{Appendix.a.A}{Database Schema}{}% 36
-\BOOKMARK [0][-]{Appendix.a.B}{Running the Programs}{}% 37
-\BOOKMARK [0][-]{Appendix.a.C}{Experimental Stimuli}{}% 38
-\BOOKMARK [1][-]{subsection.a.C.0.1}{Matrix-based}{Appendix.a.C}% 39
-\BOOKMARK [2][-]{subsection.a.C.0.2}{Node-link}{subsection.a.C.0.1}% 40
+\BOOKMARK [1][-]{section.5.1}{Software reusability}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.2}{Limitations and Future work}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.2.1}{Experimental Software}{section.5.2}% 33
+\BOOKMARK [2][-]{subsection.5.2.2}{Experimental Question}{section.5.2}% 34
+\BOOKMARK [1][-]{section.5.3}{Conclusion}{chapter.5}% 35
+\BOOKMARK [0][-]{section*.16}{Appendices}{}% 36
+\BOOKMARK [0][-]{Appendix.a.A}{Running the Experimental Software}{}% 37
+\BOOKMARK [0][-]{Appendix.a.B}{Experimental Stimuli}{}% 38
+\BOOKMARK [1][-]{section.a.B.1}{Matrix-based}{Appendix.a.B}% 39
+\BOOKMARK [1][-]{section.a.B.2}{Node-link}{Appendix.a.B}% 40

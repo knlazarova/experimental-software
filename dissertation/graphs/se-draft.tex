@@ -11,6 +11,12 @@
 \usepackage{wrapfig}
 \usepackage[compact]{titlesec} 
 \usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+
 %\usepackage{alltt}
 
 %\usepackage{fancyvrb}
@@ -28,8 +34,8 @@
 
 \begin{abstract}
 
-People who work in the social and health policy make decisions based on causality. Causality is usually visualised by node-link graphs, but matrix-based representations have the potential to outperform them because of their concise and clear visual representation. However, matrix-based graphs have not been extensively studied in causal relationship visualisation. Therefore, an experimental software was created to test human performance on reading causal relationships in node-link and matrix-based graphs. To make a thorough investigation of the factors influencing reading time different sizes, layouts and type of questions were created. Response time and correctness of the answer were measured. The results showed that matrix-based graphs outperforms node-link representations in direct questions. When path questions are concerned, however, node-link graphs were found to be more readable than matrix-based graphs. (DISCUSSION) 
- 
+People who work in the social and health policy make decisions based on causality. Causality is usually visualised by node-link graphs, but matrix-based representations have the potential to outperform them because of their concise and clear visual representation. However, matrix-based graphs have not been extensively studied in causal relationship visualisation. Therefore, an experimental software was created to test human performance on reading causal relationships in node-link and matrix-based graphs. To make a thorough investigation of the factors influencing reading time different sizes, layouts and type of questions were created. Response time and correctness of the answer were measured. The results showed that matrix-based graphs outperform node-link representations in direct questions. When path questions are concerned, however, node-link graphs were found to be more readable than matrix-based graphs. The results are related to previous research in readability of data visualisations.
+
 \end{abstract}
 
 \educationalconsent
@@ -105,7 +111,7 @@ Furthermore, it was suggested that adjacency matrices are superior to node-link 
 
 Adjacency matrices and node-link diagrams have been compared in another study \cite{keller2006matrices} to examine which is more suitable graphical representation for the general public. This research was provoked by the fact that matrices are mainly use in engineering area, while node-link graphs are generally a more popular way of visualisation. The research questions being examined were related to the attributes of the connectivity model influencing readability and which representation is more suitable for particular tasks. In addition, they filled the gap in previous research that did not take into consideration participants' familiarity with the data sets. It was found that error rates and response time are highly influenced by size and density. They confirmed Ghoniem's \cite{ghoniem2004comparison} findings that matrix-based graphs outperform node-link graphs for dense and large graphs, and node-link graphs are more readable for small and sparse graphs. The only exception found is finding the path between two nodes in a graph. Furthermore, experience with the data set showed to has effect on performance. 
 
-Ghoniem and colleagues \cite{ghoniem2004comparison} made a performance comparison between node-link and matrix-based graphs. They predicted that counting nodes should be equally difficult on types of representations, but counting links and finding the most connected node should be easier in matrix-based representations. Node-link graphs were hypothesised to be better when building a path between two nodes. The reason for this is that matrix based graphs have the nodes represented twice which introduces extra complexity. They also hypothesised that node-link graphs will be easier to work with when dealing with graphs with a small amount of nodes. In their experiment they had three sizes of graphs - 20, 50, and 100 nodes. They tested 36 participants and measured their performance on various tasks such as finding paths, neighbours, nodes and links between nodes. They found that performance in node-link graphs decreases as the size of the graph increases. This pattern was confirmed for all of the tasks except for finding path, where node-link graphs regardless of the size and density showed better results.
+Ghoniem and colleagues \cite{ghoniem2004comparison} made a performance comparison between node-link and matrix-based graphs. They predicted that counting nodes should be equally difficult on the two types of representations, but counting links and finding the most connected node should be easier in matrix-based representations. Node-link graphs were hypothesised to be better when building a path between two nodes. The reason for this is that matrix based graphs have the nodes represented twice which introduces extra complexity. They also hypothesised that node-link graphs will be easier to work with when dealing with graphs with a small amount of nodes. In their experiment they had three sizes of graphs - 20, 50, and 100 nodes. They tested 36 participants and measured their performance on various tasks such as finding paths, neighbours, nodes and links between nodes. They found that performance in node-link graphs decreases as the size of the graph increases. This pattern was confirmed for all of the tasks except for finding path, where node-link graphs regardless of the size and density showed better results.
 
 \section{Aims and Objectives}
 
@@ -116,6 +122,7 @@ Therefore, knowing which type of causal visualisation is more efficient and accu
 \chapter{Implementation details}
 
 \section{Requirements}
+\label{Requirements}
 
 In order to test the proposed research question a web application was to be created. This web application was going to be used by participants to give answers to the data visualisation questions and researchers to see the experimental data. Participants were going to see graphs and questions related to them. The participants' response time had to be recorded as well as whether their answer is correct. At the same time, the experimenter need to be able to check the participants' answers to the questions. After considering all requirements, a user story for each feature was created. Some of the most important user stories are:
 
@@ -139,19 +146,21 @@ After the requirements gathering analysis, development of wire-frames followed. 
  
 Participants were expected to be unaware of how to read the graphs and, therefore, a training page had to be created. It was vital to make sure that the participants are aware of how to read each graph before the actual experiment. This is how the requirements specification became an iterative process during which a better understanding of the product evolved.
 
-\section{Software tools and technologies}
+\section{Overview of possible software tools}
 
-\subsection{The Spring Framework}
+To choose the appropriate technologies for this project a research on possible software tools was made. The web application frameworks taken into consideration and the database management system are discussed below. 
 
-To choose the appropriate technologies for this project a research on possible software tools was made. In the beginning the Java framework Spring was decided to be used for the creation of the web service as it is among the most widely used frameworks in industry \cite{shiLuiLi}. This decision was supported by extensive previous experience with Java from developer's point of view and the applicability of the skills to be acquired.
+\subsection{Spring}
+
+The Java framework Spring was the first considered framework for this project. Spring is among the most widely used frameworks in industry \cite{shiLuiLi}, which was implying that the acquired skills from the project would be highly valuable. This decision was supported by extensive previous experience with Java from developer's point of view and the applicability of the skills to be acquired.
 
 \subsubsection{Challenges}
 
-However, one of the reasons why Spring is used in industry is because of the large and complex systems that exist there. The Spring framework works on a very high level of abstraction where you can easily write configuration files to add dependencies from different project. Therefore, it is considered rather unfriendly for small independent projects like this one and developers with limited Spring experience. The reasoning behind this conclusion was provoked after issues in setting the relative paths to different CSS and JavaScript files. The issue was found to be in the web application configuration file, but also the realisation that Spring is unnecessary abstract for this project appeared.
+However, one of the reasons why Spring is used in industry is because of the large and complex systems that exist there. The Spring framework works on a very high level of abstraction where developers can easily write configuration files to add dependencies from different project. Therefore, it is considered rather unfriendly for small independent projects like this one and developers with limited Spring experience. The reasoning behind this conclusion was provoked after issues in setting the relative paths to different CSS and JavaScript files. The issue was found to be in the web application configuration file, but also the realisation that Spring is unnecessary abstract for this project appeared.
 
 \subsection{Django}
 
-As a web application framework that is being thought in university, Django was also considered to be used for the implementation of the web service. Django is a Python-based framework that encourages rapid development. Furthermore, previous experience with the framework might have benefited the development process. However, one of the objectives for this project to learn new technologies and as Django is already a familiar one, it was disregarded as an option.
+As a web application framework that is being thought in university, Django was also considered to be used for the implementation of the web service. Django is a Python-based framework that encourages rapid development. Furthermore, previous experience with the framework might have benefited the development process. However, one of the objectives for this project was to learn new technologies and as Django is already a familiar one, it was disregarded as an option.
 
 \subsection{Node.js}
 
@@ -174,11 +183,11 @@ As the size of this project is considerably small a relational database was chos
 \textbf{participant\_info}(\underline{participant\_id}, name, email, degree) \newline
 \textbf{latin\_square}(\underline{participant\_id}, sequence) \newline
 
-The first table questions had a primary key (PK) question ID, a text field with the actual question, the four multiple choice answers, the correct answer, the image name, type of graph (node-link or matrix-based), the layout, the theme of the graph, and whether it is a direct question or a path question. The answers table consisted of two foreign keys - question ID and participant ID, the time taken to answer the question and whether it the answer is correct or not. The participant information table was populated by the demographic questionnaire with participant ID being PK, and name, email and degree the rest of the fields in the table. Latin square was used to randomise the sequence of questions for each participant \ref{Experiment}.
+The first table questions had a primary key (PK) question ID, a text field with the actual question, the four multiple choice answers, the correct answer, the image name, type of graph (node-link or matrix-based), the layout, the theme of the graph, and whether it is a direct question or a path question. The answers table consisted of two foreign keys - question ID and participant ID, the time taken to answer the question and whether it the answer is correct or not. The participant information table was populated by the demographic questionnaire with participant ID being PK, and name, email and degree the rest of the fields in the table. Latin square was used to randomise the sequence of questions for each participant. More details can be found in \autoref{chap:exp}.
 
 \section{System Design}
 
-Figure \ref{abstractDesign} shows an abstract view of the system design. There is an Actor who will either be a participant in the study or a researcher \ref{Requirements}. They will interact with the front-end which will be in the form of a web application in a browser. The front end will communicate with the back-end which will be implemented in Node.js. The back-end will make requests to the database to retrieve and send information. 
+Figure \ref{abstractDesign} shows an abstract view of the system design. There is an Actor who will either be a participant in the study or a researcher (\autoref{Requirements}). They will interact with the front-end which will be in the form of a web application in a browser. The front end will communicate with the back-end which will be implemented in Node.js. The back-end will make requests to the database to retrieve and send information. 
 
 \begin{figure}[H]
 \centering
@@ -211,6 +220,8 @@ Following the implementation, it was found that the front end structure needs to
 
 
 \chapter{Experiment}
+\label{chap:exp}
+
 \section{Design}
 
 This is a within subject design experiment with two conditions. In the first condition participants answered questions related to causal relationships in node-link graphs, while in the second one they were asked to answer questions on matrix-based representation. Each condition had four levels - size, layout, question type and question domain. The dependent variables were time taken to answer each question and correctness of the answer. The participants were also given a questionnaire which required subjective answers about their graph preferences and how they enjoy solving logical problems. 
@@ -467,28 +478,56 @@ In general, there was positive feedback about the questions asked and the nature
 
 \chapter{Discussion}
 
-\section{Results}
-
 The experimental findings showed that for direct questions matrix graphs have better performance than node-link graphs, but for path questions the opposite was true - node-link graphs outperformed matrix-based representations. Direct questions required the participants to find a label and check which factor is being caused by this label. The results of the experiment suggests that it was easier for the participants to find this label on the matrix-based graph. Considering the layouts of the two representations, the matrix has a row and a column while the node-link layout is rather spread out and unevenly distributed on the screen. Consequently, a possible explanation for the better performance of matrix-based graphs for direct questions can be that it is easier for the human eye to find a label in a row rather than on a flat space where factors are spread out in different directions. 
 
-When path questions were concerned node-link graphs outperformed matrix-based graphs. In order to answer a path question in matrix-based graph two selected cells had to be found which could be positioned on two completely different places in the matrix. Therefore, it would take time for the participant to find these two cells. For node-link graphs, however, the participants were required to follow the link between nodes that are positioned next to each other. Therefore, they had to spend time finding only one of the factors. Our results confirmed the findings of Zekian et al \cite{sheny2007path}, who also concluded that node-link representations are better than matrix-based graphs when answering path questions. 
+When path questions were concerned node-link graphs outperformed matrix-based graphs. In order to answer a path question in matrix-based graph two selected cells had to be found, which could be positioned on two completely different places in the matrix. Therefore, it would take time for the participant to find these two cells. For node-link graphs, however, the participants were required to follow the link between nodes that are positioned next to each other. Therefore, they had to spend time finding only one of the factors. Our results confirmed the findings of Zekian et al \cite{sheny2007path}, who also concluded that node-link representations are better than matrix-based graphs when answering path questions. In addition, we supported the findings of Ghoniem and colleagues \cite{ghoniem2004comparison} that node-link graphs outperform matrix-based graphs in path questions.
 
-The layout analysis did not find a consistent best performing layout in node-link and matrix-based graphs. However, a consistent bad performance from particular layouts depending on the size of the graph and type of representation was found. First, in node-link direct questions, the parallel layout was found to take significantly more time to read than the rest of the layouts (Fig.  \ref{nodelinkdirectlayouts}). A deeper investigation revealed that a possible reason for these findings is that the edge length in the parallel layout is longer than the rest of the layouts. To illustrate this, edge length in the causal path in the small early age drinking graph between "drinking parents", "early age drinking", and "depression" in the three different layouts was measured. The edge length in the hierarchical layout was 2.9cm, and the edge length in the organic layout was 3, while the length in the organic layout was 11.9cm. In order to show the difference between the layouts an example that shows the biggest difference in length in this particular graph was chosen. It must be noted that the length difference is not that large in all causal relationships. However, the edge lengths in the parallel layout varies greatly, while the edge lengths in the hierarchical and parallel layouts are very similar - between 1cm and 1.5cm between two nodes. 
+The layout analysis did not find a consistent best performing layout in node-link and matrix-based graphs. However, a consistent worst performing layout depending on the size of the graph and type of representation was found. First, in node-link direct questions, the parallel layout was found to take significantly more time to read than the rest of the layouts (Fig.  \ref{nodelinkdirectlayouts}). A deeper investigation revealed that a possible reason for these findings is that the edge length in the parallel layout is longer than the rest of the layouts. To illustrate the difference between layouts, edge length in the causal path in the "small drinking issues" graph between the factors "drinking parents", "early age drinking", and "depression" was measured. The edge length in the hierarchical layout was 2.9cm, and the edge length in the organic layout was 3cm, while the length in the organic layout was 11.9cm. In order to show the difference between the layouts an example that shows the biggest difference in length in this particular graph was chosen. It must be noted that the length difference is not that large in all causal relationships. The graphs were generated by a yEd algorithm and it was out of our control to account for edge lengths. What is more, the goal of the experiment was to examine different yEd layouts. However, the edge lengths in the parallel layout varied greatly, while the edge lengths in the hierarchical and parallel layouts were very similar - between 1cm and 1.5cm between two nodes. 
 
-Consequently, it was suggested that the length of the edge is a direct predictor of performance. A controlled experiment examined readability of graphs while manipulating the length of the edges \cite{holten2011extended}. There were two edge lengths - short and long. It was found that it took participants significantly longer to answer questions on graphs with long edges when compared to their response time on the short-edge questions. As a result, this study brings a possible explanation for the bad performance of the parallel layout.
+Consequently, it was suggested that the length of the edge is a direct predictor of performance. A controlled experiment examined readability of graphs, while manipulating the length of the edges \cite{holten2011extended}. There were two edge lengths - short and long. It was found that it took participants significantly longer to answer questions on graphs with long edges than on graph with short edges. As a result, this study brings a possible explanation for the bad performance of the parallel layout.
 
-Interestingly, however, these results were not found in the path questions. There the parallel layout outperformed the organic one. It was found that in medium and large graphs, the organic layout has significantly worse performance than hierarchical and parallel graphs. Considering the similarity in the mean values between hierarchical and parallel performance, we can investigate the differences between organic layout and hierarchical/parallel. The main visual difference is that the organic layout \ref{drinkingIssuesMedOrganic} is spread out in all directions, and the direction of the edges does not follow a particular pattern. However, in parallel (Fig. \ref{sportMedParallel}) and hierarchical (Fig. \ref{drinkingIssuesSmallHier}) graphs the nodes are ordered into parallel rows and the edges always point from the upper level to the lower level. Therefore, the direction of the edge is proposed to be another important characteristics of the causal graphs that is not found in non-directed graphs.
+The readability of a node-link graph is characterized by readability metrics. These are means that define the understandability of the graph based on number of nodes and overlapping edges. A well-known method for inducing better readability of node-link graphs is spreading out the nodes evenly, keeping the edges away from the nodes, and edges-lengths equal, and avoid overlapping \cite{dunne2015readability}. In addition, another experiment innvestigated which are the most important factors that when measuring aesthetics of a graph \cite{purchase1997aesthetic}. It was found that among edge crosses, orthogonality, edge bends, symmetry, and angle maximization, the most important aesthetic factor was edge crosses. In the present experiment, parallel layout is the only layout that has any edge crossings. The hierarchical, and organic layouts have links between edges that do not cross each other. Therefore, the longer response time in the parallel layout might also be caused by the edge crossings.
 
-Path questions require the reader to follow two edges which might be the reason why different performance between the
+Furthermore, it was found that minimization of bends in edges can contribute to a more aesthetically pleasing layout \cite{ware2002cognitive}. In the present experiment the links between the nodes in the organic layout are always straight lines. The hierarchical layout has a 90 degrees edge to form a hierarchical structure and the parallel layout usually sticks to the same 90 degrees edge. However, sometimes the parallel layout has an unpredictable way of curving a small amount of edges. An example of this can be seen in figure \ref{sportMedParallel} and the shape of the edge pointing from "large gym" to "social gym experience". Therefore, our experiment supports the findings of Ware and colleagues \cite{ware2002cognitive} that edge bendiness is an important factor for the readability of a node-link layout.
 
-\section{Node-link readability}
+Interestingly, however, these results were not found in the path questions. There the parallel layout outperformed the organic one. It was found that in the medium and large graphs, the organic layout has significantly worse performance than hierarchical and parallel graphs. Considering the similarity in the mean values between hierarchical and parallel performance, we investigated the differences between organic layout and hierarchical/parallel. The organic layout \ref{drinkingIssuesMedOrganic} is spread out in all directions and the direction of the edges does not follow a particular pattern. However, in parallel (Fig. \ref{sportMedParallel}) and hierarchical (Fig. \ref{drinkingIssuesSmallHier}) graphs the nodes are ordered into parallel rows and the edges always point from the upper level to the lower level. Therefore, the direction of the edge is proposed to be another important characteristics of the causal graphs. 
 
-The readability of a node-link graph is characterized by readability metrics. These are means that define the understandability of the graph based on number of nodes and overlapping edges. A well-known method for inducing better readability of node-link graphs is spreading out the nodes evenly, keeping the edges away from the nodes, and edges-lengths equal, and avoid overlapping \cite{dunne2015readability}. However, applying an algorithm to make these amendments to a visualisation might lead to a misleading drawing with changed spatial representation.
+Path questions require the reader to follow two edges which might be the reason why the results are influenced in favour of readability of edge direction, where organic graphs are outperformed by the rest of the layouts. As discussed above the direction of the edge in the organic question is not predefined and the person reading the graph needs to follow each edge, while for hierarchical and node-link graphs the edges are always pointing down. As a result, this could be the reason for the worse performance of the organic layout in path questions.
 
+Matrix-based graphs did not differ significantly in the direct question type for small and large size. Significant difference was found between the layouts in the medium size with out-degree descending layout having the best performance. In the path question the alphabetical layout was found to be the best performing one in the small and medium size. No significant difference between layouts was found in the large size. An explanation for the above average performance of the alphabetical layout was expected as the users were able to find the label they are looking for quicker. A preference for alphabetical order of the factors was expressed at the informal observations during the experiment.
 
-\section{Future work}
+Moreover, Bach and colleagues \cite{bach2014visualizing} examined various readability factors in matrix cubes by interviewing two experts in different fields - an astronomer and a neurologist. They suggested that reordering rows and columns in matrix representations can be confusing. Visual clusters were not found to aid readability from the astronomy expert as they were suggested to prevent the recognition of separate row and columns. He suggested that an alphabetical order is more appropriate and easier to read. However, according to the neurology expert row and column ordering to form data clusters were better at representing the data than alphabetically ordered matrices. According to this study the matrix layout need to be tailored to the user preference and area of expertise.
+
+As a result, matrix-based representations are still not very well understood. Our preference research among the participants showed that people would rather work with node-link graphs. Interestingly, we found that matrix-based graphs had better performance than node-link graphs in the direct question. A possible cause for participants' preference result could be that the matrix is not as user friendly as the node-link graph and requires training. The matrix results suggest that alphabetical order has the best performance when searching for particular factors. However, as noted by Back and colleagues \cite{bach2014visualizing} depending on the task and the type of visualised data there could be different best performing matrix orderings. 
+
+\section{Software reusability}
+
+The implemented software can be reused in a different data visualisation experiment without the need to implemented additional changes. As long as the desired functionality is the same, the displayed stimuli, questions asked and multiple choice answers can be changed by altering the database. If the database schema is followed the web application will be able to display any questions with multiple choice answers. The experimental software will be able to record participants' answers in the Answers table as long as it has the same schema.  
+
+The most efficient way to populate the questions for the experiment is by importing a CSV file which follows the table schema into the database. A possible issue that might occur is that the question of interest does not have the same description field. The description fields in the present experiment were question type, layout, size etc. In this case, the database schema will have to be changed. However, as this information is only used in the "Participants Answers" section in the website a change in the query requesting information for the population of that specific web-page need to be made. 
+
+\section{Limitations and Future work}
+
+\subsection{Experimental Software}
+
+To improve the reusability of the web application, an extra layer of complexity can be added to the experimental software. This is an Admin interface which will give the experimenter more flexibility when creating an experiment. For example, at the moment the Latin square randomization is made for a particular number of participants. A completely flexible experimental software should be able to allow the experimenter to input the number of the participants and have the randomisation done for them.
+
+Additional features of the Admin interface will allow the experimenter to input the questions and answers in a form in the website rather than changing the database manually. Furthermore, the web application was not deployed anywhere, as for this specific experiment the researcher had to be present in order to control for the environmental factors that might influence participants' performance. For future experiments that might not be necessary and particularly if a large number of people need to take part in the experiment, the project needs to be deployed. However, this will lead to a security issue, as the application at the moment does not have different levels of authorisation implemented. The reason for this is because it was supposed to be used only on one the researcher's laptop. Another possible issue that might arise is that if the size of the graphs of the future experiments is larger than the present they need to be adjusted for the participants' screen.
+
+Therefore, the experimental software was used successfully to test the present research question. In order to make it a fully reliable experimental system that can be used on-line, however, more features needs to be implemented. There are also important factors, that the researcher needs to consider. Some of these are screen size and the environment in which the participants complete the study.
+
+\subsection{Experimental Question}
+
+The experimental findings brought light into the factors which influenced readability in causal relationships in node-link and matrix-based graphs. Our research question was answered successfully, but further investigation in the underlying mechanisms that influenced the results needs to be made. It was found that parallel graphs have the worst performance in node-link direct graphs, and according to previous research the reason for that is thought to be edge length and edge crossings. However, these are only speculations as the present experiment did not control for either of these factors. Therefore, a future experiment might examine the response time of causal graphs with different edge lengths and number of edge crossings. 
+
+Furthermore, a deeper investigation of the reason why there are different best performing layouts for the two types of questions - direct and path, needs to be made. It is interesting to examine whether we found this difference because we were visualising causal relationships. Future investigation might compare directed and non-directed node-link and matrix-based graphs and evaluate whether the came readability predictors will influence performance.
+
+Matrices are a new way of visualising causal relationships and more research needs to be done evaluating the readability predictors in these visualisations. Matrix-based visualisations were found to found to be better at answering direct questions when compared to node link graphs. Therefore, they are a potential replacer of node-link graphs so further investigation in different row and columns orderings need to be conducted. 
 
 \section{Conclusion}
+
+In a real life environment, when people working in the Social and Health sector are trying to answer a specific question from a matrix-based or node-link visualisation, the implications of our findings have the potential to make their work easier and more efficient. An experimental software was implemented using Node.js, Angular and PostgreSQL to assess readability of node-link and matrix-based graphs. Different layouts, sizes, types of quesitons and question themes were created. Afterwords, 30 participant were tested in a controlled environment.
+
 
 %%%%%%%%%%%%%%%%
 %              %
@@ -497,25 +536,16 @@ The readability of a node-link graph is characterized by readability metrics. Th
 %%%%%%%%%%%%%%%%
 \begin{appendices}
 
-\chapter{Database Schema}
+\chapter{Running the Experimental Software}
 
-\begin{verbatim}
-participants_answers(question_id, participant_id, answer, time)
-participants_info(participant_id,participant_name, email, uni_degree, age)
-questions(question_id, question, one, two, three, four, correct, image)
-\end{verbatim}
-
-
-\chapter{Running the Programs}
-An example of running from the command line is as follows:
-\begin{verbatim}
-      > java MaxClique BBMC1 brock200_1.clq 14400
-\end{verbatim}
-This will apply $BBMC$ with $style = 1$ to the first brock200 DIMACS instance allowing 14400 seconds of cpu time.
+%An example of running from the command line is as follows:
+%\begin{verbatim}
+%      > java MaxClique BBMC1 brock200_1.clq 14400
+%\end{verbatim}
+%This will apply $BBMC$ with $style = 1$ to the first brock200 DIMACS instance allowing 14400 seconds of cpu time.
 
 
 \chapter{Experimental Stimuli}
-
 
 \begin{sidewaysfigure}[H]
 \centering
@@ -525,7 +555,7 @@ This will apply $BBMC$ with $style = 1$ to the first brock200 DIMACS instance al
 \end{sidewaysfigure}
 
 
-\subsection{Matrix-based}
+\section{Matrix-based}
 
 \begin{figure}[H]
 \centering
@@ -603,26 +633,26 @@ This will apply $BBMC$ with $style = 1$ to the first brock200 DIMACS instance al
 \label{studentSmallInDD}
 \end{figure}
 
-\subsection{Node-link}
+\section{Node-link}
 
-\begin{sidewaysfigure}[H]
+\begin{sidewaysfigure}[ht]
 \centering
 \includegraphics[width=20cm]{images/drinkingIssuesLargeParallel.jpg}
 \caption{Large node-link graph in parallel layout and drinking issues domain question}
 \label{drinkingIssuesLargeParallel}
 \end{sidewaysfigure}
 
-\begin{sidewaysfigure}[H]
+\begin{figure}[H]
 \centering
-\includegraphics[width=20cm]{images/drinkingIssuesMedOrganic.jpg}
+\includegraphics[width=15cm]{images/drinkingIssuesMedOrganic.jpg}
 \caption{Medium node-link graph in organic layout and drinking issues domain question}
 \label{drinkingIssuesMedOrganic}
-\end{sidewaysfigure}
+\end{figure}
 
 
-\begin{sidewaysfigure}[H]
+\begin{sidewaysfigure}[ht]
 \centering
-\includegraphics[width=20cm]{images/studentMedHier.jpg}
+\includegraphics[width=18cm]{images/studentMedHier.jpg}
 \caption{Medium matrix-based graph in hierarchical layout and student domain question}
 \label{studentMedHier}
 \end{sidewaysfigure}
@@ -630,23 +660,23 @@ This will apply $BBMC$ with $style = 1$ to the first brock200 DIMACS instance al
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{images/drinkingIssuesSmallHier.jpg}
+\includegraphics[width=12cm]{images/drinkingIssuesSmallHier.jpg}
 \caption{Small node-link graph in hierarchical layout and drinking issues domain question}
 \label{drinkingIssuesSmallHier}
 \end{figure}
 
 
-\begin{sidewaysfigure}[H]
+\begin{sidewaysfigure}[ht]
 \centering
-\includegraphics[width=20cm]{images/sportLargeHier.jpg}
+\includegraphics[width=19cm]{images/sportLargeHier.jpg}
 \caption{Large node-link graph in hierarchical layout and sport domain question}
-\label{drinkingIssuesMedOrganic}
+\label{SportLargeHier}
 \end{sidewaysfigure}
 
 
-\begin{sidewaysfigure}[H]
+\begin{sidewaysfigure}[ht]
 \centering
-\includegraphics[width=20cm]{images/sportMedParallel.jpg}
+\includegraphics[width=16cm]{images/sportMedParallel.jpg}
 \caption{Medium node-link graph in parallel layout and sport domain question}
 \label{sportMedParallel}
 \end{sidewaysfigure}

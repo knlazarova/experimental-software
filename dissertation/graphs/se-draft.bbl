@@ -19,6 +19,12 @@ Basak Alper, Benjamin Bach, Nathalie Henry~Riche, Tobias Isenberg, and
 \newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
   Computing Systems}, pages 483--492. ACM, 2013.
 
+\bibitem{bach2014visualizing}
+Benjamin Bach, Emmanuel Pietriga, and Jean-Daniel Fekete.
+\newblock Visualizing dynamic networks with matrix cubes.
+\newblock In {\em Proceedings of the 32nd annual ACM conference on Human
+  factors in computing systems}, pages 877--886. ACM, 2014.
+
 \bibitem{borner2015investigating}
 Katy B{\"o}rner, Adam Maltese, Russell~Nelson Balliet, and Joe Heimlich.
 \newblock Investigating aspects of data visualization literacy using 20
@@ -122,6 +128,13 @@ Taylor Hanken, Sam Young, Karen Smilowitz, George Chiampas, and David
   chicago marathon (chicago, illinois usa).
 \newblock {\em Prehospital and Disaster Medicine}, pages 1--6, 2016.
 
+\bibitem{holten2011extended}
+Danny Holten, Petra Isenberg, Jarke~J Van~Wijk, and Jean-Daniel Fekete.
+\newblock An extended evaluation of the readability of tapered, animated, and
+  textured directed-edge representations in node-link graphs.
+\newblock In {\em Pacific Visualization Symposium (PacificVis), 2011 IEEE},
+  pages 195--202. IEEE, 2011.
+
 \bibitem{hsu2012evaluation}
 Chun-Cheng Hsu.
 \newblock Evaluation criteria for blog design and analysis of causal
@@ -178,6 +191,12 @@ Judea Pearl.
 \newblock An introduction to causal inference.
 \newblock {\em The international journal of biostatistics}, 6(2), 2010.
 
+\bibitem{purchase1997aesthetic}
+Helen Purchase.
+\newblock Which aesthetic has the greatest effect on human understanding?
+\newblock In {\em International Symposium on Graph Drawing}, pages 248--261.
+  Springer, 1997.
+
 \bibitem{sheny2007path}
 Zeqian Sheny and Kwan-Liu Maz.
 \newblock Path visualization for adjacency matrices.
@@ -215,6 +234,11 @@ Colin Ware, Eric Neufeld, and Lyn Bartram.
 \newblock Visualizing causal relations.
 \newblock In {\em Proceedings of IEEE Information Visualization}, volume~99,
   1999.
+
+\bibitem{ware2002cognitive}
+Colin Ware, Helen Purchase, Linda Colpoys, and Matthew McGill.
+\newblock Cognitive measurements of graph aesthetics.
+\newblock {\em Information Visualization}, 1(2):103--110, 2002.
 
 \bibitem{shiLuiLi}
 Kuikui~Liu\"{o}s Xiujin~Shi\'{a}s and Yue Li\"{e}s.
