@@ -16,6 +16,7 @@
 \usepackage{lscape}
 \usepackage{rotating}
 \usepackage{epstopdf}
+\usepackage{hyperref}
 
 %\usepackage{alltt}
 
@@ -590,16 +591,96 @@ In a real-life environment, when people working in the Social and Health sector 
 %%%%%%%%%%%%%%%%
 \begin{appendices}
 
-\chapter{Running the Experimental Software}
+\chapter{Experimental Software}
 
-%An example of running from the command line is as follows:
-%\begin{verbatim}
-%      > java MaxClique BBMC1 brock200_1.clq 14400
-%\end{verbatim}
-%This will apply $BBMC$ with $style = 1$ to the first brock200 DIMACS instance allowing 14400 seconds of cpu time.
+\section{Home Screen}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{images/home.PNG}
+\caption{This is the home screen. The experimenter can choose whether they would like to conduct an experiment, or see research or demographic data}
+\label{homeScreen}
+\end{figure}
 
-\chapter{Experimental Stimuli}
+\section{Information Sheet}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/informationsheet.PNG}
+\caption{All participants read the Information Sheet before they participated in the experiment.}
+\label{informationsheet}
+\end{figure}
+
+\section{Consent Form}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{images/consent.PNG}
+\caption{After reading the Information Sheet, participants were asked to agree with the Consent Form}
+\label{consent}
+\end{figure}
+
+\section{Training}
+
+All participants were provided with video training, which can be found here: \url{https://youtu.be/pkchO1fafrs}
+
+They were also given the following written instructions of how to read the graphs.
+
+----------------------------------------------------------------------------------------------------------------------
+
+Node-linked graphs are graphs made of vertices and edges. Those graphs are used to
+represent causal relationships between two or more variables. The node-linked graph displayed
+in figure 1.2 has two vertices: “having fun” and “good memories”, and one edge between them
+which points towards “good memories”. When reading this graph one would say: “Having fun
+causes good memories”.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=7cm]{images/training11.PNG}
+\caption{}
+\label{training11}
+\end{figure}
+
+Those graphs are also used to show causal paths or indirect relationships between factors.
+For example Figure 1.2 shows that “playing games” causes “having fun” which causes “good
+memories”. At the same time “playing games” causes “procrastination”, which causes
+“dissatisfaction”. These are two different causal paths. Therefore, “playing games” indirectly
+causes “dissatisfaction” and “good memories”.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=7cm]{images/training12.PNG}
+\caption{}
+\label{training12}
+\end{figure}
+
+The same information can also be displayed in a matrix-based graph (Figure 1.3). The darker
+squares on the matrix show that the row factor (horizontal label, on the left) is causing the
+column factor (vertical label, at an angle). For example, “playing games” (horizontal) causes
+“having fun” (vertical). Then if we are looking for a path we will look for factors that are caused
+by “having fun”. In order to do this we find the “having fun” factor on the left and will find the
+column factor that it is connected with, which is “good memories”. This way the same causal
+path is found: playing games $->$ having fun$ ->$ good memories.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=13cm]{images/training13.PNG}
+\caption{}
+\label{training13}
+\end{figure}
+
+To see that one factor can lead to different causal paths, we need to find the row factor that has
+more than one darker square. In this example, this is playing games. Please, find the the row
+“playing games” and find what are two different factors that it can lead to. As previously
+mentioned those are “having fun” and “procrastination”.
+
+If you still have any questions regarding reading how to read those graphs please ask the
+researcher in the room for help.
+Otherwise, you can proceed to start the experiment.
+
+----------------------------------------------------------------------------------------------------------------------
+
+\section{Research Questions}
 
 \begin{sidewaysfigure}[ht]
 \centering
@@ -608,6 +689,8 @@ In a real-life environment, when people working in the Social and Health sector 
 \label{exampleQuestion}
 \end{sidewaysfigure}
 
+
+\chapter{Experimental Stimuli}
 
 \section{Matrix-based}
 
@@ -760,7 +843,7 @@ In a real-life environment, when people working in the Social and Health sector 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{images/studentLargeOrganic.jpg}
+\includegraphics[width=12cm]{images/studentLargeOrganic.jpg}
 \caption{Large node-link graph in organic layout and student domain question}
 \label{studentLargeOrganic}
 \end{figure}

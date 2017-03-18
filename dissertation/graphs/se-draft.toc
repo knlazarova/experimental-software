@@ -40,7 +40,12 @@
 \contentsline {subsection}{\numberline {5.2.2}Experimental Question}{27}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Conclusion}{27}{section.5.3}
 \contentsline {chapter}{Appendices}{28}{section*.18}
-\contentsline {chapter}{\numberline {A}Running the Experimental Software}{29}{Appendix.a.A}
-\contentsline {chapter}{\numberline {B}Experimental Stimuli}{30}{Appendix.a.B}
-\contentsline {section}{\numberline {B.1}Matrix-based}{30}{section.a.B.1}
-\contentsline {section}{\numberline {B.2}Node-link}{40}{section.a.B.2}
+\contentsline {chapter}{\numberline {A}Experimental Software}{29}{Appendix.a.A}
+\contentsline {section}{\numberline {A.1}Home Screen}{29}{section.a.A.1}
+\contentsline {section}{\numberline {A.2}Information Sheet}{30}{section.a.A.2}
+\contentsline {section}{\numberline {A.3}Consent Form}{31}{section.a.A.3}
+\contentsline {section}{\numberline {A.4}Training}{31}{section.a.A.4}
+\contentsline {section}{\numberline {A.5}Research Questions}{33}{section.a.A.5}
+\contentsline {chapter}{\numberline {B}Experimental Stimuli}{35}{Appendix.a.B}
+\contentsline {section}{\numberline {B.1}Matrix-based}{35}{section.a.B.1}
+\contentsline {section}{\numberline {B.2}Node-link}{45}{section.a.B.2}

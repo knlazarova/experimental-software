@@ -1,32 +1,29 @@
-// index.js
-
-//require('./app/index')  
 const express = require('express')  
 const app = express()  
 var exphbs  = require('express-handlebars');
 const port = 3000
 const path = require('path')  
-'use strict'
 const pg = require('pg')  
+'use strict'
 
-const conString = 'postgres://knlaz:knlaz@localhost:5432/knlaz' // make sure to match your own database's credentials
+// database credentials
+const conString = 'postgres://knlaz:knlaz@localhost:5432/knlaz' 
+
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 app.set('view engine', '.hbs')  
 app.set('views', path.join(__dirname, 'views'))  
-
 app.use('/img',express.static(path.join(__dirname, 'public/images')));
 app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
 app.use('/css',express.static(path.join(__dirname, 'public/stylesheets')));
 
-
+//create the server
 app.listen(port, (err) => {  
   if (err) {
-    return console.log('something bad happened', err)
+    return console.log('Port Error:', err)
   }
-  console.log(`server is listening on ${port}`)
+  console.log(`Server is listening on ${port}`)
 })
 
 app.engine('.hbs', exphbs({  
@@ -40,7 +37,7 @@ app.post('/participants-info', function (req, res, next) {
   const participant = req.body;
 	pg.connect(conString, function (err,client) {
     if (err) {
-    	console.log("CANT CONNECT TO DB");
+    	console.log("Cannot connect to database");
     	return next(err)
     }
     //populate the database with participant's answers to the demographic questionnaire
@@ -58,24 +55,25 @@ app.post('/participants-info', function (req, res, next) {
 
 app.post('/research-answers-db', function(req, res, next) {
   const researchAnswers = req.body;
-  console.log('about to post to db', req.body);
+  //connect to database
   pg.connect(conString, function(err,client,done){
     if (err){
-      console.log('cannot connect to db')
+      console.log("Cannot connect to database")
     }
-    //add the answers to the research questions to the database
+    //add all answers to the participants_answers table in the database
+    //start from the 6th one to exclude the training questions
     for (var i = researchAnswers.length - 1; i >= 6; i--) {
     client.query('INSERT INTO participants_answers values ($1, $2, $3, $4, $5, $6, $7, $8, $9);', 
         [researchAnswers[i].question_id, parseInt(researchAnswers[i].participant_id), 
         researchAnswers[i].answer, researchAnswers[i].time, researchAnswers[i].correct, 
         researchAnswers[i].type,  researchAnswers[i].size,  researchAnswers[i].layout,  researchAnswers[i].domain_question], function(err, result){
     if (err){
-        console.log('theres been an error in inserting participants answers to db')
+        console.log('Theres been an error in inserting participants answers to db')
         res.send();
       }
       return res.send();
       res.sendStatus(200);
-    }) //end of client query
+    }) //end of query
 }  
 
   })
@@ -89,10 +87,6 @@ app.get('/participant-number', (request, response)=>{
 	response.render('participant-number',{})
 })
 
-app.get('/login', (request, response)=>{
-	response.render('login',{})
-})
-
 app.get('/questionnaire-answers', (request, response)=>{
 	response.render('questionnaire-answers',{})
 })
@@ -104,7 +98,6 @@ app.get('/participants-questionnaire', (request, response)=>{
 app.get('/consent-form', (request, response)=>{
   response.render('consent-form',{})
 })
-
 
 app.get('/research-answers', (request, response)=>{
   response.render('research-answers',{})
@@ -124,6 +117,7 @@ app.get('/research-answers-db', (request, response)=>{
         console.log('An error occured when trying to retrieve participants research answers');
         return response.sendStatus(500);
       }
+      //return the participants's data from the db
       return response.json(result.rows);
  })
 
@@ -141,7 +135,6 @@ app.get('/questionnaire-answers-db', (request,response) =>{
         return response.sendStatus(500);
       }
       return response.json(result.rows);
-
       })
   })
 })

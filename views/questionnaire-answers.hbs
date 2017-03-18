@@ -4,15 +4,16 @@
   <table class="table table-striped">
   <thead>
     <tr>
+      <!-- Table fields -->
       <th>ParticipantID</th>
       <th>Email</th>
       <th>Name</th>
       <th>Age</th>
       <th>Studying</th>
-      <!-- add more questions dinamically depending on what's in the DB -->
     </tr>
   </thead>
   <tbody>
+    <!-- display data for each record -->
     <tr ng-repeat="record in answers">
       <th scope="row" ng-bind="record.participant_id"></th>
       <td>{record.email}</td>
