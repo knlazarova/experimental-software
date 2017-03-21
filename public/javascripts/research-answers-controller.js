@@ -7,7 +7,6 @@ app.config(function($interpolateProvider) {
 
 
 app.factory('answerService', ['$http', '$q', function($http, $q){
-	console.log('in factory')
 	var getAnswers = function(){
 		var defer = $q.defer();
 		$http.get('http://localhost:3000/research-answers-db').then(function(response){

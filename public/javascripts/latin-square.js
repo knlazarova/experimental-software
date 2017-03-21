@@ -9,8 +9,5 @@ var latinSquareQuestions = participants.map(makeRow)
 count = 0
 
 for (var i = latinSquareQuestions.length - 1; i >= 0; i--) {
- // console.log(latinSquareQuestions[i])
   count++
 }
-
-console.log(latinSquareQuestions)

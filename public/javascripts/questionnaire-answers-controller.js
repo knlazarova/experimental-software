@@ -1,5 +1,3 @@
-//questionnaire-answers-controller.js
-
 var app = angular.module('myApp', []);
 
 app.config(function($interpolateProvider) {
@@ -32,7 +30,6 @@ app.controller('questionnaireAnswersCtrl', ['$scope', '$http','answerService', f
 		$scope.answer = $scope.answers[i];
 		$scope.participant_id = $scope.answer.participant_id;
 	}
-	//$scope.question=$scope.questions[0];
 }).catch(function(){
 		$scope.error = 'unable to get the questions';
 	})

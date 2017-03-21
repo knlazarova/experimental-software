@@ -5,9 +5,8 @@ app.config(function($interpolateProvider) {
   $interpolateProvider.endSymbol('}');
 });
 
-
+//get all the questions for the experiment from the db
 app.factory('questionService', ['$http', '$q', function($http, $q){
-	console.log('in factory')
 	var getQuestions = function(){
 		var defer = $q.defer();
 		$http.get('http://localhost:3000/db-questions').then(function(response){
@@ -22,6 +21,7 @@ app.factory('questionService', ['$http', '$q', function($http, $q){
 	};
 }]);
 
+//get Latin square information from the db
 app.factory('latinSquare', ['$http', '$q', function($http, $q){
 	var getLatinSquare = function(){
 		var defer = $q.defer();
@@ -40,12 +40,12 @@ app.factory('latinSquare', ['$http', '$q', function($http, $q){
 app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cookies', 'latinSquare', function($scope, $http,  $window, questionService, $cookies, latinSquare){
 	//get the participant id
 	$scope.participant_id=$cookies.get("partNumber")
-	//get questions data
 	var startTime;
 	var questionNumber = 0;
 	$scope.isNext = true;
 	$scope.participantAnswers = new Array();
 	$("input:radio").attr("checked",false);
+	//get questions data
 	questionService.getQuestions().then(function(data){
 		$scope.questions=data;
 		//get latin square
@@ -54,14 +54,15 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		var latinSquareNumber = 0
 		var latinSquareData=latin
 		for(var object in latinSquareData){
+			//match the participant id with the latin square participant id
 			if($scope.participant_id == latinSquareData[object]['id']){
+				//assign the correct sequence to a scope variable
 				$scope.sequenceQuestions = latinSquareData[object]['order'].split(',')
 			}
 		}
 		// match the sequence of questions for the participant ID
 		for( i=0; i<$scope.sequenceQuestions.length; i++){
 			var orderedQuestionsId = $scope.sequenceQuestions[i]
-			console.log(orderedQuestionsId)
 			for( k=0; k<$scope.questions.length; k++){
 				if($scope.questions[k]['question_id'] === parseInt(orderedQuestionsId)){
 					$scope.orderedQuestions.push($scope.questions[k]);
@@ -78,9 +79,8 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 	}).catch(function(){
 		$scope.error = 'unable to get the questions';
 	})
-	console.log("participant num from questions controller" + $cookies.get("partNumber"))
-	
-	//data will be $scope.question
+
+	//when click on registerAnswer
 	$scope.registerAnswer = function(question, participant){
 		var trialObject = {}
 		var endTime = new Date();
@@ -88,11 +88,10 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		var timeTaken = endTime-startTime
 		// convert into sec
 		timeTaken /= 1000
-		console.log(timeTaken)
+		//take the participants' answer
 		var currentAnswer = $("input:checked").val();
-		console.log("currentAnswer", currentAnswer)
+		//add the trial data to a JSON object
 		trialObject["question_id"] =  question.question_id;
-
 		trialObject["participant_id"] = $scope.participant_id
 		trialObject["answer"] = currentAnswer;
 		trialObject["time"] = timeTaken;
@@ -100,45 +99,38 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		trialObject["size"] = question.size;
 		trialObject["layout"] = question.layout;
 		trialObject["domain_question"] = question.domain_question;
-
+		//check if the answer is correct
 		if (question.correct == currentAnswer){
 			trialObject["correct"] = "yes"
 		} else{
 			trialObject["correct"] = "no"
 		}
-		console.log("trialObject:", trialObject);
 		return trialObject;
-		
 	}
 
+
 	$scope.nextQuestion = function(){
-		console.log("is next:", $scope.isNext)
 		// get the selected value
 		$scope.participantAnswers.push($scope.registerAnswer($scope.question, $scope.participant_id));
-		console.log("in nextQuestion function")
 		// Uncheck radio buttons
 		$("input:radio").attr("checked",false);
-		//$("#nextButton").attr("disabled", true);
+		//start timer
 		startTime = new Date();
 		//there are more than one questions left
-		//
 		if (questionNumber < $scope.orderedQuestions.length - 1){
 			questionNumber = questionNumber+1;
-			//console.log("questionNumber", questionNumber)
 			$scope.question = $scope.orderedQuestions[questionNumber];
-			console.log("scope question: ", $scope.question)
 		}
 		else{
 			$scope.submitQuestions();			 
 		}
 	}
-
 	//send the answers to the database
 	$scope.submitQuestions = function(){	
 		$http.post('http://localhost:3000/research-answers-db', $scope.participantAnswers).then(
 			function(response){
 				console.log('success')
-				//go to thank-you
+				//go to the demographic questionnaire
 				$window.location.href = '/participants-questionnaire';
 		},
 		function(response){
