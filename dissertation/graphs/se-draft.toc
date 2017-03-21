@@ -22,13 +22,13 @@
 \contentsline {chapter}{\numberline {4}Experiment}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Design}{13}{section.4.1}
 \contentsline {section}{\numberline {4.2}Stimuli}{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}Pilot}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}Participants}{17}{section.4.4}
-\contentsline {section}{\numberline {4.5}Procedure}{17}{section.4.5}
-\contentsline {section}{\numberline {4.6}Results}{17}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Data Analysis Methodology}{17}{subsection.4.6.1}
+\contentsline {section}{\numberline {4.3}Participants}{16}{section.4.3}
+\contentsline {section}{\numberline {4.4}Procedure}{16}{section.4.4}
+\contentsline {section}{\numberline {4.5}Pilot}{16}{section.4.5}
+\contentsline {section}{\numberline {4.6}Results}{18}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Data Analysis Methodology}{18}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Experimental Results}{18}{subsection.4.6.2}
-\contentsline {subsubsection}{Direct Questions}{18}{subsection.4.6.2}
+\contentsline {subsubsection}{Direct Questions}{19}{subsection.4.6.2}
 \contentsline {subsubsection}{Path Questions}{20}{table.caption.13}
 \contentsline {subsection}{\numberline {4.6.3}Summary}{22}{subsection.4.6.3}
 \contentsline {section}{\numberline {4.7}Preference Results}{23}{section.4.7}
@@ -45,7 +45,11 @@
 \contentsline {section}{\numberline {A.2}Information Sheet}{30}{section.a.A.2}
 \contentsline {section}{\numberline {A.3}Consent Form}{31}{section.a.A.3}
 \contentsline {section}{\numberline {A.4}Training}{31}{section.a.A.4}
-\contentsline {section}{\numberline {A.5}Research Questions}{33}{section.a.A.5}
-\contentsline {chapter}{\numberline {B}Experimental Stimuli}{35}{Appendix.a.B}
-\contentsline {section}{\numberline {B.1}Matrix-based}{35}{section.a.B.1}
-\contentsline {section}{\numberline {B.2}Node-link}{45}{section.a.B.2}
+\contentsline {section}{\numberline {A.5}Demographic Questionnaire}{34}{section.a.A.5}
+\contentsline {section}{\numberline {A.6}Debriefing form}{35}{section.a.A.6}
+\contentsline {section}{\numberline {A.7}Preference Questionnaire}{35}{section.a.A.7}
+\contentsline {section}{\numberline {A.8}Research Questions}{35}{section.a.A.8}
+\contentsline {chapter}{\numberline {B}Experimental Stimuli}{38}{Appendix.a.B}
+\contentsline {section}{\numberline {B.1}Matrix-based}{38}{section.a.B.1}
+\contentsline {section}{\numberline {B.2}Node-link}{48}{section.a.B.2}
+\contentsline {chapter}{\numberline {C}Progress Diary}{55}{Appendix.a.C}

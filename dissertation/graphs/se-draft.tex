@@ -36,7 +36,7 @@
 
 \begin{abstract}
 
-People who work in the social and health policy make decisions based on causality. Causality is usually visualised by node-link graphs, but matrix-based representations have the potential to show higher performance because of their concise and clear visual representation. However, matrix-based graphs have not been extensively studied in causal relationship visualisation. Therefore, an experimental software was created to test human performance when reading causal relationships in node-link and matrix-based graphs. The web application was implemeted using Node.js, Angular and PostgreSQL. To make a thorough investigation of the factors influencing reading time different sizes, layouts and type of questions were created. The direct and the path question represented two different tasks in the experiment. Response time and correctness of the answer were measured. The results showed that matrix-based graphs outperform node-link representations in direct questions. When path questions were concerned, however, node-link graphs were found to be more readable than matrix-based graphs. The results were discussed in relation to previous research in readability of data visualisations.
+People who work in the social and health policy sectors make decisions based on causality. Causality is usually visualised by node-link graphs, but matrix-based representations have the potential to show higher performance because of their concise and clear visual representation. However, matrix-based graphs have not been extensively studied in causal relationship visualisation. Therefore, an experimental software was created to test human performance when reading causal relationships in node-link and matrix-based graphs. The web application was implemeted using Node.js, Angular and PostgreSQL. To make a thorough investigation of the factors influencing reading time different sizes, layouts and types of questions were created. The direct and the path question represented two different tasks in the experiment. Response time and correctness of the answer were measured. The results showed that matrix-based graphs outperform node-link representations in direct questions. When path questions were concerned, however, node-link graphs were found to be more readable than matrix-based graphs. The results were discussed in relation to previous research in readability of data visualisations.
 
 \end{abstract}
 
@@ -60,7 +60,7 @@ I would like to express my sincere thanks to Dr. Helen Purchase for giving me th
 
 \section{Data Visualisation}
 
-Data visualisation has been described as a technique that makes use of computer-supported, interactive illustrations to deepen human's understanding of a dataset \cite{card1999readings}. Information visualisation (InfoVis) is necessary when dealing with increasingly large and complex data. InfoVis systems are most helpful when a set of data is being explored \cite{fekete2008value}. Usually, this occurs not when someone is looking for a specific answer to a question, but when a deeper understanding of that data set is sought. It was suggested that the value of information visualisation is not in understanding a specific question, it is about developing and deepening one's insights of a set of data \cite{fekete2008value}. Data visualisation is able to facilitate this process because there are a number of cognitive benefits associated with it. A large visual cue that illustrates data becomes a single point of reference for human cognitive processes. Visuals become external cognition helpers in facilitating human memory by providing a bigger working set for analysing data. 
+Data visualisation has been described as a technique that makes use of computer-supported, interactive illustrations to deepen human's understanding of a dataset \cite{card1999readings}. Information visualisation (InfoVis) is necessary when dealing with increasingly large and complex data. InfoVis systems are most helpful when a set of data is being explored \cite{fekete2008value}. The value of information visualisation is not in understanding a specific question, it is about developing and deepening one's insights of a set of data \cite{fekete2008value}. Data visualisation is able to facilitate this process because there are a number of cognitive benefits associated with it. A large visual cue that illustrates data becomes a single point of reference for human cognitive processes. Visuals become external cognition helpers in facilitating human memory by providing a bigger working set for analysing data. 
 
 Density of the InfoVis and task difficulty are known to influence human performance \cite{netzel2014comparative}. For instance, following a single path on a graph with one trajectory would require less cognitive effort than performing the same task on a highly dense and complex network. However, the exploration of a representation can convey a better insight into the meaning of the data \cite{al2014information}. Al and colleagues \cite{al2014information} argued that InfoVis has three main roles: communication field, knowledge management mean, and decision support instrument. Furthermore, visual architecture and design applied at company and department levels have been reported to be successful due to the low cognitive burden for visualisation reading \cite{king2016cognitive}.
 
@@ -72,7 +72,7 @@ Inventions in this field have been made continuously in order to improve the vis
 
 However, there have been many issues related to Big Data visualisations \cite{gorodov2013analytical}. First, visual noise is the phenomenon of having so many data points on the screen that the user cannot see them as separate points which leads to visibility loss. Second, large images are dependent on the device's resolution abilities. Nevertheless, even if many devices are added together for partial data visualisation to represent a more detailed illustration or a larger amount of data, human perception will eventually reach its limit. Therefore, after a certain point, people will not be able to understand the representations or their analysis. A third problem is information loss which is caused by data filtration and aggregation. These techniques are likely to hide information and mislead people analysing the data. Another problem is High Performance Requirements, especially in dynamic visualisation. In addition, the visualisation might be accompanied by a high rate of image change and lead to people being unable to react to the number of data changes. 
 
-Big Data visualisation method has been suggested  to deal with the alleviate some of the mentioned issues. This is the TreeMap visualisation \cite{gorodov2013analytical} which is a hierarchical way of representing data by rectangles. Some advantages of this method are that the hierarchical matching clearly shows data relations and the extreme outliers are visible. A known  disadvantage is that the data must be hierarchical which makes it unsuitable for examining time patterns, for example. 
+Big Data visualisation method has been suggested  to deal with and alleviate some of the mentioned issues. This is the TreeMap visualisation \cite{gorodov2013analytical} which is a hierarchical way of representing data by rectangles. Some advantages of this method are that the hierarchical matching clearly shows data relations and the extreme outliers are visible. A known  disadvantage is that the data must be hierarchical which makes it unsuitable for examining time patterns, for example. 
 
 Another well-known issue of InfoVis is that sometimes it is challenging for people to understand the meaning of the data. A study aimed to examine familiarity of museum visitors with different visualisation techniques \cite{borner2015investigating}. They included charts, maps, graphs, and networks to reveal how familiar people are with them. It was found that even though most participants were interested in science and art they had difficulties naming and reading the visualisations. It was concluded that people are interested in visualisation techniques, but have significant difficulties in naming and understanding them. 
 
@@ -88,7 +88,7 @@ A study looking to identify factors influencing blog design used the Decision Ma
 
 ReView is a tool for finding causal relationships in anomalies in network traffic. It has been suggested to facilitate a better understanding of network representations \cite{Zhang:2015:VTC:2713579.2713583}. One of its features is minimising the detailed information while showing the causal relationship. ReView can also quickly navigate the user through networks with a large number of requests and levels of abstractions.
 
-Causal relationships are thought to be perceived easier if they are accompanied by animation. Ware and colleagues \cite{ware1999visualizing} followed Michotte's perception of causality principle which illustrates a causal event with a billiard ball hitting another ball and causing its motion. They introduced a visual causal vector method that shows a causal relationship between representations using animation. They found that the perception of causality depends on the simultaneous occurrence the visual causal vector and the change in the graphical representations. 
+Causal relationships are thought to be perceived easier if they are accompanied by animation. Ware and colleagues \cite{ware1999visualizing} followed Michotte's perception of causality principle which illustrates a causal event with a billiard ball hitting another ball and causing its motion. They introduced a visual causal vector method that shows a causal relationship between representations using animation. They found that the perception of causality depends on the simultaneous occurrence the visual causal vector and the change in the graphical representations. Thus, causal relationships have been studied extensively and different visualisations have been created to enable better readability.
 
 \section{Node-Link Graphs}
 
@@ -100,7 +100,7 @@ Well-known structures in node-link visualisations are colliders and confounders.
 
 Furthermore directed acyclic graphs (DAGs) are increasingly used in representing causal relationships in modern epidemiology \cite{suttorp2015graphical}. The factors in DAGs are connected by arrows which can never create a closed loop \cite{greenland1999causal}. A path is defined by a sequence of arrows between the factors of interest. The DAG method is valuable as it is found to show underlying relations explicitly and easily identifies sources of confounding. A confounding factor is known to be a variable that is related to  the exposure (causing factor) and the outcome (factor being caused) but does not exist in the causal path between them. For example, chronic kidney disease and mortality are often caused by age. Confounding occurs when reading the causal relationships between chronic kidney disease and the outcome mortality. 
 
-Directed node-link graphs are often used to represent causal data. Dense node-link diagrams make reading graphs harder and colliders and confounders are known for inducing reading biases. However node-link graphs are among the visualisations that do not require extensive learning and are easy and intuitive to read, as they fit the structure of the mental representation they visualise\cite{netzel2014comparative}.
+Directed node-link graphs are often used to represent causal data. Dense node-link diagrams make reading graphs harder and colliders and confounders are known for inducing reading biases. However, node-link graphs are among the visualisations that do not require extensive learning and are easy and intuitive to read, as they fit the structure of the mental representation they visualise\cite{netzel2014comparative}.
 
 \section{Matrix-based Graphs}
 
@@ -108,7 +108,7 @@ An Adjacency matrix is frequently used to represent a network \cite{longabaugh20
 
 Furthermore, PathwayMatrix is another visualisation tool that represents specific relations between proteins in a pathway \cite{dang2015pathwaymatrix}. The implementation of the tool consists of adjacent matrices that interact with each other. Additional features were added to facilitate the data analysis. This visualisation software received positive feedback in the specific area of representing relations in proteins pathways. Consequently, there is no one best representation technique. Depending on the dataset specifications, the complexity and size of the data there might be many or only a few sufficient ways to visualise it.       
 
-A performance comparison between square and triangular matrices has been conducted to measure performance speed and accuracy \cite{liu2015effects}. It was found that performance is influenced by the matrix juxtaposition type which led to the creation of a new matrix visualisation called TileMatrix. It represents a many matrices and is effective at analysing networks that are multi-faceted and time-varying. With TileMatrix it is easy to see differences in matrices across time and facets. However, triangular matrices can work only in non-directed networks. 
+A performance comparison between square and triangular matrices has been conducted to measure performance speed and accuracy \cite{liu2015effects}. It was found that performance is influenced by the matrix juxtaposition type which led to the creation of a new matrix visualisation called TileMatrix. It represents many matrices and is effective at analysing networks that are multi-faceted and time-varying. With TileMatrix it is easy to see differences in matrices across time and facets. However, triangular matrices can work only in non-directed networks. 
 
 On the other hand, some of the disadvantages of matrix-based graphs are that the area increases quadratically and as large networks are sparse there will be mainly empty space on the matrix. Improvements such as compressed adjacency matrix try to account for some of these disadvantages. In general matrix-based representations are considered to be an unambiguous and concise way of representing data. The main advantages of a matrix-based graph are that it has no overlapping and can be ordered.
 
@@ -118,13 +118,13 @@ Alper and colleagues \cite{alper2013weighted} compared augmented adjacency matri
 
 Furthermore, it was suggested that adjacency matrices are superior to node-link graphs in representing dense graphs because they are more compact and easier to look at \cite{sheny2007path}. However, they also found that node-link graphs are better for path finding as a path can easily be followed if the arrows are not too tangled. Consequently, as mentioned earlier a unique best InfoVis does not exists. Depending on the data size, data characteristics and question of interest different representations can fit the best performing model. 
 
-Adjacency matrices and node-link diagrams have been compared in another study \cite{keller2006matrices} to examine which is more suitable graphical representation for the general public. This research was provoked by the fact that matrices are mainly used in engineering area, while node-link graphs are generally a more popular way of visualisation. The research questions being examined were related to the attributes of the connectivity model influencing readability, and which representations were more suitable for the execution of particular tasks. In addition, they filled the gap in previous research that did not take into consideration participants' familiarity with the data sets. It was found that error rates and response time are highly influenced by size and density. They confirmed Ghoniem's \cite{ghoniem2004comparison} findings that matrix-based graphs outperform node-link graphs for dense and large graphs, and node-link graphs are more readable for small and sparse graphs. The only exception found was finding the path between two nodes in a graph. Furthermore, experience with the data set showed to have an effect on performance. 
+Adjacency matrices and node-link diagrams have been compared in another study \cite{keller2006matrices} to examine which is more suitable graphical representation for the general public. This research was provoked by the fact that matrices are mainly used in the engineering area, while node-link graphs are generally a more popular way of visualisation. The research questions being examined were related to the attributes of the connectivity model influencing readability, and which representations were more suitable for the execution of particular tasks. In addition, they filled the gap in previous research that did not take into consideration participants' familiarity with the data sets. It was found that error rates and response time are highly influenced by size and density. They confirmed Ghoniem's \cite{ghoniem2004comparison} findings that matrix-based graphs outperform node-link graphs for dense and large graphs, and node-link graphs are more readable for small and sparse graphs. The only exception found was finding the path between two nodes in a graph. Furthermore, experience with the data set showed to have an effect on performance. 
 
 Ghoniem and colleagues \cite{ghoniem2004comparison} made a performance comparison between node-link and matrix-based graphs. They predicted that counting nodes should be equally difficult in the two types of representations, but counting links and finding the most connected node should be easier in matrix-based representations. Node-link graphs were hypothesised to be better when building a path between two nodes. The reason for this is that matrix based graphs have the nodes represented twice which introduces extra complexity. They also hypothesised that node-link graphs will be easier to work with when dealing with graphs with a few nodes. In their experiment, they had three sizes of graphs - 20, 50, and 100 nodes. They tested 36 participants and measured their performance on various tasks such as finding paths, neighbours, nodes and links between nodes. They found that performance in node-link graphs decreases as the size of the graph increases. This pattern was confirmed for all of the tasks except for finding a path, where node-link graphs regardless of the size and density showed better results.
 
 \chapter{Introduction}
 
-The present research question aims to compare and evaluate readability of node-link \ref{drinkingIssuesSmallHierIntro} and matrix-based graphs \ref{gymSmallAlphaintro} when representing causal relationships. As discussed above the two types of representations have already been compared in non-directed networks, but their performance in causal relationships has not been examined yet. Therefore, the aim of this experiment is to investigate whether their readability in directed graphs will be influenced by the same factors as in non-directed visualisations. What is more, deeper knowledge of the difference in their performance can benefit those working in the Social and Health policy sectors. They need an accurate and efficient way of representing data in order to make well-informed and quick decisions. Their decisions are important as they can directly influence social and health policies. In addition, the health and safety sector invests large amounts of money based on their interpretation of causal relationships graphs.
+The present research aims to compare and evaluate readability of node-link \ref{drinkingIssuesSmallHierIntro} and matrix-based graphs \ref{gymSmallAlphaintro} when representing causal relationships. As discussed above the two types of representations have already been compared in non-directed networks, but their performance in causal relationships has not been examined yet. Therefore, the aim of this experiment is to investigate whether their readability in directed graphs will be influenced by the same factors as in non-directed visualisations. What is more, deeper knowledge of the difference in their performance can benefit those working in the Social and Health policy sectors. They need an accurate and efficient way of representing data in order to make well-informed and quick decisions. Their decisions are important as they can directly influence social and health policies. In addition, the health and safety sector invests large amounts of money based on their interpretation of causal relationships graphs.
 
 
 \begin{figure}[H]
@@ -143,22 +143,22 @@ Therefore, knowing which type of causal visualisation has a more efficient and a
 \label{gymSmallAlphaintro}
 \end{figure}
  
-To broaden our understanding of the factors that influence readability, graphs' characteristics can be manipulated during the experiment. These characteristics can include the layout of the graph and its size. As previously mentioned different graph sizes have been associated with better performance in different types of graphs. In order to explore the research question, an experimental software needs to be implemented. The main functionality of this software  is to present experimental questions to the participants and then show their results to the researcher. To measure performance, the software must measure time to answer the question, and whether the answer is correct. The results of the experiment will show whether node-link or matrix-based graph is better when representing causal relationships. Also, it will become clear if significant performance differences are modulated by factors such as layout and size of the graphs. 
+To broaden our understanding of the factors that influence readability, graphs' characteristics were manipulated during the experiment. These characteristics included the layout of the graph and its size. As previously mentioned different graph sizes have been associated with better performance in different types of graphs. To conduct an experiment that brings awareness in the topic of interest, an experimental software was implemented. The main functionality of this software is to present experimental questions to the participants and then show their results to the researcher. To measure performance, the software measures time to answer the question, and whether the answer is correct. The results of the experiment showed whether node-link or matrix-based graph is better at representing causal relationships and whether significant performance differences were modulated by factors such as layout and size of the graphs. 
 
-Consequently, the current experiment aims to investigate human performance in readability of causal relationships. These relationships will be visualised by node-link graphs and matrix-based representations. A large number of instances of the two types of graphs needs to be generated in order to conduct an experiment and measure participants' performance. Different themes for the graphs are required to prevent learning effects. In addition, the complexity of the data being visualised should not be different. The experimental software needs to accommodate these visualisations and their corresponding questions and multiple choice answers. The experiment must be run in a controlled environment to ensure participants' performance is not influenced by anything different from the characteristics of the graphs. The response times for the two types of graphs will be compared in each size and layout and each type of task. The results of the experiment will enable those working in the Health and Social sector to take faster and better informed decisions. 
+Consequently, the current experiment aims to investigate human performance in readability of causal relationships. These relationships were visualised by node-link graphs and matrix-based representations. A large number of instances of the two types of graphs was generated in order to conduct an experiment and measure participants' performance. Different themes for the graphs were required to prevent learning effects. In addition, the complexity of the data being visualised had to be kept constant. The experimental software had to accommodate these visualisations and their corresponding questions and multiple choice answers. The experiment was run in a controlled environment to ensure participants' performance was not influenced by anything different from the characteristics of the graphs. The response times for the two types of graphs were compared in each size and layout and each type of task. The results of the experiment can enable those working in the Health and Social sector to take faster and better informed decisions. 
 
 \chapter{Implementation details}
 
 \section{Requirements}
 \label{Requirements}
 
-A web application was decided to be created to test the proposed research question. This web application was going to be used by participants to give answers to the data visualisation questions and researchers to see the experimental data. Participants were going to see graphs and questions related to them. The participants' response time was to be recorded as well as whether their answer is correct. At the same time, the experimenter needs to be able to check the participants' answers to the questions. After considering all requirements, a user story for each feature was created. Some of the most important user stories are:
+A web application was decided to be created to test the proposed research question. This web application was going to be used by participants to give answers to the data visualisation questions and researchers to see the experimental data. Participants were going to see graphs and questions related to them. The participants' response time was to be recorded as well as whether their answer is correct. At the same time, the experimenter had to be able to check the participants' answers to the questions. After considering all requirements, a user story for each feature was created. Some of the most important user stories are:
 
 \begin{itemize}
    \item As a researcher, I want to be able to see participants' answers to all questions, so that I can analyse the data.
    \item As a participant, I want to be able to see a graph and a question at a time, so that I can complete the experiment.
-   \item As a researcher, I want to keep participant's scores anonymous, so that the experiment comply with ethics requirements.
-   \item As a participant, I want to be unable to go the next question before completing the present question, so that I am certain that I haven't missed a question.
+   \item As a researcher, I want to keep participant's scores anonymous, so that the experiment complies with ethics requirements.
+   \item As a participant, I want to be unable to go the next question before completing the present question, so that I am certain that I have answered all questions.
    \item As a researcher, I want to be able to see participants' demographic information, so that I can make generalisations about my experiment.
 \end{itemize}
 
@@ -211,7 +211,7 @@ As the size of this project is considerably small a relational database was chos
 \textbf{participant\_info}(\underline{participant\_id}, name, email, degree) \newline
 \textbf{latin\_square}(\underline{participant\_id}, sequence) \newline
 
-The first table questions had a primary key (PK) question ID, a text field with the actual question, the four multiple choice answers, the correct answer, the image name, type of graph (node-link or matrix-based), the layout, the theme of the graph, and whether it is a direct question or a path question. The answers table consisted of two foreign keys - question ID and participant ID, the time taken to answer the question and whether it the answer is correct or not. The participant information table was populated by the demographic questionnaire with participant ID being PK, and name, email and degree the rest of the fields in the table. Latin square was used to randomise the sequence of questions for each participant. More details can be found in \autoref{chap:exp}.
+The first table questions had a primary key (PK) question ID, a text field with the actual question, the four multiple choice answers, the correct answer, the image name, type of graph (node-link or matrix-based), the layout, the theme of the graph, and whether it is a direct question or a path question. The answers table consisted of two foreign keys - question ID and participant ID, the time taken to answer the question and whether the answer is correct or not. The participant information table was populated by the demographic questionnaire with participant ID being PK, and name, email and degree the rest of the fields in the table. Latin square was used to randomise the sequence of questions for each participant. More details about Latin square can be found in \autoref{chap:exp}.
 
 \section{System Design}
 
@@ -223,8 +223,7 @@ The first table questions had a primary key (PK) question ID, a text field with 
 \end{figure}
 
 
-Figure \ref{abstractDesign} shows an abstract view of the system design. There is an Actor who will either be a participant in the study or a researcher (\autoref{Requirements}). They will interact with the front-end which will be in the form of a web application in a browser. The front-end will communicate with the back-end which will be implemented in Node.js. The back-end will make requests to the database to retrieve and send information. 
-
+Figure \ref{abstractDesign} shows an abstract view of the system design. There is an Actor who will either be a participant in the study or a researcher (\autoref{Requirements}). They interact with the front-end which is in the form of a web application in a browser. The front-end communicates with the back-end which was to be implemented in Node.js. The back-end makes requests to the database to retrieve and send information. 
 
 \begin{figure}[H]
 \centering
@@ -233,18 +232,15 @@ Figure \ref{abstractDesign} shows an abstract view of the system design. There i
 \label{moreSpecificDesign}
 \end{figure}
 
-Figure \ref{moreSpecificDesign} displays a more detailed version of the system design. This design has been implemented to separate the different concerns in this specific system. When the Actor interacts with the application, the front-end sends information to the Controllers. There are as many controllers as pages with front-end functionality in the web application. The Controller component decides what should the next action be according to the user input. It has control over the front-end logic and sending requests to the Service if information from the database or the server is requested. For example, the answers to all questions are kept in the front-end until a "Submit" button is clicked on. This action triggers a request to the Service. The Service component works with the back-end logic. It can send and retrieve data from the database and keep the information in the Repository. The Service also deals with the requests for the different web pages. It also ensures that the project dependencies are loaded.   
-
-
-
+Figure \ref{moreSpecificDesign} displays a more detailed version of the system design. This design has been implemented to separate the different concerns in this specific system. When the Actor interacts with the application, the front-end sends information to the Controllers. There are as many controllers as pages with front-end functionality in the web application. The Controller component decides what should the next action be according to the user input. It has control over the front-end logic and sends requests to the Service if information from the database or the server is requested. For example, the answers to all questions are kept in the front-end until a "Submit" button is clicked on. This action triggers a request to the Service. The Service component works with the back-end logic. It can send and retrieve data from the database and keep the information in the Repository. Moreover, the Service deals with the requests for the different web pages. It also ensures that the project dependencies are loaded.   
 
 \section{Implementation}
 
-The development process was split into front-end and back-end. Following the prototype, the front-end pages were created. Bootstrap was added to the HTML to improve the UI design and make it look more appealing for the participant. Furthermore, a hierarchical page set up was implemented by having all HTML pages extending one layout file. This also helped to avoid repeated code as the required libraries were imported only once and all other files inherited them. 
+The development process was split into front-end and back-end. Following the prototype, the front-end pages were created. Bootstrap was added to the HTML to improve the UI design and make it look more appealing for the participants. Furthermore, a hierarchical page set up was implemented by having all HTML pages extending one layout file. This also helped to avoid repeated code as the required libraries were imported only once and all other files inherited them. 
 
-Setting up a server in Node.js was very well-documented as Node.js is growing in popularity and there are a number of useful tutorials available on-line. After there was a working server, the Express framework was added to the project and the HTML pages were mapped to an Express handlebars or hbs files. Before implementing the front-end functionality the database system was created and connected to the web application. Afterwords, requests for fetching information from the database and sending information to the database were written. Postman was used to check whether the POST and GET requests are working correctly. 
+The Express framework was added to the project and the HTML pages were mapped to an Express handlebars or hbs files. Setting up a server in Node.js was very well-documented as Node.js is growing in popularity and there are a number of useful tutorials available on-line. Before implementing the front-end functionality the database system was created and connected to the web application. Then, requests for getting information from the database and sending information to the database were written. Postman was used to check whether the POST and GET requests are working correctly. 
 
-Once it was established that the skeleton of the application is working, Angular was used to do the data binding in the front-end. Angular controllers were set to gather the data for each participant. Then they were sending the information to the back-end in the form of JSON object and from there the JSON data was sent to the database in the form of a database query. For each new participant, there was a participant id created, which was related to their answers to the experimental questions, and the demographic questionnaire. Cookies were used to keep the user ID throughout the experimental session. Latin square was used to randomise the question sequence for each participant. Node.js has a Latin square module which was used to generate the different sequences. Then the matrix sequences were kept in the database and linked to a participant's id ensuring that each user gets a different sequence of questions. Angular was used for populating the website data - graph images and questions. This was done by using one-page template for all questions and Angular given the required sequence of questions was displaying the appropriate information. 
+Once it was established that the skeleton of the application is working, Angular was used to do the data binding in the front-end. Angular controllers were set to gather the data for each participant. Then they were sending the information to the back-end in the form of JSON object and from there the JSON data was sent to the database in the form of a database query. For each new participant, there was a participant id created, which was related to their answers to the experimental questions, and the demographic questionnaire. Cookies were used to keep the user ID throughout the experimental session. Latin square was used to randomise the question sequence for each participant. Node.js has a Latin square module which was used to generate the different sequences. Then the matrix sequences were kept in the database and linked to a participant's id ensuring that each user gets a different sequence of questions. Angular was used to populate the website's experimental data - graph images and questions. This was done by using one-page template for all questions and Angular given the required sequence of questions was displaying the appropriate information. 
 
 \subsubsection{Challenges}
 
@@ -256,13 +252,13 @@ Following the implementation, it was found that the front-end structure needs to
 
 \section{Design}
 
-This is a within-subjects design experiment with two conditions. In the first condition, participants answered questions related to causal relationships in node-link graphs, while in the second one they were asked to answer questions on matrix-based representation. Each condition had three factors: size, layout, and question type. There were three levels of the size factor: small (nodes=10), medium (nodes=20), and large (nodes=30). The layouts of the node-link graphs were hierarchical, parallel, and organic. The matrix-based graphs layouts were in-degree descending, out-degree descending, and alphabetical. The two question types were path questions and direct questions. These were essentially the two types of tasks in this experiment. In addition, there were three different question themes. The dependent variables were time taken to answer each question and correctness of the answer. The participants were also given a questionnaire which required subjective answers about their graph preferences and how they enjoy solving logical problems. 
+This is a within-subjects design experiment with two conditions. In the first condition, participants answered questions related to causal relationships in node-link graphs, while in the second one they were asked to answer questions on matrix-based representation. Each condition had three factors: size, layout, and question type. There were three levels of the size factor: small (nodes=10), medium (nodes=20), and large (nodes=30). The layouts of the node-link graphs were hierarchical, parallel, and organic. The matrix-based graphs' layouts were in-degree descending, out-degree descending, and alphabetical. The two question types were path questions and direct questions. They represented the two types of tasks in this experiment. In addition, there were three different question themes. The dependent variables were time taken to answer each question and correctness of the answer. The participants were also given a questionnaire which required subjective answers about their graph preferences and how they enjoy solving logical problems. 
 
 \section{Stimuli}
 
-To prepare the experimental stimuli, a variety of graph factors had to be addressed. First, the information complexity in all graphs had to be the same to avoid influencing performance time. Consequently, node-link graphs were created in yEd 3.16.1 and then converted into matrix-based representations using an XGML translation software created in Glasgow University. This is how equally complex node-link and matrix-based representations were created. As long as the graphs were from the same domain question and size, they represented the same information. However, each question was carefully structured to require different information to be read from the graphs to avoid learning effect. 
+To prepare the experimental stimuli, a variety of graph factors had to be addressed. First, the information complexity in all graphs had to be the same to avoid influencing performance time. Node-link graphs were created in yEd 3.16.1 and then converted into matrix-based representations using an XGML translation software created in Glasgow University. This is how equally complex node-link and matrix-based representations were created. As long as the graphs were from the same domain question and size, they represented the same information. However, each question was carefully structured to require different information to be read from the graphs to avoid learning effect. 
 
-Furthermore, in order to create a large number of graphs, three different question themes were introduced: drinking issues, exams, and healthy/unhealthy gym behaviour. To gain a deeper understanding of which are the most influential characteristics of a graph different layouts and sizes were also implemented. The three different sizes were small, medium, and large. A small node-link graph consists of 10 vertices and 10 or 9 edges \ref{sportSmallOrganicS}. The equivalent matrix-based representation has 10 rows, 10 columns and 10 or 9 darker squares showing the causal relationships between factors \ref{studentSmallInDDS}. The medium size representations had 20 factors or 20 vertices (node-link graphs) and 20 row and columns (matrix-based graph). The large graphs had 30 variables or 30 vertices in node-link graphs and 30 row and columns in matrix representations. 
+Furthermore, in order to create a large number of graphs, three different question themes were introduced: drinking issues, exams, and healthy/unhealthy gym behaviour. To gain a deeper understanding of which are the most influential characteristics of a graph different layouts and sizes were also implemented. The three different sizes were small, medium, and large. A small node-link graph consisted of 10 vertices and 10 or 9 edges (Figure \ref{sportSmallOrganicS}). The equivalent matrix-based representation had 10 rows, 10 columns and 10 or 9 darker squares showing the causal relationships between the factors (Figure \ref{studentSmallInDDS}). The medium size representations had 20 factors or 20 vertices (node-link graphs) and 20 row and columns (matrix-based graph). The large graphs had 30 variables or 30 vertices in node-link graphs and 30 row and columns in matrix representations. All graphs used in the experiment can be found in Appendix \ref{expStim}.
 
 \begin{figure}[tbp]
   \centering
@@ -279,7 +275,7 @@ Furthermore, in order to create a large number of graphs, three different questi
   \end{minipage}
 \end{figure}
 
-For each type of representation different layouts were implemented. The matrix-based layouts were alphabetical, in-degree descending and out-degree descending \ref{matrixLayout}. The alphabetical layout had the row and column factors in alphabetical order. The in-degree descending layout finds the number of edges that are coming into each vertex and sorts them in descending order. The out-degree descending layouts calculates the number of edges going out of each vertex and applies descending order.  The node-link layouts were hierarchical, orthogonal, and series-parallel \ref{nodeLayouts}. yEd applies an algorithm for the creation of each layout. The hierarchical layout represents precedence relation in directed graphs. Series-parallel graphs have one sink and source which are created recursively to generate the series-parallel graph. The organic layout has well-balanced spread out distribution of nodes. Figure \ref{experimentalDesign} shows the pattern which was followed to create 36 graphs with an equal amount of combinations of sizes, layouts and question domains. 
+For each type of representation different layouts were implemented. The matrix-based layouts were alphabetical, in-degree descending and out-degree descending (Figure \ref{matrixLayout}). The alphabetical layout sorts the row and column factors in alphabetical order. The in-degree descending layout finds the number of edges that are coming into each vertex and sorts them in descending order. The out-degree descending layouts calculates the number of edges going out of each vertex and applies descending order.  The node-link layouts were hierarchical, organic, and series-parallel (Figure \ref{nodeLayouts}). yEd applies an algorithm for the creation of each layout. The hierarchical layout represents precedence relation in directed graphs. Series-parallel graphs have one sink and source which are created recursively to generate the series-parallel graph. The organic layout has well-balanced spread out distribution of nodes. Figure \ref{experimentalDesign} shows the pattern which was followed to create 36 graphs with an equal amount of combinations of sizes, layouts and question domains. 
 
 \begin{figure}[h]
 \centering
@@ -300,22 +296,30 @@ There was a direct relationship question and an indirect causal relationship que
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{experimentalObjects.png}
-\caption{Experimental Design}
+\caption{The pattern followed for the creation of the experimental stimuli}
 \label{experimentalDesign}
 \medskip
 \small
-Each size of node-link and matrix-based graph was visualised in one of three layouts. To randomise the questions there were 3 themes: drinking issues (blue), student issues (yellow), and gym issues (purple). Each layout was linked to a theme in the pattern above.
+Each size of node-link and matrix-based graph was visualised in three different layouts. To enable the generation of different questions, there were 3 question themes: drinking issues (blue), student issues (yellow), and gym issues (purple). Each layout was linked to a theme in the pattern above.
 \end{figure}
 
-The specified sequence of questions with matched layouts, question themes, and different sizes was likely to influence the results of the experiment because of the exposure effect of that particular sequence. Therefore, to ensure that all participants receive the questions in a different order, Latin square /cite{winer1962latin} randomization was used. The sequence of questions was different for each participant and the possibility of the questions sequence affecting the results was eliminated.
+The specified sequence of questions with matched layouts, question themes, and different sizes was likely to influence the results of the experiment because of the exposure effect of that particular sequence. Therefore, to ensure that all participants receive the questions in a different order, Latin square \cite{winer1962latin} randomization was used. The sequence of questions was different for each participant and the possibility of the questions sequence affecting the results was eliminated.
   
-All representations were displayed in their real size on the left side of the screen and the corresponding question was on the right. A special attention was paid to the letter's font size and retaining the original size of the image on one screen. Participants were not able to go to the next question before they answered the current one. In addition, to measure answer time more accurately, there was no "Next" button. Once a participant clicked on an answer it was automatically submitted and the next question was loaded on the page. Figure \ref{exampleQuestion} in Appendix C shows an example of a trial question in the web application.
+All representations were displayed in their real size on the left side of the screen and the corresponding question was on the right. A special attention was paid to the letter's font-size and retaining the original size of the image on one screen. Participants were not able to go to the next question before they had answered the current one. In addition, to measure answer time more accurately, there was no "Next" button. Once a participant clicked on an answer it was automatically submitted and the next question was loaded on the page. Figure \ref{exampleQuestion} in Appendix C shows an example of a trial question in the web application.
 
 Finally, a Google Form questionnaire was used to ask participants to reflect back on their experience. Two weeks after the testing has started the participants were sent an email with the subjective questionnaire about their graph preference. 
 
+\section{Participants}
+There were 30 participants who took part in the experiment, aged between 20 and 29 years. The excluding criteria restricted people specialised in the subjects of Maths, Engineering and Computing Science from participating. The reason for this is that these fields are likely to include preparation in reading graphs. In addition, findings are expected to be representative for the Health and Social sector employees, who are not likely to have previous knowledge in those degrees.
+
+\section{Procedure}
+
+In order to have a better-controlled experiment, the study was conducted only on the experimenter's laptop in their presence. The participants were asked to sit on a chair and complete the experiment in a calm environment. They were recruited either in Glasgow University library or by posts on social media websites. The experiment was conducted in GU library in quiet group study areas. The participants had to read through an information sheet (Appendix \ref{informationsheet}), explaining what was to follow in the next 30 minutes, a consent from (Appendix \ref{consent}), asking them to give their written informed consent, and a training (Appendix \ref{train}) showing them examples of how to solve the upcoming 42 research questions. At the end of the experiment, participants were shown a short demographic questionnaire (Appendix \ref{questionnaire}) and a debrief form (Appendix\ref{debrief}). Two weeks after the testing has started they received another questionnaire asking about their graph preferences (Appendix \ref{preference}).
+
+
 \section{Pilot}
 
-Conducting a pilot was an essential part of this study. It brought light into how people who have never been exposed to the graphs and the software before interact with them. It was important to learn whether the tasks are clear and the software is easy to use. Three volunteers took part in the pilot. They were asked to sit on a chair in a quiet environment and complete the experiment starting from the information sheet and finishing with the debrief form. At the end, the participants were asked questions regarding the training, the clearness and enjoyment of the tasks. All participants said that the training in the beginning of the experiment is sufficient at explaining how to read the graphs. One of the participants, however, required confirmation that the correct direction of reading the graphs is from left to top. Thus, it was decided to make the first three questions trials in which the participants can ask as many questions as they need to understand how to read the graphs. The second three questions (4,5,6) were also going to be practice questions but they were not going to be explicitly informed about it. Consequently, during the first six tasks, the participants were expected to learn how to interpret the graphs and their answers were not recorded in the results. 
+Conducting a pilot was an essential part of this study. It brought light into how people who have never been exposed to the graphs and the software before interact with them. It was important to learn whether the tasks were clear and the software was easy to use. Three volunteers took part in the pilot. They were asked to sit on a chair in a quiet environment and complete the experiment starting from the information sheet and finishing with the debrief form. At the end, the participants were asked questions regarding the training, the clearness and enjoyment of the tasks. All participants said that the training in the beginning of the experiment is sufficient at explaining how to read the graphs. One of the participants, however, required confirmation that the correct direction of reading the graphs is from left to top. Thus, it was decided to make the first three questions trials in which the participants can ask as many questions as they need to understand how to read the graphs. The second three questions (4,5,6) were also going to be practice questions but they were not going to be explicitly informed about it. Consequently, during the first six tasks, the participants were expected to learn how to interpret the graphs and their answers were not recorded in the results. 
 
 An interesting problem regarding the nature of the trial questions was also considered. Initially, it was suggested that the trial instances are always the first questions of each sequence. However, as those questions would not be accounted for in the results and the Latin Square randomises each sequence, this was going to lead to a uneven number of answers for each type of graph. If this was to happen, the results of the experiment were going to be negatively influenced. In order to avoid this, 6 new questions were created using a combination of layouts, sizes and domains that has not been used for the original 36 questions. A mixture of different sizes and types was included to ensure that the participants have exposure to the main challenges of the experiment during the practice trials. These 6 questions were going to be added at the beginning of each sequence so that all participants are exposed to the same trial questions.  
 
@@ -329,29 +333,24 @@ Another technical issue found was concerned with the time recorder. It was found
  
 In general, the pilot helped in identifying small issues regarding the graphs layout and the manner in which questions were asked. Other bigger issues, that were going to influence the results, were also found such as typos leading to wrong evaluation of correctness and inaccurate time recorder. The pilot also inspired a new way in which the trial questions should be created and accounted for.
 
-\section{Participants}
-There were 30 participants who took part in the experiment, aged between 20 and 29 years. The excluding criteria restricted people specialised in the subjects of Maths, Engineering and Computing Science from participating. The reason for this is that these fields are likely to include preparation in reading graphs. In addition, findings are expected to be representative for the Health and Social sector employees, who are not likely to have previous knowledge in those degrees.
-
-\section{Procedure}
-
-In order to have a better-controlled experiment, the study was conducted only on the experimenter's laptop in their presence. The participants were asked to sit on a chair and complete the experiment in a calm environment. They were recruited either in Glasgow University library or by posts on social media websites. The experiment was conducted in GU library in quiet group study areas. The participants had to read through an information sheet, explaining what was to follow in the next 30 minutes, a consent from, asking them to give their written informed consent, and a training showing them examples of how to solve the upcoming 42 research questions. At the end of the experiment, participants were shown a short demographic questionnaire and a debrief form. Two weeks after the testing has started they received another questionnaire asking about their graph preferences.
-
-
 \section{Results}
 
 \subsection{Data Analysis Methodology}
 
-Correct data analysis is vital for the successful completion of a research based project. This is why a pilot of the data analysis methodology with fake data was completed before all participants were tested. In order to achieve this the results of 20 participants were faked. As this is a repeated-measures experiment the data layout had to be in wide format with each participant's data represented on each row. However, the way the database was being populated was in long format. Therefore, data wrangling had to be applied before the data was in a format able to be statistically analysed. The data analysis was done with RStudio which provides a package for data wrangling. However, as there were a number of different factors defining each answer and thousands of lines of raw data, it was decided that writing SQL queries would be a more appropriate way to deal with the data layout. For each type of comparison, there was a query written to aggregate the needed information in a format ready to be inserted in R Studio. 
+Correct data analysis is vital for the successful completion of a research based project. This is why a pilot of the data analysis methodology with fake data was completed before all participants were tested. In order to achieve this the results of 20 participants were faked. As this is a repeated-measures experiment the data layout had to be in wide format with each participant's data represented on each row. However, the way the database was being populated was in long format. Therefore, data wrangling had to be applied before the data was in a format able to be statistically analysed. The data analysis was done with RStudio which provides a package for data wrangling. However, as there were a number of different factors defining each answer and thousands of lines of raw data, it was decided that writing SQL queries would be a more appropriate and easier way to fix the data layout. For each type of comparison, there was a query written to aggregate the needed information in a format ready to be inserted in RStudio. 
 
-Testing the date for outliers was the first part of the analysis. Then, Shapiro-Wilks Normality test was conducted to check whether the data is normally distributed. The test showed a p-value of less than 0.05 for the fake data which rejected the Null hypothesis that the data is normally distributed. Histograms were plotted using the hist() function. This was found to be helpful to visualise the distribution of the values. If the data values were normally distributed then a repeated measures t-test was going to be run to see whether there is a significant difference between the time taken to read the two types of graphs. However, as the data was found to not be normally distributed, a non-parametric test was applied. The non-parametric equivalent of repeated measures t-test is Wilcoxon. 
+Testing the data for outliers was the first part of the analysis. Then, Shapiro-Wilks Normality test was conducted to check whether the data is normally distributed. The test showed a p-value of less than 0.05 for the fake data which rejected the Null hypothesis that the data is normally distributed. Histograms were plotted using the hist() function. This was found to be helpful to visualise the distribution of the values. If the data values were normally distributed then a repeated measures t-test was going to be run to check whether there is a significant difference between the time taken to read the two types of graphs. However, as the data was found to not be normally distributed, a non-parametric test was applied. The non-parametric equivalent of repeated measures t-test is Wilcoxon. 
 
-The type of representation may be the main aspect being investigated, but there are other characteristics of the graph that might influence performance. In order to investigate whether layout and size have any effect, a different statistical test needs to be used. For non-parametric data this test is Friedman followed by post-hoc comparison in case of significant difference. The data was faked so that a significant result was found and there was a need to investigate which are the pairs of comparisons significantly different from each other. A function called friedmanmc() was found to compute this comparison, but it returned True or False, not the actual p-value. Therefore, a new function was found but inconsistency in the results of the two functions was found. After a deeper investigation, it was found that the second function was not calculating the adjusted p-value which was leading to a difference in results. In order to account for this Bonferroni adjustment was added as a parameter to the calculation. This is how the process for calculating significance between 3  non-parametric factors was finalised. 
+The type of representation may be the main aspect being investigated, but there are other characteristics of the graph that might influence performance. In order to investigate whether layout and size have any effect, a different statistical test had to be used. For non-parametric data this test is Friedman followed by post-hoc comparison in case of significant difference. The data was faked so that a significant result was found and there was a need to investigate which are the pairs of comparisons significantly different from each other. A function called friedmanmc() was found to compute this comparison, but it returned True or False, not the actual p-value. Therefore, a new function was found but inconsistency in the results of the two functions was found. After a deeper investigation, it was concluded that the second function was not calculating the adjusted p-value which was leading to a difference in results. In order to account for this Bonferroni adjustment was added as a parameter to the calculation. This is how the process for calculating significance between 3  non-parametric factors was finalised. 
 
-The fake data analysis took longer than expected due to the unforeseen circumstances of data layout difficulties, inexperience with RStudio, and analysis of large amounts of data. However, because of this process, a clear layout of the analysis for the real data was prepared. All steps of the process were clear beginning with SQL queries to aggregate data, to inserting data in RStudio, and running all statistical tests.
+The fake data analysis took longer than expected due to the unforeseen circumstances of data wrangling, inexperience with RStudio, and analysis of many different factors. However, because of this process, a clear layout of the analysis for the real data was prepared. All steps of the process were clear beginning with SQL queries to aggregation of data, inserting data in RStudio, and running all statistical tests.
 
 \subsection{Experimental Results}
 
-The data analysis was first done for direct questions and then for path questions. The analysis was split into these groups, as they were two separate tasks requiring different type of computation and different time. Considering that for the direct and the path question were two different tasks the participants had to complete, the data was split into two independent parts. There were only 6 incorrect answers in the questions from all participants so this data was not included in the analysis.
+The data analysis was first done for direct questions and then for path questions. The analysis was split into these groups, as they were two separate tasks requiring different type of computation and different time. Considering that the direct and the path question were two different tasks the participants had to complete, the data was split into two independent parts. There were only 6 incorrect answers in the data in total so the correctness factor was not included in the analysis.
+
+\bigskip
+\bigskip
 
 \subsubsection{Direct Questions}
 
@@ -360,14 +359,14 @@ The data analysis was first done for direct questions and then for path question
 	\vspace{-20mm}
 	%\hspace{-8mm}
     \includegraphics[width=0.35\textwidth]{images/directComparison.PNG}
-    \caption{Matrix vs Node-link} 
+    \caption{Matrix vs Node-link Direct Question} 
 	\label{directComparison}
 \end{wrapfigure}
 
 
-The research nature of the experiment allowed for thorough data analysis of different factors in the graphs. The results showed that regardless of the graph layout and size the matrix-based graphs (M = 14.15) have better performance than node-link graphs (M = 16.85) for direct questions (Fig\ref{directComparison}) with p-value = 0.0128 (Table\ref{directResults}). When different sizes of each graph type were compared significant difference was found only for the large graphs comparison with matrix-based large graphs (M = 16.03) being easier to read than node-link graphs(M = 24.76). Figure\ref{directComparison} shows the mean values of each representation. Wilcoxon test showed a p-value of 5.633e-07.
+A thorough data analysis of all different factors of the graphs was conducted. The results showed that regardless of the graph layout and size the matrix-based graphs (M = 14.15) have better performance than node-link graphs (M = 16.85) for direct questions (Fig\ref{directComparison}) with p-value = 0.0128 (Table\ref{directResults}). When different sizes of each graph type were compared a significant difference was found only for the large graphs comparison with matrix-based large graphs (M = 16.03) being easier to read than node-link graphs (M = 24.76). A Wilcoxon test revealed that p-value = 5.633e-07. Figure\ref{directComparison} shows the mean values of each comparison group. 
 
-
+\bigskip
 \begin{figure}[!ht]
     \includegraphics[width=13cm]{images/nodelinkdirectlayouts.PNG}
     \vspace{-15pt}
@@ -376,10 +375,9 @@ The research nature of the experiment allowed for thorough data analysis of diff
 	\label{nodelinkdirectlayouts}
 \end{figure}
 
+Node-link layouts were compared in each size group. Figure \ref{nodelinkdirectlayouts} illustrates the difference in mean values in all node-link layouts and sizes. In small size, the parallel layout was found to have the worst performance (M = 14.20) and hierarchical layout was found to have the best performance (M = 9.65). Friedman test showed that p-value = 0.0013* with significant post-hoc tests between all pairs (Table\ref{directResults}). In the medium size measures, the parallel layout had the worst performance time of 15.62 on average, but when Friedman test was conducted no statistical difference between the three layouts was found with p-value = 0.6575. The node-link large size performance time for hierarchical (M=17.96), parallel (M=38.86), and organic (M=17.46) layouts \ref{nodelinkdirectlayouts} was significantly different and has a p-value = 3.261e-06*. 
 
-Node-link layouts were compared in each size group. Figure\ref{nodelinkdirectlayouts} illustrates the difference in mean values in all node-link layouts and sizes. In small size, the parallel layout was found the have the worst performance (M = 14.20) and hierarchical layout was found to have the best performance (M = 9.65). Friedman test calculated a p-value of 0.0013* with significant post-hoc tests between all pairs (Table\ref{directResults}). In the medium size measures, the parallel layout had the worst performance time of 15.62 on average, but when Friedman test was conducted no statistical difference between the three layouts was found with p-value = 0.6575. The node-link large size performance time for hierarchical (M=17.96), parallel (M=38.86), and organic (M=17.46) layouts \ref{nodelinkdirectlayouts} was significantly different and has p-value = 3.261e-06*. 
-
-The matrix-based based graphs were not found to have consistent performance differences between the various layouts when direct question was asked. Significant difference was found in the medium size with out-degree descending layout (M=12.70) outperforming in-degree descending (M=14.64) and alphabetical layouts (M=14.86). As far as the small and the large sizes are concerned p-value was shown to be insignificant.
+The matrix-based based graphs were not found to have consistent performance differences between the various layouts when direct question was asked. A significant difference was found in the medium size with out-degree descending layout (M=12.70) outperforming in-degree descending (M=14.64) and alphabetical layouts (M=14.86). As far as the small and the large sizes are concerned p-value was shown to be insignificant.
 
 
 \begin{table}[H]
@@ -431,10 +429,9 @@ H - hierarchical; P - parallel; O - organic; inDD - in-degree descending; outDD 
 	\label{pathComparison}
 \end{wrapfigure}
 
-The path question results showed a different pattern. The Wilcoxon comparison between the matrix-based (M=35.62) and node-link (M=31.81) representations of any size and layout showed a better performance for node-link graphs \ref{pathComparison} with p-value=0.02479*. In the small group size of this question type, matrix-based representations (M=23.09) were outperformed by node-link graphs (M=27.83). Wilcoxon test reported a p-value of 0.03997* (Table\ref{pathResults}). No difference was found in the medium size graphs but in the large size group matrix-based graphs (M=47.38) showed worse performance than node-link graphs (M=39.51). Wilcoxon test found a p-value of 0.02847*. 
+The path question results showed a different pattern. The Wilcoxon comparison between the matrix-based (M=35.62) and node-link (M=31.81) representations of all sizes and layouts showed a significantly better performance for node-link graphs \ref{pathComparison} with p-value=0.02479*. In the small group size of this question type, matrix-based representations (M=23.09) were outperformed by node-link graphs (M=27.83). Wilcoxon test reported a p-value of 0.03997* (Table\ref{pathResults}). No difference was found in the medium size graphs but in the large size group matrix-based graphs (M=47.38) showed worse performance than node-link graphs (M=39.51). Wilcoxon test showed a p-value of 0.02847*. 
 
-The node-link layout comparison showed that for small sizes the hierarchical layout (M=27.31) has worst performance, followed by the parallel layout (M=22.43) and the organic layout (M=19.62). Friedman test found a significant difference between the layouts with p-value=5.943e-06*. However, in the medium size group, the layouts showed different results (Figure\ref{nodePathLayouts}). The organic layout (M=48.55) performed significantly worse than the parallel (M=26.44) and the hierarchical (M=23.54) \ref{pathResults}. These results were consistent with the large group size layouts where the organic layout (M=47.88) showed worse performance than parallel (M=39.20) and hierarchical (M=31.44) layouts.
-
+The node-link layout comparison showed that for small sizes the hierarchical layout (M=27.31) has the worst performance, followed by the parallel layout (M=22.43) and the organic layout (M=19.62). Friedman test found a significant difference between the layouts with p-value=5.943e-06*. However, in the medium size group, the layouts showed different results (Figure\ref{nodePathLayouts}). The organic layout (M=48.55) performed significantly worse than the parallel (M=26.44) and the hierarchical (M=23.54) (Figure \ref{pathResults}). These results were consistent with the large size group layouts where the organic layout (M=47.88) showed worse performance than parallel (M=39.20) and hierarchical (M=31.44) layouts.
 
 \begin{figure}[H]
 \centering
@@ -443,8 +440,7 @@ The node-link layout comparison showed that for small sizes the hierarchical lay
 \label{nodePathLayouts}
 \end{figure}
 
-Among the matrix layouts, significant difference was found in the small and large size groups. When the size is small, alphabetical layout (M=23.79) outperformed out degree descending (M=29.50) and in degree descending (30.20) layouts \ref{matrixpathlayouts}. A Friedman test found a significant difference between the three layouts with p-value=0.0003245*. In the medium size group, the alphabetical layout was confirmed to have the best performance (M=27.29) when compared to in-degree descending layout (M=29.07), but no statistical difference was found when compared to out-degree descending layout (M=28.68) with p-value= 0.26. No significant difference was found among the layouts in large size. All p-values for path question can be found in Figure \ref{pathResults} 
-
+Among the matrix layouts, significant difference was found in the small and large size groups. When the size is small, alphabetical layout (M=23.79) outperformed out-degree descending (M=29.50) and in-degree descending (30.20) layouts \ref{matrixpathlayouts}. A Friedman test found a significant difference between the three layouts with p-value=0.0003245*. In the medium size group, the alphabetical layout was confirmed to have the best performance (M=27.29) when compared to in-degree descending layout (M=29.07), but no statistical difference was found when compared to out-degree descending layout (M=28.68) with p-value=0.26. No significant difference was found among the layouts in large size. All p-values for path question can be found in Table \ref{pathResults}.
 
 \begin{figure}[H]
 \centering
@@ -499,6 +495,7 @@ H - hierarchical P - parallel O - organic inDD - indegree descending outDD - out
 
 Direct Question:
 \begin{itemize}
+ \itemsep0em
 	\item Matrix-based graphs were found to have better performance than node-link graphs for direct questions.
 	\item The parallel layout had worst performance in all sizes.
 	\item The hierarchical layout was the best in small node-link graphs, while for large size the organic layout was the best performing one.
@@ -506,6 +503,7 @@ Direct Question:
 \end{itemize}
 Path Question:
 \begin{itemize}
+\itemsep0em
 	\item Node-link graphs had better performance than matrix-based graphs in the path question task.
 	\item In the small size comparison for node-link layouts, organic representations were found to be the best performing ones.
 	\item In the layout comparison for medium and large size, the hierarchical layout was found to outperform the rest of the layouts.
@@ -521,9 +519,9 @@ The participants' answers to the preference questionnaire brought more light int
 
 \section{Qualitative Results}
 
-The experiment was done in the presence of the researcher to ensure high environmental validity and also to allow for  observations while the participants were doing the tasks. For example, while one of the participants was working on the tasks their telephone rang and they got distracted from the tasks. However, a timer was started to measure how long it took the participant to come back to the tasks and then this time was subtracted from the total recorded time for this question. An additional issue which arises is that it is impossible to measure whether the participant had to read the question again when they came back from their distraction or they were able to continue from where they stopped. Fortunately, this happened only once, and the time before the distraction was added on to the time after the distraction.
+The experiment was done in the presence of the researcher to ensure high validity of the results and also to allow for  observations while the participants were doing the tasks. For example, while one of the participants was working on the tasks their telephone rang and they got distracted from the tasks. However, a timer was started to measure how long it took the participant to come back to the tasks and then this time was subtracted from the total recorded time for this question. An additional issue which arises is that it is impossible to measure whether the participant had to read the question again when they came back from their distraction or they were able to continue from where they stopped. Fortunately, this happened only once, and the time before the distraction was added on to the time after the distraction.
 
-In general, there was positive feedback about the questions asked and the nature of the topics. Most people found them very familiar and were interested to find the causal relationships. A few people (N=3) mentioned that the font-size of the labels was small and it was difficult to follow the matrix row and columns on the large graphs because of the small size of the squares. The squares and font-size were made as large as possible, but due to the big amount of information that had to be fitted on one screen, some participants still experienced difficulties. One of these participants said that it might have been more difficult for them as they have eyesight issues. Other participants were explicitly asked after the experiment whether they had experienced any issues and they reported that everything was fine.
+In general, there was a positive feedback about the questions asked and the nature of the topics. Most people found them very familiar and were interested to find the causal relationships. A few people (N=3) mentioned that the font-size of the labels was small and it was difficult to follow the matrix row and columns on the large graphs because of the small size of the squares. The squares and font-size were made as large as possible, but due to the big amount of information that had to be fitted on one screen, some participants still experienced difficulties. One of these participants said that it might have been more difficult for them as they have eyesight issues. Other participants were explicitly asked after the experiment whether they had experienced any issues and they reported that everything was fine.
 
 \chapter{Discussion}
 
@@ -547,7 +545,7 @@ Matrix-based graphs did not differ significantly in the direct question type for
 
 Moreover, Bach and colleagues \cite{bach2014visualizing} examined various readability factors in matrix cubes by interviewing two experts in different fields - an astronomer and a neurologist. It was suggested that reordering rows and columns in matrix representations can be confusing. Visual clusters were not found to aid readability by the astronomy expert as they were suggested to prevent the recognition of separate rows and columns. He suggested that an alphabetical order is more appropriate and easier to read. However, according to the neurology expert row and column ordering to form data clusters was better when representing the data than alphabetically ordered matrices. According to this study, the matrix layout needs to be tailored to the user preference and area of expertise.
 
-As a result, matrix-based representations are still not very well understood. Our preference research among the participants showed that people would rather work with node-link graphs. Interestingly, we found that matrix-based graphs had better performance than node-link graphs in the direct question. A possible cause for participants' preference result could be that the matrix is not as user-friendly as the node-link graph and requires training. The matrix results suggest that alphabetical order has the best performance when searching for particular factors. However, as noted by Back and colleagues \cite{bach2014visualizing} depending on the task and the type of visualised data there could be different best performing matrix orderings. 
+As a result, matrix-based representations are still not very well understood. Our preference research among the participants showed that people would rather work with node-link graphs. Interestingly, we found that matrix-based graphs had better performance than node-link graphs in the direct question. A possible cause for participants' preference result could be that the matrix is not as user-friendly as the node-link graph and requires training. The matrix results suggest that alphabetical order has the best performance when searching for particular factors. However, as noted by Bach and colleagues \cite{bach2014visualizing} depending on the task and the type of visualised data there could be different best performing matrix orderings. 
 
 \section{Software reusability}
 
@@ -569,7 +567,7 @@ Therefore, the experimental software was used successfully to test the present r
 
 \subsection{Experimental Question}
 
-The experimental findings brought light into the factors which influenced readability in causal relationships in node-link and matrix-based graphs. Our research question was answered successfully, but further investigation in the underlying mechanisms that influenced the results needs to be made. It was found that parallel graphs have the worst performance in node-link direct graphs, and according to previous research, the reason for that is thought to be edge length and edge crossings. However, these are only speculations as the present experiment did not control for either of these factors. Therefore, a future experiment might examine the response time of causal graphs with different edge lengths and number of edge crossings. 
+The experimental findings brought light into the factors which influence readability in causal relationships in node-link and matrix-based graphs. Our research question was answered successfully, but further investigation in the underlying mechanisms that influenced the results needs to be made. It was found that parallel graphs have the worst performance in node-link direct graphs, and according to previous research, the reason for that is thought to be edge length and edge crossings. However, these are only speculations as the present experiment did not control for either of these factors. Therefore, a future experiment might examine the response time of causal graphs with different edge lengths and number of edge crossings. 
 
 Furthermore, a deeper investigation of the reason why there are different best performing layouts for the two types of questions - direct and path, needs to be made. It is interesting to examine whether we found this difference because we were visualising causal relationships. Future investigation might compare directed and non-directed node-link and matrix-based graphs and evaluate whether the came readability predictors will influence performance.
 
@@ -577,7 +575,7 @@ Matrices are a new way of visualising causal relationships and more research nee
 
 \section{Conclusion}
 
-Causal relationships can be visualised by node-link and matrix-based graphs. Node-link graphs are well-known visualisations used to illustrate directed and non-directed graphs for a long time. However, matrix graphs are a new representation which has recently been involved in visualising causal graphs. The aim of this project was to examine which type of graph is more readable for people. To test that experimental software was implemented using Node.js, Angular and PostgreSQL. Different layouts, sizes, types of questions and question themes were created. 30 participants were tested in a controlled environment. The results proposed that matrix-based representations have a better response time for direct questions, while node-link graphs have better performance for path questions. These results were related to previous studies which found similar differences between node-link graphs and matrix-based representations for non-directed graphs. Further investigation can examine the similarities in performance between causal and non-directed graphs. It will be interesting to investigate whether the pointing edge of the node-link graph can contribute to the complexity of the graph and significantly slow down human perception.
+Causal relationships can be visualised by node-link and matrix-based graphs. Node-link graphs are well-known visualisations used to illustrate directed and non-directed graphs for a long time. However, matrix graphs are a new representation which has recently been involved in visualising causal graphs. The aim of this project was to examine which type of graph is more readable for people. To test that experimental software was implemented using Node.js, Angular and PostgreSQL. Different layouts, sizes, types of questions and question themes were created. Thirty participants were tested in a controlled environment. The results proposed that matrix-based representations have a better response time for direct questions, while node-link graphs have better performance for path questions. These results were related to previous studies which found similar differences between node-link graphs and matrix-based representations for non-directed graphs. Further investigation can examine the similarities in performance between causal and non-directed graphs. It will be interesting to investigate whether the pointing edge of the node-link graph can contribute to the complexity of the graph and significantly slow down human perception.
 
 In a real-life environment, when people working in the Social and Health sector are trying to answer a specific question from a matrix-based or node-link visualisation knowing which is the more efficient way of finding information can help them save time and money. In addition, a data visualisation technique that is not likely to be misread will help them take the correct decisions according to the data. The implications of the results of the present project brought more light into the visualisation of causal relationships and the effectiveness of different layouts.
 
@@ -621,8 +619,9 @@ In a real-life environment, when people working in the Social and Health sector 
 \end{figure}
 
 \section{Training}
+\label{train}
 
-All participants were provided with video training, which can be found here: \url{https://youtu.be/pkchO1fafrs}
+All participants were provided with video training, which can be found \href{https://youtu.be/pkchO1fafrs}{here}.
 
 They were also given the following written instructions of how to read the graphs.
 
@@ -679,18 +678,48 @@ researcher in the room for help.
 Otherwise, you can proceed to start the experiment.
 
 ----------------------------------------------------------------------------------------------------------------------
+\section{Demographic Questionnaire}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{images/questionnaire.PNG}
+\caption{Questionnaire}
+\label{questionnaire}
+\end{figure}
+
+
+\section{Debriefing form}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{images/debriefing.PNG}
+\caption{Debriefing form was shown to all participants at the end of the experiment.}
+\label{debrief}
+\end{figure}
+
+\section{Preference Questionnaire}
+\label{preference}
+The preference questionnaire can be found \href{https://docs.google.com/forms/d/e/1FAIpQLSeEKichG31qd8Ba88OqcTDvYKJLk-Xf8oWBELAJMx0QDHbe-g/viewform?usp=sf_link}{here}.
 \section{Research Questions}
 
 \begin{sidewaysfigure}[ht]
 \centering
 \includegraphics[width=24cm]{exampleQuestion.PNG}
-\caption{Example of an experimental question}
+\caption{Example of a path question}
 \label{exampleQuestion}
 \end{sidewaysfigure}
 
 
+\begin{sidewaysfigure}[ht]
+\centering
+\includegraphics[width=24cm]{images/directQ.PNG}
+\caption{Example of a direct question}
+\label{directQ}
+\end{sidewaysfigure}
+
+
 \chapter{Experimental Stimuli}
+\label{expStim}
 
 \section{Matrix-based}
 
@@ -847,6 +876,62 @@ Otherwise, you can proceed to start the experiment.
 \caption{Large node-link graph in organic layout and student domain question}
 \label{studentLargeOrganic}
 \end{figure}
+
+\chapter{Progress Diary}
+
+Here is a summary of the achievements for each month.
+
+{\bfseries September}
+\begin{itemize}
+	\item Research in data visualisation and causal relationships.
+\end{itemize}
+
+{\bfseries October}
+\begin{itemize}
+	\item Aims of the project were established: matrix-based vs node-link comparison.
+	\item The software for creating the visualisation stimuli was chosen.
+	\item Different ways to implement the experimental software were discussed.
+	\item Requirements and user stories.
+	\item Research in different matrix-based and node-link layouts.
+	\item The technology tools that were going to be used in the project (Node.js, Angular and PostgreSQL) were chosen. 
+\end{itemize}
+
+{\bfseries November}
+\begin{itemize}
+	\item Node-link and matrix-based graphs were created for the experimental questions.
+	\item Web application development was initialised.
+	\item The decision to have two types of tasks (direct question and path question) was taken.
+	\item Information sheet, consent form and training video were completed.
+	\item Latin square was added to the web application.
+	\item All questions were added to the database.
+	\item The pilot of the experiment started.
+	\item The draft of the Implementation section was written.
+\end{itemize}
+
+{\bfseries December}
+\begin{itemize}
+	\item Issues spotted in the Pilot were fixed and the experiment was ready for real testing.
+	\item The first participant took part in the experiment.
+	\item Drafts of the Experimental methodology and Pilot section were written.
+\end{itemize}
+
+{\bfseries January}
+\begin{itemize}
+	\item The results analysis methodology was established.
+	\item 30 participants completed the experiment.
+\end{itemize}
+
+{\bfseries February}
+\begin{itemize}
+	\item The experimental data was analysed.
+	\item Results section was written.
+\end{itemize}
+
+{\bfseries March}
+\begin{itemize}
+	\item Introduction Chapter and Literature Background Chapter were finalised.
+	\item Discussion chapter was written.
+\end{itemize}
 
 \end{appendices}
 %%%%%%%%%%%%%%%%%%%%
