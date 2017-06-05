@@ -785,7 +785,7 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">37</attribute>
-			<attribute key="label" type="String">more friends</attribute>
+			<attribute key="label" type="String">more likeable </attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">863.6928571428572</attribute>
 				<attribute key="y" type="double">420.0</attribute>
@@ -797,7 +797,7 @@
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">more friends</attribute>
+				<attribute key="text" type="String">more likeable </attribute>
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
