@@ -179,6 +179,12 @@ app.get('/research-questions', (request, response)=>{
   response.render('research-questions',{layout: 'questionLayout.hbs'})
 })
 
+
+app.get('/research-questions-type0', (request, response)=>{
+  response.render('research-questions-type0',{layout: 'questionLayout.hbs'})
+})
+
+
 app.get('/thank-you', (request, response)=>{
 	response.render('thank-you',{})
 })

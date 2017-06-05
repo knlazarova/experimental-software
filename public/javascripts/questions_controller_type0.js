@@ -113,7 +113,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		// get the selected value
 		$scope.participantAnswers.push($scope.registerAnswer($scope.question, $scope.participant_id));
 		// Uncheck radio buttons
-		$("input:checkbox").attr("checked",false);
+		$("input:radio").attr("checked",false);
 		//start timer
 		startTime = new Date();
 		//there are more than one questions left
