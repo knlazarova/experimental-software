@@ -90,16 +90,12 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		timeTaken /= 1000
 		//take the participants' answer
 		var currentAnswer = $("input:checked").val();
-		console.log(currentAnswer);
+		console.log("checked asnwers is ", currentAnswer);
 		//add the trial data to a JSON object
 		trialObject["question_id"] =  question.question_id;
 		trialObject["participant_id"] = $scope.participant_id
 		trialObject["answer"] = currentAnswer;
 		trialObject["time"] = timeTaken;
-		//trialObject["type"] = question.type;
-		//trialObject["size"] = question.size;
-		//trialObject["layout"] = question.layout;
-		//trialObject["domain_question"] = question.domain_question;
 		
 		//check if the answer is correct
 		if (question.correct == currentAnswer){
@@ -134,7 +130,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 			function(response){
 				console.log('success')
 				//go to the demographic questionnaire
-				$window.location.href = '/participants-questionnaire';
+				$window.location.href = '/research-questions-type1';
 		},
 		function(response){
 			console.log('failed')

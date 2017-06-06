@@ -9,7 +9,7 @@ app.config(function($interpolateProvider) {
 app.factory('questionService', ['$http', '$q', function($http, $q){
 	var getQuestions = function(){
 		var defer = $q.defer();
-		$http.get('http://localhost:3000/db-questions').then(function(response){
+		$http.get('http://localhost:3000/db-questions-type1').then(function(response){
 			defer.resolve(response.data);
 		}, function(response){
 			defer.reject(response);
@@ -88,20 +88,28 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		var timeTaken = endTime-startTime
 		// convert into sec
 		timeTaken /= 1000
+		
+		var answersArray = new Array()
 		//take the participants' answer
-		var currentAnswer = $("input:checked").val();
+		 console.log(answersArray)
+		$("input:checkbox:checked").each(function(){
+   		 answersArray.push($(this).val());;
+   		 console.log(answersArray)
+		});
+ 		console.log(answersArray)
 		//add the trial data to a JSON object
 		trialObject["question_id"] =  question.question_id;
 		trialObject["participant_id"] = $scope.participant_id
-		trialObject["answer"] = currentAnswer;
+		trialObject["option_checked"] = answersArray;
 		trialObject["time"] = timeTaken;
 		
 		//check if the answer is correct
-		if (question.correct == currentAnswer){
-			trialObject["correct"] = "yes"
-		} else{
-			trialObject["correct"] = "no"
-		}
+		//if (question.correct == currentAnswer){
+		//	trialObject["correct"] = "yes"
+		//} else{
+		//	trialObject["correct"] = "no"
+		//}
+		
 		return trialObject;
 	}
 
@@ -122,6 +130,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 			$scope.submitQuestions();			 
 		}
 	}
+
 	//send the answers to the database
 	$scope.submitQuestions = function(){	
 		$http.post('http://localhost:3000/research-answers-type1-db', $scope.participantAnswers).then(

@@ -81,7 +81,7 @@ app.post('/research-answers-type0-db', function(req, res, next) {
   })
 });
 
-//TODO - send answers of type1 to db
+//send answers of type1 to db
 app.post('/research-answers-type1-db', function(req, res, next) {
   const researchAnswers = req.body;
   //connect to database
@@ -91,13 +91,12 @@ app.post('/research-answers-type1-db', function(req, res, next) {
     }
     //add all answers to the participants_answers table in the database
     //start from the 6th one to exclude the training questions
-    for (var i = researchAnswers.length - 1; i >= 6; i--) {
-    client.query('INSERT INTO answers_type1 values ($1, $2, $3, $4, $5, $6, $7, $8, $9);', 
+    for (var i = researchAnswers.length - 1; i >= 1; i--) {
+    client.query('INSERT INTO answers_type1 values ($1, $2, $3, $4);', 
         [researchAnswers[i].question_id, parseInt(researchAnswers[i].participant_id), 
-        researchAnswers[i].answer, researchAnswers[i].time, researchAnswers[i].correct, 
-        researchAnswers[i].type,  researchAnswers[i].size,  researchAnswers[i].layout,  researchAnswers[i].domain_question], function(err, result){
+        researchAnswers[i].time, researchAnswers[i].option_checked.toString() ], function(err, result){
     if (err){
-        console.log('Theres been an error in inserting participants answers to db')
+        console.log('Theres been an error in inserting participants answers type 1 to db')
         res.send();
       }
       return res.send();
@@ -187,6 +186,25 @@ app.get('/db-questions-type0', (request, response)=>{
   })
 })
 
+//type1 questions, please
+app.get('/db-questions-type1', (request, response)=>{
+    pg.connect(conString, function (err,client) {
+    if (err) {
+      console.log("CANT CONNECT TO DB");
+    }
+    var getQuestions = client.query('SELECT * FROM public.questions_type1;');
+   client.query('SELECT * FROM public.questions_type1;', [], function(err,result){     
+      if (err){
+        console.log('An error occured while trying to retrieve research questions from the database')
+        return response.sendStatus(500);
+      }
+      return response.json(result.rows);
+    })
+  })
+})
+
+
+
 app.get('/latin-square', (request, response)=>{
     pg.connect(conString, function (err,client) {
     if (err) {
@@ -206,8 +224,8 @@ app.get('/welcome', (request, response)=>{
 	response.render('welcome',{})
 })
 
-app.get('/research-questions', (request, response)=>{
-  response.render('research-questions',{layout: 'questionLayout.hbs'})
+app.get('/research-questions-type1', (request, response)=>{
+  response.render('research-questions-type1',{layout: 'questionLayout.hbs'})
 })
 
 
