@@ -12,7 +12,13 @@
     <div class="col-sm-4">
     <form id="form" style="margin-top:97%; padding: 2% 2%;">
     <fieldset class="form-group" id="form-group">
-      <legend ng-bind="question.question"> </legend>
+      <!--<legend ng-bind="question.question"> </legend>
+      -->
+      <legend> 
+        <p>Look at the path </p> <ng-value="question.path">
+        <p> and identify all colliders and confounders </p>
+      </legend>
+
       <div class="form-check">
         <label class="form-check-label">
           <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios1" ng-value="question.one">
@@ -35,6 +41,42 @@
         <label class="form-check-label">
           <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios4" ng-value="question.four" >
           <span ng-bind="question.four"></span> 
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios4" ng-value="question.five" >
+          <span ng-bind="question.five"></span> 
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios4" ng-value="question.six" >
+          <span ng-bind="question.six"></span> 
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios4" ng-value="question.seven" >
+          <span ng-bind="question.seven"></span> 
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios4" ng-value="question.eight" >
+          <span ng-bind="question.eight"></span> 
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios4" ng-value="question.nine" >
+          <span ng-bind="question.nine"></span> 
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios4" ng-value="question.ten" >
+          <span ng-bind="question.ten"></span> 
         </label>
       </div>
       <div class="btn-group btn-group-lg" role="continue">

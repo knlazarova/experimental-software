@@ -7,7 +7,7 @@ const pg = require('pg')
 'use strict'
 
 // database credentials
-const conString = 'postgres://knlaz:knlaz@localhost:5432/knlaz' 
+const conString = 'postgres://knlaz:knlaz@localhost:5432/internship' 
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -53,7 +53,36 @@ app.post('/participants-info', function (req, res, next) {
 
 })
 
-app.post('/research-answers-db', function(req, res, next) {
+//send participants' answers to type0 questions to db 
+app.post('/research-answers-type0-db', function(req, res, next) {
+  const researchAnswers = req.body;
+  //connect to database
+  pg.connect(conString, function(err,client,done){
+    if (err){
+      console.log("Cannot connect to database")
+    }
+    //add all answers to the participants_answers table in the database
+    //start from the 6th one to exclude the training questions
+
+    //for (var i = researchAnswers.length - 1; i >= 6; i--) {
+    for (var i = researchAnswers.length - 1; i >= 0; i--) {
+    client.query('INSERT INTO answers_type0 values ($1, $2, $3, $4, $5);', 
+        [researchAnswers[i].question_id, parseInt(researchAnswers[i].participant_id), 
+        researchAnswers[i].answer, researchAnswers[i].time, researchAnswers[i].correct], function(err, result){
+    if (err){
+        console.log('Theres been an error in inserting participants answers type 0 to db')
+        res.send();
+      }
+      return res.send();
+      res.sendStatus(200);
+    }) //end of query
+}  
+
+  })
+});
+
+//TODO - send answers of type1 to db
+app.post('/research-answers-type1-db', function(req, res, next) {
   const researchAnswers = req.body;
   //connect to database
   pg.connect(conString, function(err,client,done){
@@ -63,7 +92,7 @@ app.post('/research-answers-db', function(req, res, next) {
     //add all answers to the participants_answers table in the database
     //start from the 6th one to exclude the training questions
     for (var i = researchAnswers.length - 1; i >= 6; i--) {
-    client.query('INSERT INTO participants_answers values ($1, $2, $3, $4, $5, $6, $7, $8, $9);', 
+    client.query('INSERT INTO answers_type1 values ($1, $2, $3, $4, $5, $6, $7, $8, $9);', 
         [researchAnswers[i].question_id, parseInt(researchAnswers[i].participant_id), 
         researchAnswers[i].answer, researchAnswers[i].time, researchAnswers[i].correct, 
         researchAnswers[i].type,  researchAnswers[i].size,  researchAnswers[i].layout,  researchAnswers[i].domain_question], function(err, result){
@@ -107,6 +136,7 @@ app.get('/training', (request, response)=>{
   response.render('training',{})
 })
 
+//
 app.get('/research-answers-db', (request, response)=>{
     pg.connect(conString, function (err,client) {
     if (err) {
@@ -123,7 +153,7 @@ app.get('/research-answers-db', (request, response)=>{
 
 })
   })
-
+//
 app.get('/questionnaire-answers-db', (request,response) =>{
     pg.connect(conString, function (err,client) {
     if (err) {
@@ -139,13 +169,14 @@ app.get('/questionnaire-answers-db', (request,response) =>{
   })
 })
 
-app.get('/db-questions', (request, response)=>{
+//type0 questions, please
+app.get('/db-questions-type0', (request, response)=>{
     pg.connect(conString, function (err,client) {
     if (err) {
       console.log("CANT CONNECT TO DB");
     }
-    var getQuestions = client.query('SELECT * FROM public.questions;');
-   client.query('SELECT * FROM public.questions;', [], function(err,result){     
+    var getQuestions = client.query('SELECT * FROM public.questions_type0;');
+   client.query('SELECT * FROM public.questions_type0;', [], function(err,result){     
       if (err){
         console.log('An error occured while trying to retrieve research questions from the database')
         return response.sendStatus(500);

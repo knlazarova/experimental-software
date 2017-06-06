@@ -95,10 +95,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		trialObject["participant_id"] = $scope.participant_id
 		trialObject["answer"] = currentAnswer;
 		trialObject["time"] = timeTaken;
-		trialObject["type"] = question.type;
-		trialObject["size"] = question.size;
-		trialObject["layout"] = question.layout;
-		trialObject["domain_question"] = question.domain_question;
+		
 		//check if the answer is correct
 		if (question.correct == currentAnswer){
 			trialObject["correct"] = "yes"
@@ -127,7 +124,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 	}
 	//send the answers to the database
 	$scope.submitQuestions = function(){	
-		$http.post('http://localhost:3000/research-answers-db', $scope.participantAnswers).then(
+		$http.post('http://localhost:3000/research-answers-type1-db', $scope.participantAnswers).then(
 			function(response){
 				console.log('success')
 				//go to the demographic questionnaire

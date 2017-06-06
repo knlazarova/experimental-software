@@ -12,29 +12,24 @@
     <div class="col-sm-4">
     <form id="form" style="margin-top:97%; padding: 2% 2%;">
     <fieldset class="form-group" id="form-group">
-      <legend ng-bind="question.question"> </legend>
+      <!---<legend ng-bind="question.question"> </legend> -->
+      <legend>Consider the highlighted path. What bias does the node in blue indroduce for this path?
       <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="optionsRadios1" ng-value="question.one">
-          <span ng-bind="question.one"></span>        
+          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="collider" value="collider">
+          <span>collider</span>        
         </label>
       </div>
       <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="optionsRadios2" ng-value="question.two" >
-          <span ng-bind="question.two"></span> 
+          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="confounder" value="confounder">
+          <span>confounder</span> 
         </label>
       </div>
     <div class="form-check">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="optionsRadios3" ng-value="question.three" >
-         <span ng-bind="question.three"></span> 
-        </label>
-      </div>
-    <div class="form-check">
-        <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="optionsRadios4" ng-value="question.four" >
-          <span ng-bind="question.four"></span> 
+          <input type="radio" class="form-check-input" name="optionsRadios" ng-click="nextQuestion()" id="none" value="none">
+         <span>none</span> 
         </label>
       </div>
     </fieldset>
