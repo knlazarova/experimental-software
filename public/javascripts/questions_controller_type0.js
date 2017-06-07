@@ -98,7 +98,11 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		trialObject["time"] = timeTaken;
 		
 		//check if the answer is correct
-		if (question.correct == currentAnswer){
+		var questionAnswer = question.answer.replace(/ /g, '');
+		console.log("question.answer: ", questionAnswer,  ",,,,")
+		console.log("currentAnswer: ", currentAnswer, ",,,,");
+		if (questionAnswer == currentAnswer){
+
 			trialObject["correct"] = "yes"
 		} else{
 			trialObject["correct"] = "no"

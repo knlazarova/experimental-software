@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.set('view engine', '.hbs')  
 app.set('views', path.join(__dirname, 'views'))  
 app.use('/img',express.static(path.join(__dirname, 'public/images')));
-app.use('/pilotType0',express.static(path.join(__dirname, 'public/images/pilotType0')));
+app.use('/type0',express.static(path.join(__dirname, 'public/images/type0')));
 app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
 app.use('/css',express.static(path.join(__dirname, 'public/stylesheets')));
 
@@ -95,7 +95,7 @@ app.post('/research-answers-type1-db', function(req, res, next) {
     for (var i = researchAnswers.length - 1; i >= 1; i--) {
     client.query('INSERT INTO answers_type1 values ($1, $2, $3, $4);', 
         [researchAnswers[i].question_id, parseInt(researchAnswers[i].participant_id), 
-        researchAnswers[i].time, researchAnswers[i].option_checked.toString() ], function(err, result){
+        researchAnswers[i].time, researchAnswers[i].option_checked], function(err, result){
     if (err){
         console.log('Theres been an error in inserting participants answers type 1 to db')
         res.send();

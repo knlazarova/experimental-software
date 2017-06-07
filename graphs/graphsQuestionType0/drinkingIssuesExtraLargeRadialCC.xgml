@@ -66,7 +66,7 @@
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">br</attribute>
 			</section>
 		</section>
 		<section name="node">
@@ -682,8 +682,8 @@
 			<attribute key="id" type="int">32</attribute>
 			<attribute key="label" type="String">bullying</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">145.9795680426605</attribute>
-				<attribute key="y" type="double">-34.49587966813206</attribute>
+				<attribute key="x" type="double">166.9795680426605</attribute>
+				<attribute key="y" type="double">-21.743819502198093</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -693,9 +693,10 @@
 			</section>
 			<section name="LabelGraphics">
 				<attribute key="text" type="String">bullying</attribute>
-				<attribute key="fontSize" type="int">12</attribute>
+				<attribute key="fontSize" type="int">14</attribute>
+				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">bl</attribute>
 			</section>
 		</section>
 		<section name="node">

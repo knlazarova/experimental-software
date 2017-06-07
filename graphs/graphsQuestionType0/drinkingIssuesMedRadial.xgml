@@ -129,7 +129,7 @@
 				<attribute key="fontSize" type="int">16</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">tl</attribute>
 			</section>
 		</section>
 		<section name="node">
@@ -339,7 +339,7 @@
 				<attribute key="fontSize" type="int">16</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">br</attribute>
 			</section>
 		</section>
 		<section name="node">
@@ -381,7 +381,7 @@
 				<attribute key="fontSize" type="int">16</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">b</attribute>
 			</section>
 		</section>
 		<section name="node">
