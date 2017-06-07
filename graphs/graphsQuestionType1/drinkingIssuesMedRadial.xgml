@@ -12,8 +12,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">70.71067811865474</attribute>
 				<attribute key="y" type="double">70.71067811865476</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -33,8 +33,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">7.443213082547236</attribute>
 				<attribute key="y" type="double">-99.72260816388527</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -54,11 +54,11 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-87.81739357278683</attribute>
 				<attribute key="y" type="double">47.83414456308651</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#FF0000</attribute>
+				<attribute key="fill" type="String">#99CC00</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -75,8 +75,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-490.89235513408033</attribute>
 				<attribute key="y" type="double">-94.99839825447552</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -96,8 +96,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">0.0</attribute>
 				<attribute key="y" type="double">0.0</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -117,8 +117,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-6.311949130715462</attribute>
 				<attribute key="y" type="double">-199.90037343179543</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -138,8 +138,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-379.5911713703856</attribute>
 				<attribute key="y" type="double">126.13699940009107</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -159,8 +159,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-212.49305029698098</attribute>
 				<attribute key="y" type="double">338.89040053605044</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -180,8 +180,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-322.0704869172586</attribute>
 				<attribute key="y" type="double">382.4533977583151</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -201,8 +201,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-111.73492144707441</attribute>
 				<attribute key="y" type="double">487.35542197580617</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -222,8 +222,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-386.48458430071037</attribute>
 				<attribute key="y" type="double">458.94407730997807</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -243,11 +243,11 @@
 			<section name="graphics">
 				<attribute key="x" type="double">172.52803081813548</attribute>
 				<attribute key="y" type="double">-101.16362281974926</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#FF0000</attribute>
+				<attribute key="fill" type="String">#99CC00</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -264,11 +264,11 @@
 			<section name="graphics">
 				<attribute key="x" type="double">97.75842485391512</attribute>
 				<attribute key="y" type="double">-21.054461999334748</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#FF0000</attribute>
+				<attribute key="fill" type="String">#99CC00</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -285,8 +285,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-175.63478714557365</attribute>
 				<attribute key="y" type="double">95.66828912617302</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -306,8 +306,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-263.45218071836047</attribute>
 				<attribute key="y" type="double">143.50243368925953</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -327,8 +327,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-9.467923696073193</attribute>
 				<attribute key="y" type="double">-299.85056014769316</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -348,8 +348,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">212.13203435596424</attribute>
 				<attribute key="y" type="double">212.13203435596427</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -369,8 +369,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">141.42135623730948</attribute>
 				<attribute key="y" type="double">141.4213562373095</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>
@@ -390,11 +390,11 @@
 			<section name="graphics">
 				<attribute key="x" type="double">282.84271247461896</attribute>
 				<attribute key="y" type="double">282.842712474619</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#FF0000</attribute>
+				<attribute key="fill" type="String">#99CC00</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -411,8 +411,8 @@
 			<section name="graphics">
 				<attribute key="x" type="double">-392.7138841072643</attribute>
 				<attribute key="y" type="double">-75.99871860358041</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
+				<attribute key="w" type="double">10.0</attribute>
+				<attribute key="h" type="double">10.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
 				<attribute key="fill" type="String">#99CC00</attribute>

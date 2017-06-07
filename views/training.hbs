@@ -10,36 +10,60 @@ Your browser does not support the video tag.
 </video></center>
 
 	<div style="margin: 4% 4% 4% 4%">
- 	<p><span style="font-weight: 400;">Node-link graphs are graphs made of vertices and edges. Those graphs are used to represent</span><strong><em> causal relationship </em></strong><span style="font-weight: 400;">between two or more variables. The node-link graph displayed in figure 1.1 has two vertices : &ldquo;having fun&rdquo; and &ldquo;good memories&rdquo;, and one edge between them which points towards &ldquo;good memories&rdquo;. When reading this graph one would say: &ldquo;Having fun causes good memories&rdquo;.</span></p>
+ 	<p><span style="font-weight: 400;">Node-link and matrix-based graphs are graphs made of nodes and edges. Those graphs are used to represent</span><strong><em> causal relationship </em></strong><span style="font-weight: 400;">between two or more variables. The node-link graph displayed in figure 1.1 has two nodes : &ldquo;having fun&rdquo; and &ldquo;good memories&rdquo;, and one edge between them which points towards &ldquo;good memories&rdquo;. When reading this graph one would say: &ldquo;Having fun causes good memories&rdquo;.</span></p>
 <p>&nbsp;</p>
 <img src="/img/trainging11.PNG"></img>
 	
-	<p><span style="font-weight: 400;">Those graphs are also used to show </span><strong><em>causal paths</em></strong><span style="font-weight: 400;"> or</span><strong><em> indirect relationships</em></strong><span style="font-weight: 400;"> between factors. For example Figure 1.2 shows that &ldquo;playing games&rdquo; causes &ldquo;having fun&rdquo; which causes &ldquo;good memories&rdquo;. At the same time &ldquo;playing games&rdquo; causes &ldquo;procrastination&rdquo;, which causes &ldquo;dissatisfaction&rdquo;. These are two different </span><strong>causal paths</strong><span style="font-weight: 400;">. Therefore, &ldquo;playing games&rdquo; </span><strong>indirectly causes</strong><span style="font-weight: 400;"> &ldquo;dissatisfaction&rdquo; and &ldquo;good memories&rdquo;.</span></p>
+	<p><span style="font-weight: 400;">These graphs are also used to show </span><strong><em>causal paths</em></strong><span style="font-weight: 400;"> or</span><strong><em> indirect relationships</em></strong><span style="font-weight: 400;"> between factors. For example Figure 1.2 shows that &ldquo;playing games&rdquo; causes &ldquo;having fun&rdquo; which causes &ldquo;good memories&rdquo;. At the same time &ldquo;playing games&rdquo; causes &ldquo;procrastination&rdquo;, which causes &ldquo;dissatisfaction&rdquo;. These are two different </span><strong>causal paths</strong><span style="font-weight: 400;">. Therefore, &ldquo;playing games&rdquo; </span><strong>indirectly causes</strong><span style="font-weight: 400;"> &ldquo;dissatisfaction&rdquo; and &ldquo;good memories&rdquo;.</span></p>
 <p><br /><br /></p>
 	<img src="/img/training12.PNG"></img>
 
-	<p><span style="font-weight: 400;">The same information can also be displayed in a </span><strong>matrix-based graph </strong><span style="font-weight: 400;">(Figure 1.3). The darker squares on the matrix show that the row factor (horizontal label, on the left) is causing the column factor (vertical label, at an angle). For example, &ldquo;playing games&rdquo; (horizontal) causes &ldquo;having fun&rdquo; (vertical). Then if we are looking for a path we will look for factors that are caused by &ldquo;having fun&rdquo;. In order to do this we find the &ldquo;having fun&rdquo; factor on the left and will find the column factor that it is connected with, which is &ldquo;good memories&rdquo;. This way the same causal path is found: playing games -&gt; having fun -&gt; good memories. </span></p>
+	<p><span style="font-weight: 400;">The same information can also be displayed in a </span><strong>matrix-based graph </strong><span style="font-weight: 400;">(Figure 1.3). The darker squares on the matrix represents an edge between the row factor (horizontal label, on the left) and the column factor (vertical label, at an angle), which are the nodes of the matrix based-graph. For example, &ldquo;playing games&rdquo; (horizontal) causes &ldquo;having fun&rdquo; (vertical). Then if we are looking for a path we will look for factors that are caused by &ldquo;having fun&rdquo;. In order to do this we find the &ldquo;having fun&rdquo; factor on the left and will find the column factor that it is connected with, which is &ldquo;good memories&rdquo;. This way the same causal path is found: playing games -&gt; having fun -&gt; good memories. </span></p>
 <p><br /><br /></p>
 <img src="/img/training13.PNG"></img>
 <p><br /><br /></p>
 
-<p><span style="font-weight: 400;">To see that one factor can lead to different causal paths, we need to find the row factor that has more than one darker square. In this example, this is playing games. Please, find the the row &ldquo;playing games&rdquo; and find what are two different factors that it can lead to. As previously mentioned those are &ldquo;having fun&rdquo; and &ldquo;procrastination&rdquo;.</span></p>
-<p><span style="font-weight: 400;">If you still have any questions regarding reading how to read those graphs please ask the researcher in the room for help.</span></p>
+<p><span style="font-weight: 400;">To see that one factor can lead to different causal paths, we need to find the row factor (node) that has more than one darker squares (edges). The left side label is the beginning of the edge while the label at the top is the end of an edge. In this example, this is playing games. Please, find the the row &ldquo;playing games&rdquo; and find what are two different factors that it can lead to. As previously mentioned those are &ldquo;having fun&rdquo; and &ldquo;procrastination&rdquo;.</span></p>
+<p><span style="font-weight: 400;">If you still have any questions regarding how to read these graphs please ask the researcher in the room for help. It is esential to understand this section in order to proceed further.</span></p>
 <p>&nbsp;</p>
-<p><span style="font-weight: 400;">Otherwise, you can go onto the next part of the training.</span></p>
-<p><br /><br /></p>
+
 
 <h1> Colliders and Confounders </h1>
 
-Colliders and confounders are types of structures that can introduce biases when reading causal graphs. These structures are not fixed in a graph. They appear according to a specific path. For example, in Figure 2.1. in the path boredom -> video grames -> fun, &ldquo;inability to focus&rdquo; is a <b>confounder</b> as it causes two of the factors on the graph. 
+Colliders and confounders are types of structures that can introduce biases when reading causal graphs. These structures are not fixed in a graph. They appear according to a specific path. In order to show you a particular path later in the experiment there will be edges which will have thicker lines (highlighted lines). Regular drinking -> depression -> poor education -> negative parenting is an example of a highlighted path and can be seen bellow.
+
+<p><br /><br /></p>
+<img src="/img/highlight.PNG"></img>
+<p><br /><br /></p>
+
+Colliders and confounders can also be found in matrix-based graphs. The following graph represents the same logical structure. The beginning of a causal path is marked in <b>blue</b> and the end in <b>red</b>. The highlighted path is represented by darker squares. Each darker square represents and edge and each label represents a node.
+
+<p><br /><br /></p>
+<img src="/img/matrixHigh.PNG"></img>
+<p><br /><br /></p>
+
+In Figure 2.1. in the path boredom -> video grames -> fun, &ldquo;inability to focus&rdquo; is a <b>confounder</b> as it causes two of the factors on the graph. 
 
 <p><br /><br /></p>
 <img src="/img/confounder.PNG"></img>
 <p><br /><br /></p>
 
+ The same representation can be made in a matrix-based graph. if you start reading the graph from  &ldquo;boredom&rdquo; (the beginning of the graph/blue factor), you will quickly find that  &ldquo;fun&rdquo; (red factor) is the end of that path. If you look at the inability to focus label you will see that it causes boredom and video games, which are two of the nodes on the specified path. Therefore, it is is a confounder on this particular path.
+
+<p><br /><br /></p>
+<img src="/img/matrixTraining.PNG"></img>
+<p><br /><br /></p>
+
 In Figure 2.2 &ldquo;inability to focus&rdquo; has become a <b>collider</b> as two of the nodes on the specified path cause &ldquo;inability to focus&rdquo;. 
 <p><br /><br /></p>
 <img src="/img/collider.PNG"></img>
+<p><br /><br /></p>
+
+
+The graph bellow show the same representation but in a matrix-based graph. When the path from blue to red is followed, one can see that two nodes from the path cause &ldquo;inability to focus&rdquo;. Therefore, it is a collider.
+
+<p><br /><br /></p>
+<img src="/img/matrixCollider.PNG"></img>
 <p><br /><br /></p>
 
 In addition, colliders and confounders can be implicit. In Figure 2.3. on the association path boredom -> video games -> fun, inability to focus is again a confounder because it causes two of the nodes on the path. 
@@ -48,6 +72,14 @@ In addition, colliders and confounders can be implicit. In Figure 2.3. on the as
 <img src="/img/assConfounder.PNG"></img>
 <p><br /><br /></p>
 
+
+In the graph below is the same: &ldquo;inability to focus&rdquo; is an implicit confounder. The blue colour helps us understand that the path starts from boredom even though inability to focus causes boredom. Then when we continue reading the graph we see that inability to focus also causes video games, which in turn causes fun. Therefore, &ldquo;inability to focus&rdquo; causes two factors in the causal path we are interested in and, therefore, it is a confounder. Figure 2.3 represents the same logical structure but in node-link visualisation.
+
+<p><br /><br /></p>
+<img src="/img/matrixImplicitConfounder.PNG"></img>
+<p><br /><br /></p>
+
+
 Similarly, there are implicit colliders (Figure 2.4). 
 
 <p><br /><br /></p>
@@ -55,39 +87,20 @@ Similarly, there are implicit colliders (Figure 2.4).
 <p><br /><br /></p>
 
 
-There are also complex colliders and confounders. The reason why thy are complex is that they interact with nodes which are more than one edge apart.
+The graph below, &ldquo;inability to focus&rdquo; is an implicit collider. You can see that there is no explicit causal link between boredom and video games but both of them cause inability to focus creating the same structure as in Figure 2.4.
 
+<p><br /><br /></p>
+<img src="/img/matrixImplicitCollider.PNG"></img>
+<p><br /><br /></p>
+
+
+
+There are also complex colliders and confounders. The reason why thy are complex is that they interact with nodes which are more than one edge apart.
 
 <p><br /><br /></p>
 <img src="/img/complex.PNG"></img>
 <p><br /><br /></p>
 
-
-Colliders and confounders can also be found in matrix-based graphs. In the following graph, the beginning of a causal path is marked in blue and the end in red. So if you start reading the graph from  &ldquo;boredom&rdquo;, you will quickly find that  &ldquo;fun is the end of that path&rdquo;. If you look at the inability to focus label you will see that it causes boredom and video games, which are two of the nodes on the specified path. Therefore, it is is a confounder on this particular path.
-
-
-<p><br /><br /></p>
-<img src="/img/matrixTraining.PNG"></img>
-<p><br /><br /></p>
-
-In the graph bellow, when the path from blue to red is followed, one can see that two nodes from the path cause &ldquo;inability to focus&rdquo;. Therefore, it is a collider.
-
-<p><br /><br /></p>
-<img src="/img/matrixCollider.PNG"></img>
-<p><br /><br /></p>
-
-In the graph below, &ldquo;inability to focus&rdquo; is an implicit confounder. The blue colour helps us understand that the path starts from boredom even though inability to focus causes boredom. Then when we continue reading the graph we see that inability to focus also causes video games, which in turn causes fun. Therefore, &ldquo;inability to focus&rdquo; causes two factors in the causal path we are interested in and, therefore, it is a confounder. Figure 2.3 represents the same logical structure but in node-link visualisation.
-
-<p><br /><br /></p>
-<img src="/img/matrixImplicitConfounder.PNG"></img>
-<p><br /><br /></p>
-
-
-In the graph below, &ldquo;inability to focus&rdquo; is an implicit collider. You can see that there is no explicit causal link between boredom and video games but both of them cause inability to focus. creating the same structure as in Figure 2.4.
-
-<p><br /><br /></p>
-<img src="/img/matrixImplicitCollider.PNG"></img>
-<p><br /><br /></p>
 
 <p><span style="font-weight: 400;">If you still have any questions regarding reading how to read those graphs please ask the researcher in the room for help.</span></p>
 <p>&nbsp;</p>

@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 app.set('view engine', '.hbs')  
 app.set('views', path.join(__dirname, 'views'))  
 app.use('/img',express.static(path.join(__dirname, 'public/images')));
+app.use('/pilotType0',express.static(path.join(__dirname, 'public/images/pilotType0')));
 app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
 app.use('/css',express.static(path.join(__dirname, 'public/stylesheets')));
 
