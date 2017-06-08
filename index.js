@@ -16,6 +16,7 @@ app.set('view engine', '.hbs')
 app.set('views', path.join(__dirname, 'views'))  
 app.use('/img',express.static(path.join(__dirname, 'public/images')));
 app.use('/type0',express.static(path.join(__dirname, 'public/images/type0')));
+app.use('/type1',express.static(path.join(__dirname, 'public/images/type1')));
 app.use('/js',express.static(path.join(__dirname, 'public/javascripts')));
 app.use('/css',express.static(path.join(__dirname, 'public/stylesheets')));
 
@@ -66,7 +67,8 @@ app.post('/research-answers-type0-db', function(req, res, next) {
     //start from the 6th one to exclude the training questions
 
     //for (var i = researchAnswers.length - 1; i >= 6; i--) {
-    for (var i = researchAnswers.length - 1; i >= 0; i--) {
+      console.log("researchAnswers", researchAnswers)
+    for (var i = researchAnswers.length - 1; i >= 4; i--) {
     client.query('INSERT INTO answers_type0 values ($1, $2, $3, $4, $5);', 
         [researchAnswers[i].question_id, parseInt(researchAnswers[i].participant_id), 
         researchAnswers[i].answer, researchAnswers[i].time, researchAnswers[i].correct], function(err, result){
@@ -92,7 +94,8 @@ app.post('/research-answers-type1-db', function(req, res, next) {
     }
     //add all answers to the participants_answers table in the database
     //start from the 6th one to exclude the training questions
-    for (var i = researchAnswers.length - 1; i >= 1; i--) {
+    console.log("researchAnswers", researchAnswers)
+    for (var i = researchAnswers.length - 1; i >= 0; i--) {
     client.query('INSERT INTO answers_type1 values ($1, $2, $3, $4);', 
         [researchAnswers[i].question_id, parseInt(researchAnswers[i].participant_id), 
         researchAnswers[i].time, researchAnswers[i].option_checked], function(err, result){
@@ -110,6 +113,10 @@ app.post('/research-answers-type1-db', function(req, res, next) {
 
 app.get('/home', (request, response)=>{
   response.render('home',{})
+})
+
+app.get('/part2', (request, response)=>{
+  response.render('part2',{})
 })
 
 app.get('/participant-number', (request, response)=>{

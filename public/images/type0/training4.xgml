@@ -16,7 +16,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#FF0000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -50,7 +50,7 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">2</attribute>
-			<attribute key="label" type="String">drinking parents</attribute>
+			<attribute key="label" type="String">bullying</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">282.94603174603174</attribute>
 				<attribute key="y" type="double">266.0</attribute>
@@ -58,11 +58,11 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">drinking parents</attribute>
+				<attribute key="text" type="String">bullying</attribute>
 				<attribute key="fontSize" type="int">16</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
@@ -79,7 +79,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -100,7 +100,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -121,7 +121,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -142,7 +142,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -163,7 +163,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -184,7 +184,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -205,7 +205,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -226,7 +226,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -247,7 +247,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#3366FF</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -268,7 +268,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -289,7 +289,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -310,7 +310,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -331,7 +331,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -352,7 +352,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -373,7 +373,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -394,7 +394,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -415,7 +415,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
+				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -595,6 +595,7 @@
 			<attribute key="source" type="int">1</attribute>
 			<attribute key="target" type="int">5</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
@@ -627,7 +628,6 @@
 			<attribute key="source" type="int">3</attribute>
 			<attribute key="target" type="int">6</attribute>
 			<section name="graphics">
-				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
@@ -747,7 +747,6 @@
 			<attribute key="source" type="int">1</attribute>
 			<attribute key="target" type="int">11</attribute>
 			<section name="graphics">
-				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
@@ -804,7 +803,6 @@
 			<attribute key="source" type="int">14</attribute>
 			<attribute key="target" type="int">13</attribute>
 			<section name="graphics">
-				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -817,6 +815,7 @@
 			<attribute key="source" type="int">5</attribute>
 			<attribute key="target" type="int">15</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
@@ -847,6 +846,7 @@
 			<attribute key="source" type="int">15</attribute>
 			<attribute key="target" type="int">16</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -860,6 +860,7 @@
 			<attribute key="source" type="int">16</attribute>
 			<attribute key="target" type="int">17</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
@@ -891,6 +892,7 @@
 			<attribute key="source" type="int">17</attribute>
 			<attribute key="target" type="int">0</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
@@ -954,7 +956,6 @@
 			<attribute key="source" type="int">6</attribute>
 			<attribute key="target" type="int">14</attribute>
 			<section name="graphics">
-				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -1135,7 +1136,6 @@
 			<attribute key="source" type="int">11</attribute>
 			<attribute key="target" type="int">5</attribute>
 			<section name="graphics">
-				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>

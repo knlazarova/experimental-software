@@ -226,7 +226,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#0000FF</attribute>
+				<attribute key="fill" type="String">#99CC00</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -289,7 +289,7 @@
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
 				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#FF0000</attribute>
+				<attribute key="fill" type="String">#99CC00</attribute>
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
@@ -494,6 +494,7 @@
 			<attribute key="source" type="int">14</attribute>
 			<attribute key="target" type="int">13</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -550,6 +551,7 @@
 			<attribute key="source" type="int">3</attribute>
 			<attribute key="target" type="int">19</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -590,14 +592,30 @@
 			<attribute key="source" type="int">7</attribute>
 			<attribute key="target" type="int">6</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
+				<section name="Line">
+					<section name="point">
+						<attribute key="x" type="double">150.0</attribute>
+						<attribute key="y" type="double">720.8862823521727</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">149.5</attribute>
+						<attribute key="y" type="double">670.0</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">150.0</attribute>
+						<attribute key="y" type="double">599.0</attribute>
+					</section>
+				</section>
 			</section>
 		</section>
 		<section name="edge">
 			<attribute key="source" type="int">6</attribute>
 			<attribute key="target" type="int">3</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -606,6 +624,7 @@
 			<attribute key="source" type="int">19</attribute>
 			<attribute key="target" type="int">14</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>

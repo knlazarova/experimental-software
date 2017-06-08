@@ -510,6 +510,7 @@
 			<attribute key="source" type="int">6</attribute>
 			<attribute key="target" type="int">7</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -537,6 +538,7 @@
 			<attribute key="source" type="int">9</attribute>
 			<attribute key="target" type="int">6</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
@@ -707,6 +709,7 @@
 			<attribute key="source" type="int">7</attribute>
 			<attribute key="target" type="int">18</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
@@ -739,6 +742,7 @@
 			<attribute key="source" type="int">18</attribute>
 			<attribute key="target" type="int">15</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
@@ -770,6 +774,7 @@
 			<attribute key="source" type="int">15</attribute>
 			<attribute key="target" type="int">16</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -782,6 +787,7 @@
 			<attribute key="source" type="int">16</attribute>
 			<attribute key="target" type="int">17</attribute>
 			<section name="graphics">
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">

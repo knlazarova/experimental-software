@@ -99,8 +99,6 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 		
 		//check if the answer is correct
 		var questionAnswer = question.answer.replace(/ /g, '');
-		console.log("question.answer: ", questionAnswer,  ",,,,")
-		console.log("currentAnswer: ", currentAnswer, ",,,,");
 		if (questionAnswer == currentAnswer){
 
 			trialObject["correct"] = "yes"
@@ -134,7 +132,7 @@ app.controller('myCtrl', ['$scope', '$http', '$window','questionService', '$cook
 			function(response){
 				console.log('success')
 				//go to the demographic questionnaire
-				$window.location.href = '/research-questions-type1';
+				$window.location.href = '/part2';
 		},
 		function(response){
 			console.log('failed')

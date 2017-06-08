@@ -1266,7 +1266,7 @@
 			<attribute key="source" type="int">18</attribute>
 			<attribute key="target" type="int">19</attribute>
 			<section name="graphics">
-				<attribute key="width" type="int">3</attribute>
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -1275,7 +1275,7 @@
 			<attribute key="source" type="int">19</attribute>
 			<attribute key="target" type="int">13</attribute>
 			<section name="graphics">
-				<attribute key="width" type="int">3</attribute>
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
@@ -1498,7 +1498,7 @@
 			<attribute key="source" type="int">11</attribute>
 			<attribute key="target" type="int">7</attribute>
 			<section name="graphics">
-				<attribute key="width" type="int">3</attribute>
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -1835,7 +1835,7 @@
 			<attribute key="source" type="int">7</attribute>
 			<attribute key="target" type="int">4</attribute>
 			<section name="graphics">
-				<attribute key="width" type="int">3</attribute>
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
@@ -1844,7 +1844,7 @@
 			<attribute key="source" type="int">13</attribute>
 			<attribute key="target" type="int">5</attribute>
 			<section name="graphics">
-				<attribute key="width" type="int">3</attribute>
+				<attribute key="width" type="int">4</attribute>
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
