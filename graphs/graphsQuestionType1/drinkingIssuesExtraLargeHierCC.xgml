@@ -8,7 +8,7 @@
 		<attribute key="directed" type="int">1</attribute>
 		<section name="node">
 			<attribute key="id" type="int">0</attribute>
-			<attribute key="label" type="String">depression</attribute>
+			<attribute key="label" type="String">personal issues</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">872.6380952380953</attribute>
 				<attribute key="y" type="double">747.0</attribute>
@@ -20,7 +20,7 @@
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">depression</attribute>
+				<attribute key="text" type="String">personal issues</attribute>
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
@@ -805,7 +805,7 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">38</attribute>
-			<attribute key="label" type="String">loneliness</attribute>
+			<attribute key="label" type="String">unwillingness to go out</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">350.406746031746</attribute>
 				<attribute key="y" type="double">747.0</attribute>
@@ -817,7 +817,7 @@
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">loneliness</attribute>
+				<attribute key="text" type="String">unwillingness to go out</attribute>
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>

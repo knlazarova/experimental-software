@@ -701,27 +701,6 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">33</attribute>
-			<attribute key="label" type="String">more friends</attribute>
-			<section name="graphics">
-				<attribute key="x" type="double">428.2388331669562</attribute>
-				<attribute key="y" type="double">675.7303469341923</attribute>
-				<attribute key="w" type="double">30.0</attribute>
-				<attribute key="h" type="double">30.0</attribute>
-				<attribute key="type" type="String">ellipse</attribute>
-				<attribute key="raisedBorder" type="boolean">false</attribute>
-				<attribute key="fill" type="String">#99CC00</attribute>
-				<attribute key="outline" type="String">#FFFFFF</attribute>
-			</section>
-			<section name="LabelGraphics">
-				<attribute key="text" type="String">more friends</attribute>
-				<attribute key="fontSize" type="int">14</attribute>
-				<attribute key="fontStyle" type="String">bold</attribute>
-				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
-			</section>
-		</section>
-		<section name="node">
-			<attribute key="id" type="int">34</attribute>
 			<attribute key="label" type="String">fun</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">291.58935333290896</attribute>
@@ -742,7 +721,7 @@
 			</section>
 		</section>
 		<section name="node">
-			<attribute key="id" type="int">35</attribute>
+			<attribute key="id" type="int">34</attribute>
 			<attribute key="label" type="String">more drinking</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">333.24497523761016</attribute>
@@ -763,7 +742,7 @@
 			</section>
 		</section>
 		<section name="node">
-			<attribute key="id" type="int">36</attribute>
+			<attribute key="id" type="int">35</attribute>
 			<attribute key="label" type="String">playing tennis</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">484.73893854287616</attribute>
@@ -1446,41 +1425,15 @@
 			</section>
 		</section>
 		<section name="edge">
-			<attribute key="source" type="int">35</attribute>
-			<attribute key="target" type="int">34</attribute>
-			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-			</section>
-		</section>
-		<section name="edge">
-			<attribute key="source" type="int">3</attribute>
+			<attribute key="source" type="int">34</attribute>
 			<attribute key="target" type="int">33</attribute>
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">399.79789259618036</attribute>
-						<attribute key="y" type="double">574.5969414081952</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">405.0872069240212</attribute>
-						<attribute key="y" type="double">591.1983304252527</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">424.0518094379158</attribute>
-						<attribute key="y" type="double">658.6282517653951</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">428.2388331669562</attribute>
-						<attribute key="y" type="double">675.7303469341923</attribute>
-					</section>
-				</section>
 			</section>
 		</section>
 		<section name="edge">
-			<attribute key="source" type="int">36</attribute>
+			<attribute key="source" type="int">35</attribute>
 			<attribute key="target" type="int">3</attribute>
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
@@ -1582,7 +1535,7 @@
 			</section>
 		</section>
 		<section name="edge">
-			<attribute key="source" type="int">34</attribute>
+			<attribute key="source" type="int">33</attribute>
 			<attribute key="target" type="int">12</attribute>
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>

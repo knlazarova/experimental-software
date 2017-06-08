@@ -129,7 +129,7 @@
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">bl</attribute>
 			</section>
 		</section>
 		<section name="node">
@@ -234,7 +234,7 @@
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">bl</attribute>
 			</section>
 		</section>
 		<section name="node">
@@ -360,7 +360,7 @@
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">tl</attribute>
 			</section>
 		</section>
 		<section name="node">
@@ -722,7 +722,7 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">34</attribute>
-			<attribute key="label" type="String">confidence</attribute>
+			<attribute key="label" type="String">high academic goals</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">823.0</attribute>
 				<attribute key="y" type="double">578.0</attribute>
@@ -734,7 +734,7 @@
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">confidence</attribute>
+				<attribute key="text" type="String">high academic goals</attribute>
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
@@ -1095,14 +1095,6 @@
 		<section name="edge">
 			<attribute key="source" type="int">28</attribute>
 			<attribute key="target" type="int">27</attribute>
-			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-			</section>
-		</section>
-		<section name="edge">
-			<attribute key="source" type="int">3</attribute>
-			<attribute key="target" type="int">16</attribute>
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>

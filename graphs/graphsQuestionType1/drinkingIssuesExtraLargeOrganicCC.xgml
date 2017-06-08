@@ -701,7 +701,7 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">33</attribute>
-			<attribute key="label" type="String">low grades</attribute>
+			<attribute key="label" type="String">drugs</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">393.0</attribute>
 				<attribute key="y" type="double">687.0</attribute>
@@ -713,7 +713,7 @@
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">low grades</attribute>
+				<attribute key="text" type="String">drugs</attribute>
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
@@ -763,7 +763,7 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">36</attribute>
-			<attribute key="label" type="String">depression</attribute>
+			<attribute key="label" type="String">unknown</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">265.0</attribute>
 				<attribute key="y" type="double">885.0</attribute>
@@ -775,7 +775,7 @@
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">depression</attribute>
+				<attribute key="text" type="String">unknown</attribute>
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
