@@ -679,7 +679,7 @@
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">32</attribute>
-			<attribute key="label" type="String">unability to pay bills</attribute>
+			<attribute key="label" type="String">inability to pay bills</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">272.805041125055</attribute>
 				<attribute key="y" type="double">-292.53616791220367</attribute>
@@ -691,7 +691,7 @@
 				<attribute key="outline" type="String">#FFFFFF</attribute>
 			</section>
 			<section name="LabelGraphics">
-				<attribute key="text" type="String">unability to pay bills</attribute>
+				<attribute key="text" type="String">inability to pay bills</attribute>
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>

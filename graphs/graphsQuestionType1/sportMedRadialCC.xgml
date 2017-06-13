@@ -10,8 +10,8 @@
 			<attribute key="id" type="int">0</attribute>
 			<attribute key="label" type="String">doing sports</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">-81.22432303617434</attribute>
-				<attribute key="y" type="double">-182.7638075421805</attribute>
+				<attribute key="x" type="double">77.64571353075655</attribute>
+				<attribute key="y" type="double">-289.7777478867204</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -31,8 +31,8 @@
 			<attribute key="id" type="int">1</attribute>
 			<attribute key="label" type="String">join sports societies</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">5.6843418860808015E-14</attribute>
-				<attribute key="y" type="double">-100.0</attribute>
+				<attribute key="x" type="double">50.00000000000008</attribute>
+				<attribute key="y" type="double">-86.60254037844382</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -52,8 +52,8 @@
 			<attribute key="id" type="int">2</attribute>
 			<attribute key="label" type="String">more friends</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">41.714013033247916</attribute>
-				<attribute key="y" type="double">-195.60148546639934</attribute>
+				<attribute key="x" type="double">141.42135623730965</attribute>
+				<attribute key="y" type="double">-141.42135623730937</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -73,8 +73,8 @@
 			<attribute key="id" type="int">3</attribute>
 			<attribute key="label" type="String">better social life</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">62.57101954987187</attribute>
-				<attribute key="y" type="double">-293.402228199599</attribute>
+				<attribute key="x" type="double">212.13203435596446</attribute>
+				<attribute key="y" type="double">-212.13203435596404</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -94,8 +94,8 @@
 			<attribute key="id" type="int">4</attribute>
 			<attribute key="label" type="String">available gym facilities</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">-242.70509831248404</attribute>
-				<attribute key="y" type="double">-176.33557568774222</attribute>
+				<attribute key="x" type="double">51.76380902050429</attribute>
+				<attribute key="y" type="double">-193.18516525781362</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -115,8 +115,8 @@
 			<attribute key="id" type="int">5</attribute>
 			<attribute key="label" type="String">gym budy</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">-161.80339887498937</attribute>
-				<attribute key="y" type="double">-117.55705045849481</attribute>
+				<attribute key="x" type="double">-21.05446199933465</attribute>
+				<attribute key="y" type="double">-97.75842485391514</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -150,15 +150,15 @@
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">br</attribute>
 			</section>
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">7</attribute>
 			<attribute key="label" type="String">pleasant gym time</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">58.7785252292473</attribute>
-				<attribute key="y" type="double">80.90169943749474</attribute>
+				<attribute key="x" type="double">49.999999999999986</attribute>
+				<attribute key="y" type="double">86.60254037844388</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -178,8 +178,8 @@
 			<attribute key="id" type="int">8</attribute>
 			<attribute key="label" type="String">regular gym attendace</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">117.5570504584946</attribute>
-				<attribute key="y" type="double">161.80339887498948</attribute>
+				<attribute key="x" type="double">51.763809020504134</attribute>
+				<attribute key="y" type="double">193.18516525781365</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -199,8 +199,8 @@
 			<attribute key="id" type="int">9</attribute>
 			<attribute key="label" type="String">large gym</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">-95.10565162951532</attribute>
-				<attribute key="y" type="double">-30.90169943749484</attribute>
+				<attribute key="x" type="double">-89.28328228100261</attribute>
+				<attribute key="y" type="double">-45.038822199640215</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -220,8 +220,8 @@
 			<attribute key="id" type="int">10</attribute>
 			<attribute key="label" type="String">anxiety to attend </attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">-300.0</attribute>
-				<attribute key="y" type="double">-3.2152058793144533E-13</attribute>
+				<attribute key="x" type="double">-267.84984684300787</attribute>
+				<attribute key="y" type="double">-135.11646659892065</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -241,8 +241,8 @@
 			<attribute key="id" type="int">11</attribute>
 			<attribute key="label" type="String">gym dislike </attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">-200.0</attribute>
-				<attribute key="y" type="double">-2.149391775674303E-13</attribute>
+				<attribute key="x" type="double">-178.56656456200523</attribute>
+				<attribute key="y" type="double">-90.07764439928043</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -262,8 +262,8 @@
 			<attribute key="id" type="int">12</attribute>
 			<attribute key="label" type="String">sports avoidance</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">-117.55705045849481</attribute>
-				<attribute key="y" type="double">161.80339887498937</attribute>
+				<attribute key="x" type="double">-125.65471578947233</attribute>
+				<attribute key="y" type="double">155.59849742162336</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -283,8 +283,8 @@
 			<attribute key="id" type="int">13</attribute>
 			<attribute key="label" type="String">inability to focus</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">-176.33557568774222</attribute>
-				<attribute key="y" type="double">242.70509831248404</attribute>
+				<attribute key="x" type="double">-188.4820736842085</attribute>
+				<attribute key="y" type="double">233.39774613243506</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -304,8 +304,8 @@
 			<attribute key="id" type="int">14</attribute>
 			<attribute key="label" type="String">obesity</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">-58.77852522924741</attribute>
-				<attribute key="y" type="double">80.90169943749468</attribute>
+				<attribute key="x" type="double">-62.82735789473617</attribute>
+				<attribute key="y" type="double">77.79924871081168</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -325,8 +325,8 @@
 			<attribute key="id" type="int">15</attribute>
 			<attribute key="label" type="String">taking supplements </attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">95.10565162951538</attribute>
-				<attribute key="y" type="double">-30.9016994374947</attribute>
+				<attribute key="x" type="double">100.0</attribute>
+				<attribute key="y" type="double">4.973799150320701E-14</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -346,8 +346,8 @@
 			<attribute key="id" type="int">16</attribute>
 			<attribute key="label" type="String">gym mania</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">198.9184062806825</attribute>
-				<attribute key="y" type="double">-20.771799218010294</attribute>
+				<attribute key="x" type="double">200.0</attribute>
+				<attribute key="y" type="double">1.0125233984581428E-13</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -360,15 +360,15 @@
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">bl</attribute>
 			</section>
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">17</attribute>
 			<attribute key="label" type="String">health issues</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">176.3355756877419</attribute>
-				<attribute key="y" type="double">242.70509831248424</attribute>
+				<attribute key="x" type="double">77.64571353075621</attribute>
+				<attribute key="y" type="double">289.7777478867205</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -388,8 +388,8 @@
 			<attribute key="id" type="int">18</attribute>
 			<attribute key="label" type="String">gym overuse</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">148.7190139311257</attribute>
-				<attribute key="y" type="double">-133.72604419242214</attribute>
+				<attribute key="x" type="double">141.42135623730948</attribute>
+				<attribute key="y" type="double">141.42135623730954</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -409,8 +409,8 @@
 			<attribute key="id" type="int">19</attribute>
 			<attribute key="label" type="String">tired body</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">298.37760942102375</attribute>
-				<attribute key="y" type="double">-31.157698827015437</attribute>
+				<attribute key="x" type="double">212.1320343559642</attribute>
+				<attribute key="y" type="double">212.1320343559643</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -427,48 +427,6 @@
 			</section>
 		</section>
 		<section name="edge">
-			<attribute key="source" type="int">0</attribute>
-			<attribute key="target" type="int">1</attribute>
-			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">-81.22432303617434</attribute>
-						<attribute key="y" type="double">-182.7638075421805</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-65.15499467366489</attribute>
-						<attribute key="y" type="double">-173.90981164799774</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-50.450690301499755</attribute>
-						<attribute key="y" type="double">-163.83675701790176</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-37.196764021266915</attribute>
-						<attribute key="y" type="double">-152.6770391950492</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-25.467576959138995</attribute>
-						<attribute key="y" type="double">-140.56872265598938</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-15.326135342204182</attribute>
-						<attribute key="y" type="double">-127.6546976040067</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-6.823790195408296</attribute>
-						<attribute key="y" type="double">-114.0818144016169</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">5.6843418860808015E-14</attribute>
-						<attribute key="y" type="double">-100.0</attribute>
-					</section>
-				</section>
-			</section>
-		</section>
-		<section name="edge">
 			<attribute key="source" type="int">1</attribute>
 			<attribute key="target" type="int">2</attribute>
 			<section name="graphics">
@@ -476,24 +434,24 @@
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">5.6843418860808015E-14</attribute>
-						<attribute key="y" type="double">-100.0</attribute>
+						<attribute key="x" type="double">50.00000000000008</attribute>
+						<attribute key="y" type="double">-86.60254037844382</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">4.0846886086175935</attribute>
-						<attribute key="y" type="double">-116.5951389642027</attribute>
+						<attribute key="x" type="double">62.684954307129516</attribute>
+						<attribute key="y" type="double">-98.39566867816994</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">15.729476867176473</attribute>
-						<attribute key="y" type="double">-149.17299875475106</attribute>
+						<attribute key="x" type="double">91.31421435130818</attribute>
+						<attribute key="y" type="double">-119.0030010436852</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">31.93677132527228</attribute>
-						<attribute key="y" type="double">-180.53020176255376</attribute>
+						<attribute key="x" type="double">123.85820472953785</attribute>
+						<attribute key="y" type="double">-135.1675117485226</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">41.714013033247916</attribute>
-						<attribute key="y" type="double">-195.60148546639934</attribute>
+						<attribute key="x" type="double">141.42135623730965</attribute>
+						<attribute key="y" type="double">-141.42135623730937</attribute>
 					</section>
 				</section>
 			</section>
@@ -501,14 +459,6 @@
 		<section name="edge">
 			<attribute key="source" type="int">2</attribute>
 			<attribute key="target" type="int">3</attribute>
-			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-			</section>
-		</section>
-		<section name="edge">
-			<attribute key="source" type="int">4</attribute>
-			<attribute key="target" type="int">5</attribute>
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
@@ -528,6 +478,28 @@
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
+				<section name="Line">
+					<section name="point">
+						<attribute key="x" type="double">49.999999999999986</attribute>
+						<attribute key="y" type="double">86.60254037844388</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">53.87067154408727</attribute>
+						<attribute key="y" type="double">103.48459720412586</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">57.40251485476345</attribute>
+						<attribute key="y" type="double">138.58192987669304</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">55.1293965757834</attribute>
+						<attribute key="y" type="double">174.8481076371749</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">51.763809020504134</attribute>
+						<attribute key="y" type="double">193.18516525781365</attribute>
+					</section>
+				</section>
 			</section>
 		</section>
 		<section name="edge">
@@ -539,44 +511,6 @@
 			</section>
 		</section>
 		<section name="edge">
-			<attribute key="source" type="int">9</attribute>
-			<attribute key="target" type="int">5</attribute>
-			<section name="graphics">
-				<attribute key="fill" type="String">#000000</attribute>
-				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">-95.10565162951532</attribute>
-						<attribute key="y" type="double">-30.90169943749484</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-108.91771642467347</attribute>
-						<attribute key="y" type="double">-41.80959411361851</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-121.80606101901338</attribute>
-						<attribute key="y" type="double">-54.23155241010678</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-133.6509786282551</attribute>
-						<attribute key="y" type="double">-68.09857496093217</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-144.3375672974063</attribute>
-						<attribute key="y" type="double">-83.33333333333353</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-153.75627078999432</attribute>
-						<attribute key="y" type="double">-99.85048975275508</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-161.80339887498937</attribute>
-						<attribute key="y" type="double">-117.55705045849481</attribute>
-					</section>
-				</section>
-			</section>
-		</section>
-		<section name="edge">
 			<attribute key="source" type="int">4</attribute>
 			<attribute key="target" type="int">10</attribute>
 			<section name="graphics">
@@ -585,64 +519,60 @@
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">-242.70509831248404</attribute>
-						<attribute key="y" type="double">-176.33557568774222</attribute>
+						<attribute key="x" type="double">51.76380902050429</attribute>
+						<attribute key="y" type="double">-193.18516525781362</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-253.13887707724768</attribute>
-						<attribute key="y" type="double">-180.88705273148068</attribute>
+						<attribute key="x" type="double">49.29674884366593</attribute>
+						<attribute key="y" type="double">-202.17361431693956</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-266.0119631022625</attribute>
-						<attribute key="y" type="double">-180.89993202785863</attribute>
+						<attribute key="x" type="double">42.893842756613324</attribute>
+						<attribute key="y" type="double">-211.6772406283745</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-280.6281727457284</attribute>
-						<attribute key="y" type="double">-175.85326709990406</attribute>
+						<attribute key="x" type="double">32.25262554738309</attribute>
+						<attribute key="y" type="double">-221.0996744942503</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-295.9346203119107</attribute>
-						<attribute key="y" type="double">-165.54696053486316</attribute>
+						<attribute key="x" type="double">17.294616791799847</attribute>
+						<attribute key="y" type="double">-229.63218095374836</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-310.62761832534807</attribute>
-						<attribute key="y" type="double">-150.22952779969012</attribute>
+						<attribute key="x" type="double">-1.7540658064667072</attribute>
+						<attribute key="y" type="double">-236.32515323710354</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-323.3397660128028</attribute>
-						<attribute key="y" type="double">-130.67304299326113</attribute>
+						<attribute key="x" type="double">-24.308377572879763</attribute>
+						<attribute key="y" type="double">-240.20807266561812</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-332.8697807033036</attribute>
-						<attribute key="y" type="double">-108.15594803123196</attribute>
+						<attribute key="x" type="double">-49.42017752807161</attribute>
+						<attribute key="y" type="double">-240.44247602628258</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-338.3950532051955</attribute>
-						<attribute key="y" type="double">-84.3376334537888</attribute>
+						<attribute key="x" type="double">-75.84012417243186</attribute>
+						<attribute key="y" type="double">-236.47881370954366</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-339.60572304694125</attribute>
-						<attribute key="y" type="double">-61.044091959502595</attribute>
+						<attribute key="x" type="double">-102.14515496974482</attribute>
+						<attribute key="y" type="double">-228.18055858509683</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-336.7221990204699</attribute>
-						<attribute key="y" type="double">-40.01570102229135</attribute>
+						<attribute key="x" type="double">-151.8172882734568</attribute>
+						<attribute key="y" type="double">-204.29791008586403</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-330.39691782045554</attribute>
-						<attribute key="y" type="double">-22.680819717545226</attribute>
+						<attribute key="x" type="double">-245.18851852993058</attribute>
+						<attribute key="y" type="double">-143.3535696962572</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-321.5385110434579</attribute>
-						<attribute key="y" type="double">-10.00678955306962</attribute>
+						<attribute key="x" type="double">-257.5786282754941</attribute>
+						<attribute key="y" type="double">-137.3340526408242</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-311.11639541869954</attribute>
-						<attribute key="y" type="double">-2.450599005718901</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-300.0</attribute>
-						<attribute key="y" type="double">-3.2152058793144533E-13</attribute>
+						<attribute key="x" type="double">-267.84984684300787</attribute>
+						<attribute key="y" type="double">-135.11646659892065</attribute>
 					</section>
 				</section>
 			</section>
@@ -665,64 +595,80 @@
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">-200.0</attribute>
-						<attribute key="y" type="double">-2.149391775674303E-13</attribute>
+						<attribute key="x" type="double">-178.56656456200523</attribute>
+						<attribute key="y" type="double">-90.07764439928043</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-211.1113110228965</attribute>
-						<attribute key="y" type="double">2.494384180941121</attribute>
+						<attribute key="x" type="double">-187.27857612015953</attribute>
+						<attribute key="y" type="double">-92.0602123816898</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-221.45282365253166</attribute>
-						<attribute key="y" type="double">10.342119045363122</attribute>
+						<attribute key="x" type="double">-197.67705012221342</attribute>
+						<attribute key="y" type="double">-89.75873866980632</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-229.95383274390932</attribute>
-						<attribute key="y" type="double">23.725085376357505</attribute>
+						<attribute key="x" type="double">-209.26625664088255</attribute>
+						<attribute key="y" type="double">-82.65974734725651</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-235.3381259276915</attribute>
-						<attribute key="y" type="double">42.19890166400081</attribute>
+						<attribute key="x" type="double">-221.19654672366082</attribute>
+						<attribute key="y" type="double">-70.43280265028838</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-236.38005747662683</attribute>
-						<attribute key="y" type="double">64.60037180789593</attribute>
+						<attribute key="x" type="double">-232.3203389618557</attribute>
+						<attribute key="y" type="double">-53.05854492079196</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-232.23731194211447</attribute>
-						<attribute key="y" type="double">89.11004584453707</attribute>
+						<attribute key="x" type="double">-241.32531141390731</attribute>
+						<attribute key="y" type="double">-30.9451473848396</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-222.75163104709208</attribute>
-						<attribute key="y" type="double">113.49762493488645</attribute>
+						<attribute key="x" type="double">-246.93417685730228</attribute>
+						<attribute key="y" type="double">-4.992020575223297</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-208.597208449383</attribute>
-						<attribute key="y" type="double">135.50636131060102</attribute>
+						<attribute key="x" type="double">-248.13613816698563</attribute>
+						<attribute key="y" type="double">23.435609055477332</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-191.2035103563368</attribute>
-						<attribute key="y" type="double">153.26433778862585</attribute>
+						<attribute key="x" type="double">-244.39606213478783</attribute>
+						<attribute key="y" type="double">52.63615499833673</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-172.46790831258022</attribute>
-						<attribute key="y" type="double">165.5886512388135</attribute>
+						<attribute key="x" type="double">-235.78413941118754</attribute>
+						<attribute key="y" type="double">80.78743985516698</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-154.35746885747005</attribute>
-						<attribute key="y" type="double">172.09130331787378</attribute>
+						<attribute key="x" type="double">-222.98650201900637</attribute>
+						<attribute key="y" type="double">106.19994297053343</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-138.53365388703182</attribute>
-						<attribute key="y" type="double">173.08015273489858</attribute>
+						<attribute key="x" type="double">-207.19129772757336</attribute>
+						<attribute key="y" type="double">127.54322491474348</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-126.10611440426975</attribute>
-						<attribute key="y" type="double">169.32647608718932</attribute>
+						<attribute key="x" type="double">-189.88170408911483</attribute>
+						<attribute key="y" type="double">143.9891924301163</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-117.55705045849481</attribute>
-						<attribute key="y" type="double">161.80339887498937</attribute>
+						<attribute key="x" type="double">-172.59200903414748</attribute>
+						<attribute key="y" type="double">155.24397054057806</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">-156.6862111619142</attribute>
+						<attribute key="y" type="double">161.47579147266634</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">-143.2021801163434</attribute>
+						<attribute key="y" type="double">163.17470062035036</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">-132.77821265926366</attribute>
+						<attribute key="y" type="double">160.9915961172122</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">-125.65471578947233</attribute>
+						<attribute key="y" type="double">155.59849742162336</attribute>
 					</section>
 				</section>
 			</section>
@@ -752,52 +698,24 @@
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">58.7785252292473</attribute>
-						<attribute key="y" type="double">80.90169943749474</attribute>
+						<attribute key="x" type="double">49.999999999999986</attribute>
+						<attribute key="y" type="double">86.60254037844388</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">67.82305201615473</attribute>
-						<attribute key="y" type="double">86.0436014646445</attribute>
+						<attribute key="x" type="double">62.68495430712942</attribute>
+						<attribute key="y" type="double">98.39566867817001</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">79.60213564300733</attribute>
-						<attribute key="y" type="double">88.1439920650366</attribute>
+						<attribute key="x" type="double">91.31421435130807</attribute>
+						<attribute key="y" type="double">119.00300104368529</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">93.70979445586451</attribute>
-						<attribute key="y" type="double">86.14080106068869</attribute>
+						<attribute key="x" type="double">123.85820472953766</attribute>
+						<attribute key="y" type="double">135.16751174852277</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">109.13239403882133</attribute>
-						<attribute key="y" type="double">79.14017120027569</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">124.30273974870713</attribute>
-						<attribute key="y" type="double">66.70203010954668</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">137.3457537540555</attribute>
-						<attribute key="y" type="double">49.107959768539175</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">146.48419650459593</attribute>
-						<attribute key="y" type="double">27.48713907818117</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">150.9134277130572</attribute>
-						<attribute key="y" type="double">3.7168254899422317</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">152.6364564781406</attribute>
-						<attribute key="y" type="double">-44.286818718319275</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">146.49271636429714</attribute>
-						<attribute key="y" type="double">-121.68462838136873</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">148.7190139311257</attribute>
-						<attribute key="y" type="double">-133.72604419242214</attribute>
+						<attribute key="x" type="double">141.42135623730948</attribute>
+						<attribute key="y" type="double">141.42135623730954</attribute>
 					</section>
 				</section>
 			</section>
@@ -810,36 +728,44 @@
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">148.7190139311257</attribute>
-						<attribute key="y" type="double">-133.72604419242214</attribute>
+						<attribute key="x" type="double">141.42135623730948</attribute>
+						<attribute key="y" type="double">141.42135623730954</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">145.26405899291942</attribute>
-						<attribute key="y" type="double">-115.70716954134251</attribute>
+						<attribute key="x" type="double">144.69728370025138</attribute>
+						<attribute key="y" type="double">121.41543738523524</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">140.22789468943043</attribute>
-						<attribute key="y" type="double">-98.60979998464063</attribute>
+						<attribute key="x" type="double">145.62703009582074</attribute>
+						<attribute key="y" type="double">101.969144240186</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">133.71006079677602</attribute>
-						<attribute key="y" type="double">-82.55602456963918</attribute>
+						<attribute key="x" type="double">144.3375672974064</attribute>
+						<attribute key="y" type="double">83.33333333333339</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">125.81888558333907</attribute>
-						<attribute key="y" type="double">-67.65922919951687</attribute>
+						<attribute key="x" type="double">140.9812113168122</attribute>
+						<attribute key="y" type="double">65.74061849299774</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">116.67079571314632</attribute>
-						<attribute key="y" type="double">-54.0234918582577</attribute>
+						<attribute key="x" type="double">135.73337855796456</attribute>
+						<attribute key="y" type="double">49.40290959148553</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">106.38958584100173</attribute>
-						<attribute key="y" type="double">-41.74302953040232</attribute>
+						<attribute key="x" type="double">128.79011017187574</attribute>
+						<attribute key="y" type="double">34.509206013669484</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">95.10565162951538</attribute>
-						<attribute key="y" type="double">-30.9016994374947</attribute>
+						<attribute key="x" type="double">120.36539203482543</attribute>
+						<attribute key="y" type="double">21.22366615929155</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">110.68829978797173</attribute>
+						<attribute key="y" type="double">9.683971416406509</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">100.0</attribute>
+						<attribute key="y" type="double">4.973799150320701E-14</attribute>
 					</section>
 				</section>
 			</section>
@@ -850,28 +776,6 @@
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">95.10565162951538</attribute>
-						<attribute key="y" type="double">-30.9016994374947</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">112.15080487703653</attribute>
-						<attribute key="y" type="double">-32.14510968318492</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">146.73262818557996</attribute>
-						<attribute key="y" type="double">-31.137370244648892</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">181.56342985933122</attribute>
-						<attribute key="y" type="double">-25.413225864238804</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">198.9184062806825</attribute>
-						<attribute key="y" type="double">-20.771799218010294</attribute>
-					</section>
-				</section>
 			</section>
 		</section>
 		<section name="edge">
@@ -880,44 +784,6 @@
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">148.7190139311257</attribute>
-						<attribute key="y" type="double">-133.72604419242214</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">162.98228413577</attribute>
-						<attribute key="y" type="double">-131.9016688349501</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">177.69419980136223</attribute>
-						<attribute key="y" type="double">-128.3602744320286</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">192.5764424770113</attribute>
-						<attribute key="y" type="double">-122.97225471243334</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">207.31351208303286</attribute>
-						<attribute key="y" type="double">-115.71149666448217</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">221.58544481911727</attribute>
-						<attribute key="y" type="double">-106.66545929828266</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">261.8088516911454</attribute>
-						<attribute key="y" type="double">-71.9276690341032</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">286.8038287575334</attribute>
-						<attribute key="y" type="double">-45.115366981365845</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">298.37760942102375</attribute>
-						<attribute key="y" type="double">-31.157698827015437</attribute>
-					</section>
-				</section>
 			</section>
 		</section>
 		<section name="edge">
@@ -926,6 +792,40 @@
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
+				<section name="Line">
+					<section name="point">
+						<attribute key="x" type="double">200.0</attribute>
+						<attribute key="y" type="double">1.0125233984581428E-13</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">210.14054073773337</attribute>
+						<attribute key="y" type="double">9.009173177722698</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">219.25062435587444</attribute>
+						<attribute key="y" type="double">21.315150883479763</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">226.5258914434026</attribute>
+						<attribute key="y" type="double">36.79900010005972</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">231.2172964766372</attribute>
+						<attribute key="y" type="double">54.964617678311114</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">232.77300389922587</attribute>
+						<attribute key="y" type="double">74.95888638105725</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">213.41034707569722</attribute>
+						<attribute key="y" type="double">195.86388771354123</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">212.1320343559642</attribute>
+						<attribute key="y" type="double">212.1320343559643</attribute>
+					</section>
+				</section>
 			</section>
 		</section>
 		<section name="edge">
@@ -952,40 +852,56 @@
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">5.6843418860808015E-14</attribute>
-						<attribute key="y" type="double">-100.0</attribute>
+						<attribute key="x" type="double">50.00000000000008</attribute>
+						<attribute key="y" type="double">-86.60254037844382</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">8.519232669481967</attribute>
-						<attribute key="y" type="double">-110.25016919090045</attribute>
+						<attribute key="x" type="double">58.52383798856479</attribute>
+						<attribute key="y" type="double">-92.78254219105044</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">19.083675000943053</attribute>
-						<attribute key="y" type="double">-119.48263159878361</attribute>
+						<attribute key="x" type="double">70.48024384500293</attribute>
+						<attribute key="y" type="double">-95.91588582201207</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">31.568659301184134</attribute>
-						<attribute key="y" type="double">-127.25248140496757</attribute>
+						<attribute key="x" type="double">85.53459837638079</attribute>
+						<attribute key="y" type="double">-94.73079613676975</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">45.695098530655315</attribute>
-						<attribute key="y" type="double">-133.18097338558633</attribute>
+						<attribute key="x" type="double">102.5867962048085</attribute>
+						<attribute key="y" type="double">-88.05409215689191</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">61.05661318953307</attribute>
-						<attribute key="y" type="double">-137.01127685640967</attribute>
+						<attribute key="x" type="double">119.79683634168308</attribute>
+						<attribute key="y" type="double">-75.18623113659584</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">94.70100372892249</attribute>
-						<attribute key="y" type="double">-139.84143335206122</attribute>
+						<attribute key="x" type="double">134.8661113286931</attribute>
+						<attribute key="y" type="double">-56.284700770688055</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">130.67641233111647</attribute>
-						<attribute key="y" type="double">-137.12788112544322</attribute>
+						<attribute key="x" type="double">145.5525948640862</attribute>
+						<attribute key="y" type="double">-32.57716744976633</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">148.7190139311257</attribute>
-						<attribute key="y" type="double">-133.72604419242214</attribute>
+						<attribute key="x" type="double">150.71571333375644</attribute>
+						<attribute key="y" type="double">-6.275065847256771</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">152.48989024867439</attribute>
+						<attribute key="y" type="double">20.489031969947597</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">148.57623260327455</attribute>
+						<attribute key="y" type="double">71.3157082958165</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">139.7255648546843</attribute>
+						<attribute key="y" type="double">129.19612069678175</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">141.42135623730948</attribute>
+						<attribute key="y" type="double">141.42135623730954</attribute>
 					</section>
 				</section>
 			</section>
@@ -998,48 +914,32 @@
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">-81.22432303617434</attribute>
-						<attribute key="y" type="double">-182.7638075421805</attribute>
+						<attribute key="x" type="double">77.64571353075655</attribute>
+						<attribute key="y" type="double">-289.7777478867204</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-84.46173916860461</attribute>
-						<attribute key="y" type="double">-198.20515447673117</attribute>
+						<attribute key="x" type="double">89.61492836873504</attribute>
+						<attribute key="y" type="double">-275.80638972559444</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-80.42282619195512</attribute>
-						<attribute key="y" type="double">-214.82924109668903</attribute>
+						<attribute key="x" type="double">109.81889363046633</attribute>
+						<attribute key="y" type="double">-246.65727356350212</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-68.45897181305835</attribute>
-						<attribute key="y" type="double">-230.49941498573597</attribute>
+						<attribute key="x" type="double">125.00000000000028</attribute>
+						<attribute key="y" type="double">-216.5063509461095</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-49.45459641616984</attribute>
-						<attribute key="y" type="double">-242.56266089855114</attribute>
+						<attribute key="x" type="double">135.190608027269</attribute>
+						<attribute key="y" type="double">-186.07390870623777</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-25.964749022512745</attribute>
-						<attribute key="y" type="double">-248.64800785085313</attribute>
+						<attribute key="x" type="double">140.5174273353604</attribute>
+						<attribute key="y" type="double">-156.06041335025262</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-1.7244568996498801</attribute>
-						<attribute key="y" type="double">-247.54681944487393</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">19.362132029973118</attribute>
-						<attribute key="y" type="double">-239.67002101581568</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">34.3052598501516</attribute>
-						<attribute key="y" type="double">-226.80957420156307</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">41.691487333495026</attribute>
-						<attribute key="y" type="double">-211.37854320732578</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">41.714013033247916</attribute>
-						<attribute key="y" type="double">-195.60148546639934</attribute>
+						<attribute key="x" type="double">141.42135623730965</attribute>
+						<attribute key="y" type="double">-141.42135623730937</attribute>
 					</section>
 				</section>
 			</section>
@@ -1069,80 +969,96 @@
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">-300.0</attribute>
-						<attribute key="y" type="double">-3.2152058793144533E-13</attribute>
+						<attribute key="x" type="double">-267.84984684300787</attribute>
+						<attribute key="y" type="double">-135.11646659892065</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-308.67449833993385</attribute>
-						<attribute key="y" type="double">2.209893349395784</attribute>
+						<attribute key="x" type="double">-275.152891646921</attribute>
+						<attribute key="y" type="double">-136.42201123542415</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-316.9729624769976</attribute>
-						<attribute key="y" type="double">9.010538520376087</attribute>
+						<attribute key="x" type="double">-284.212875509951</attribute>
+						<attribute key="y" type="double">-133.69162720069278</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-324.3525052031768</attribute>
-						<attribute key="y" type="double">20.50493522114036</attribute>
+						<attribute key="x" type="double">-294.7186654813416</attribute>
+						<attribute key="y" type="double">-126.6285224170371</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-330.12287491235867</attribute>
-						<attribute key="y" type="double">36.54388496194281</attribute>
+						<attribute key="x" type="double">-306.1420854282683</attribute>
+						<attribute key="y" type="double">-115.00860527389446</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-333.5204993284288</attribute>
-						<attribute key="y" type="double">56.67865597708329</attribute>
+						<attribute key="x" type="double">-317.7561352509768</attribute>
+						<attribute key="y" type="double">-98.73685725644658</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-333.81582876631506</attribute>
-						<attribute key="y" type="double">80.14208993151719</attribute>
+						<attribute key="x" type="double">-328.6803989298598</attribute>
+						<attribute key="y" type="double">-77.90748447856335</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-330.43815699740946</attribute>
-						<attribute key="y" type="double">105.8723692831673</attribute>
+						<attribute key="x" type="double">-337.9543321845267</attribute>
+						<attribute key="y" type="double">-52.8558805517263</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-323.09399729011255</attribute>
-						<attribute key="y" type="double">132.58626354734247</attribute>
+						<attribute key="x" type="double">-344.6337568671205</attribute>
+						<attribute key="y" type="double">-24.18903482410249</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-311.8522834659289</attribute>
-						<attribute key="y" type="double">158.89667490884102</attribute>
+						<attribute key="x" type="double">-347.8997963254758</attribute>
+						<attribute key="y" type="double">7.217190669948978</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-297.17442714182835</attribute>
-						<attribute key="y" type="double">183.45628421854286</attribute>
+						<attribute key="x" type="double">-347.1644063368182</attribute>
+						<attribute key="y" type="double">40.26020921767205</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-279.8792214626052</attribute>
-						<attribute key="y" type="double">205.0998673109322</attribute>
+						<attribute key="x" type="double">-342.15448698870296</attribute>
+						<attribute key="y" type="double">73.69061699767143</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-261.04833384995254</attribute>
-						<attribute key="y" type="double">222.95633991366307</attribute>
+						<attribute key="x" type="double">-332.95860221224194</attribute>
+						<attribute key="y" type="double">106.21948355323579</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-241.89242674626416</attribute>
-						<attribute key="y" type="double">236.50887382602838</attribute>
+						<attribute key="x" type="double">-320.02662847479553</attribute>
+						<attribute key="y" type="double">136.63569515880206</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-223.6059812925726</attribute>
-						<attribute key="y" type="double">245.59505939390996</attribute>
+						<attribute key="x" type="double">-304.1217705198107</attribute>
+						<attribute key="y" type="double">163.91303936527675</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-207.2384601650055</attribute>
-						<attribute key="y" type="double">250.35419035525933</attribute>
+						<attribute key="x" type="double">-286.23381775174323</attribute>
+						<attribute key="y" type="double">187.2887512010522</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-193.60171151088957</attribute>
-						<attribute key="y" type="double">251.14025174377286</attribute>
+						<attribute key="x" type="double">-267.4695955847543</attribute>
+						<attribute key="y" type="double">206.30171161722663</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-183.2221591584085</attribute>
-						<attribute key="y" type="double">248.4239721672535</attribute>
+						<attribute key="x" type="double">-248.93944044215633</attribute>
+						<attribute key="y" type="double">220.7874169033712</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-176.33557568774222</attribute>
-						<attribute key="y" type="double">242.70509831248404</attribute>
+						<attribute key="x" type="double">-231.656801448442</attribute>
+						<attribute key="y" type="double">230.8356170526825</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">-216.4628186009792</attribute>
+						<attribute key="y" type="double">236.72288152171637</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">-203.9809231794567</attribute>
+						<attribute key="y" type="double">238.83507440922597</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">-194.60021687986836</attribute>
+						<attribute key="y" type="double">237.59384361024303</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">-188.4820736842085</attribute>
+						<attribute key="y" type="double">233.39774613243506</attribute>
 					</section>
 				</section>
 			</section>
@@ -1155,40 +1071,44 @@
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">-95.10565162951532</attribute>
-						<attribute key="y" type="double">-30.90169943749484</attribute>
+						<attribute key="x" type="double">-89.28328228100261</attribute>
+						<attribute key="y" type="double">-45.038822199640215</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-107.38467692274968</attribute>
-						<attribute key="y" type="double">-28.52084487407541</attribute>
+						<attribute key="x" type="double">-100.96929373396364</attribute>
+						<attribute key="y" type="double">-44.921357784030775</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-119.71523371083097</attribute>
-						<attribute key="y" type="double">-21.8019465721608</attribute>
+						<attribute key="x" type="double">-113.47072171353001</attribute>
+						<attribute key="y" type="double">-40.74311829904805</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-130.8324547440158</attribute>
-						<attribute key="y" type="double">-10.272057044788243</attribute>
+						<attribute key="x" type="double">-125.76332463229427</attribute>
+						<attribute key="y" type="double">-31.816278515525465</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-139.21422097462272</attribute>
-						<attribute key="y" type="double">5.803951697763409</attribute>
+						<attribute key="x" type="double">-136.4306266615504</attribute>
+						<attribute key="y" type="double">-18.024526080459847</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-143.4444646198838</attribute>
-						<attribute key="y" type="double">25.299582849826653</attribute>
+						<attribute key="x" type="double">-143.9293631258959</attribute>
+						<attribute key="y" type="double">-0.018476541317086124</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-142.65847744427307</attribute>
-						<attribute key="y" type="double">46.352549156241956</attribute>
+						<attribute key="x" type="double">-146.99107136940282</attribute>
+						<attribute key="y" type="double">20.764065208111067</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-119.19613995663752</attribute>
-						<attribute key="y" type="double">146.53533460372975</attribute>
+						<attribute key="x" type="double">-142.22546507436468</attribute>
+						<attribute key="y" type="double">64.26476801863505</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-117.55705045849481</attribute>
-						<attribute key="y" type="double">161.80339887498937</attribute>
+						<attribute key="x" type="double">-126.07128233087225</attribute>
+						<attribute key="y" type="double">141.46389929815862</attribute>
+					</section>
+					<section name="point">
+						<attribute key="x" type="double">-125.65471578947233</attribute>
+						<attribute key="y" type="double">155.59849742162336</attribute>
 					</section>
 				</section>
 			</section>
@@ -1201,48 +1121,40 @@
 				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">-200.0</attribute>
-						<attribute key="y" type="double">-2.149391775674303E-13</attribute>
+						<attribute key="x" type="double">-178.56656456200523</attribute>
+						<attribute key="y" type="double">-90.07764439928043</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-215.42538146540647</attribute>
-						<attribute key="y" type="double">-3.3126522628210573</attribute>
+						<attribute key="x" type="double">-161.76696499639164</attribute>
+						<attribute key="y" type="double">-97.46319326313083</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-228.9764984416272</attribute>
-						<attribute key="y" type="double">-13.754888741544805</attribute>
+						<attribute key="x" type="double">-144.27628073024897</attribute>
+						<attribute key="y" type="double">-104.30969817475055</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-238.43742180153222</attribute>
-						<attribute key="y" type="double">-31.051682967366474</attribute>
+						<attribute key="x" type="double">-91.7142194714373</attribute>
+						<attribute key="y" type="double">-118.69499545787528</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-241.742957941563</attribute>
-						<attribute key="y" type="double">-53.31738791928444</attribute>
+						<attribute key="x" type="double">-75.03130275186082</attribute>
+						<attribute key="y" type="double">-120.06491079330294</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-237.7641290737883</attribute>
-						<attribute key="y" type="double">-77.25424859373712</attribute>
+						<attribute key="x" type="double">-58.92693643135896</attribute>
+						<attribute key="y" type="double">-118.32715066320067</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-226.91333555490468</attribute>
-						<attribute key="y" type="double">-98.95827260122817</attribute>
+						<attribute key="x" type="double">-44.20916953970181</attribute>
+						<attribute key="y" type="double">-113.67153587054904</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-211.15164763946632</attribute>
-						<attribute key="y" type="double">-115.02866090503834</attribute>
+						<attribute key="x" type="double">-31.480767456615105</attribute>
+						<attribute key="y" type="double">-106.58958753821912</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-193.33079930094863</attribute>
-						<attribute key="y" type="double">-123.46107015791294</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-176.2299227712789</attribute>
-						<attribute key="y" type="double">-123.94387021776971</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-161.80339887498937</attribute>
-						<attribute key="y" type="double">-117.55705045849481</attribute>
+						<attribute key="x" type="double">-21.05446199933465</attribute>
+						<attribute key="y" type="double">-97.75842485391514</attribute>
 					</section>
 				</section>
 			</section>
@@ -1253,36 +1165,6 @@
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
-				<section name="Line">
-					<section name="point">
-						<attribute key="x" type="double">-95.10565162951532</attribute>
-						<attribute key="y" type="double">-30.90169943749484</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-112.69134640039127</attribute>
-						<attribute key="y" type="double">-30.19555526196084</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-130.41968009784068</attribute>
-						<attribute key="y" type="double">-27.721558775701418</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-148.15325108927064</attribute>
-						<attribute key="y" type="double">-23.46516975603479</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-165.75364922804553</attribute>
-						<attribute key="y" type="double">-17.42141054460904</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-183.08208137167185</attribute>
-						<attribute key="y" type="double">-9.594925311206618</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-200.0</attribute>
-						<attribute key="y" type="double">-2.149391775674303E-13</attribute>
-					</section>
-				</section>
 			</section>
 		</section>
 		<section name="edge">
@@ -1291,36 +1173,44 @@
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
+			</section>
+		</section>
+		<section name="edge">
+			<attribute key="source" type="int">1</attribute>
+			<attribute key="target" type="int">4</attribute>
+			<section name="graphics">
+				<attribute key="fill" type="String">#000000</attribute>
+				<attribute key="targetArrow" type="String">standard</attribute>
 				<section name="Line">
 					<section name="point">
-						<attribute key="x" type="double">-242.70509831248404</attribute>
-						<attribute key="y" type="double">-176.33557568774222</attribute>
+						<attribute key="x" type="double">50.00000000000008</attribute>
+						<attribute key="y" type="double">-86.60254037844382</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-225.3600434745511</attribute>
-						<attribute key="y" type="double">-182.51808350174082</attribute>
+						<attribute key="x" type="double">53.87067154408738</attribute>
+						<attribute key="y" type="double">-103.4845972041258</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-190.88027301110088</attribute>
-						<attribute key="y" type="double">-190.95738104406334</attribute>
+						<attribute key="x" type="double">57.4025148547636</attribute>
+						<attribute key="y" type="double">-138.58192987669295</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-157.26469872019902</attribute>
-						<attribute key="y" type="double">-194.3394312445239</attribute>
+						<attribute key="x" type="double">55.12939657578351</attribute>
+						<attribute key="y" type="double">-174.84810763717488</attribute>
 					</section>
 					<section name="point">
-						<attribute key="x" type="double">-125.1760739864427</attribute>
-						<attribute key="y" type="double">-192.9532339748174</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-95.22463203478445</attribute>
-						<attribute key="y" type="double">-187.16909321210034</attribute>
-					</section>
-					<section name="point">
-						<attribute key="x" type="double">-81.22432303617434</attribute>
-						<attribute key="y" type="double">-182.7638075421805</attribute>
+						<attribute key="x" type="double">51.76380902050429</attribute>
+						<attribute key="y" type="double">-193.18516525781362</attribute>
 					</section>
 				</section>
+			</section>
+		</section>
+		<section name="edge">
+			<attribute key="source" type="int">6</attribute>
+			<attribute key="target" type="int">5</attribute>
+			<section name="graphics">
+				<attribute key="fill" type="String">#000000</attribute>
+				<attribute key="targetArrow" type="String">standard</attribute>
 			</section>
 		</section>
 	</section>

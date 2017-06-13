@@ -2,7 +2,7 @@
 112,training2.jpg,none,x,x,x,x,childhood issues - loneliness - sedentary lifestyle - bindge eating - obesity - depression
 113,training3.PNG,collider,x,x,x,x,gym buddy - social gym experience - pleasant gym time - gym overuse - tired body - unhappiness - stop gym overuse
 114,training4.PNG,none,x,x,x,x,childhood issues - loneliness - sedentary lifestyle - bindge eating - obesity - depression
-1,drinkingIssuesExtraLargeHierCC.jpg,collider,node-link,xl,hier,drinking,behavioural issues - poor education - negative parenting - childhood issues - loneliness - suicidal behaviour
+1,drinkingIssuesExtraLargeHierCC.jpg,collider,node-link,xl,hier,drinking,drinking friends - behavioural issues - poor education - negative parenting - childhood issues - loneliness - suicidal behaviour
 2,drinkingIssuesExtraLargeOrganicCC.jpg,confounder,node-link,xl,organic,drinking,low grades - negative parenting - childhood issues - loneliness - sedentary lifestyle - binge eating - low self-esteem - unhappiness
 3,drinkingIssuesExtraLargeRadialCC.jpg,confounder,node-link,xl,radial,drinking,health issues - sedentary lifestyle - childhood issues - bullying - low grades - low salary - unability to pay bills
 4,drinkingIssuesMedHier.jpg,collider,node-link,med,hier,drinking,drinking friends - behavioural issues - poor education - negative parenting - childhood issues - smoking
@@ -18,8 +18,8 @@
 14,studentExtraLargeOrganicCC.jpg,confounder,node-link,xl,organic,student,desire to succeed - hard work - high grades during term - study groups - late bed time - poor lectures attendance - poor performance
 15,studentExtraLargeRadialCC.jpg,confounder,node-link,xl,radial,student,self-pity - lack of motivation - missed deadlines - poor lectures attendance - study groups - late bed time - regular drinking
 16,studentMedHierCC.jpg,none,node-link,med,hier,student,watching movies - late bed time - poor lectures attendance - missed deadlines - poor performance - fail exams - low self-esteem
-17,studentMedOrganicCC.jpg,collider,node-link,med,organic,student,good planning - doesn't miss deadlines  - relaxed-self - fail exams - low self-esteem
-18,studentMedRadialCC.jpg,collider,node-link,med,radial,student,studying in the library - study groups - poor lecture attendance - fail exams - late bed time
+17,studentMedOrganicCC.jpg,collider,node-link,med,organic,student,good planning - doesn't miss deadlines - high grades during term  - relaxed-self - fail exams - low self-esteem
+18,studentMedRadialCC.jpg,collider,node-link,med,radial,student,studying in the library - study groups - poor lecture attendance - poor performance - fail exams - hard work - late bed time
 19,drinkingIssuesExtraLargeMatrix.PNG,collider,matrix,xl,type,drinking,behavioural issues - poor education - negative parenting - childhood issues - loneliness - suicidal behaviour
 20,studentExtraLargeMatrix.PNG,collider,matrix,xl,type,student,desire to succeed - hard work - high grades during term - study groups - late bed time - poor lectures attendance - poor performance
 21,sportExtraLargeMatrix.PNG,confounder,matrix,xl,type,sport,available gym facilities - social gym experience - pleasant gym time - gym overuse - tired body - unhappiness - stop gym overuse

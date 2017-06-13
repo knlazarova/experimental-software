@@ -10,8 +10,8 @@
 			<attribute key="id" type="int">0</attribute>
 			<attribute key="label" type="String">good planning</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">493.0</attribute>
-				<attribute key="y" type="double">505.0</attribute>
+				<attribute key="x" type="double">437.0</attribute>
+				<attribute key="y" type="double">501.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -31,8 +31,8 @@
 			<attribute key="id" type="int">1</attribute>
 			<attribute key="label" type="String">doesn't miss deadlines</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">444.0</attribute>
-				<attribute key="y" type="double">403.0</attribute>
+				<attribute key="x" type="double">392.0</attribute>
+				<attribute key="y" type="double">386.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -45,15 +45,15 @@
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">t</attribute>
 			</section>
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">2</attribute>
 			<attribute key="label" type="String">high grades during term</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">342.0</attribute>
-				<attribute key="y" type="double">402.0</attribute>
+				<attribute key="x" type="double">280.0</attribute>
+				<attribute key="y" type="double">386.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -73,8 +73,8 @@
 			<attribute key="id" type="int">3</attribute>
 			<attribute key="label" type="String">confidence</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">393.0</attribute>
-				<attribute key="y" type="double">42.0</attribute>
+				<attribute key="x" type="double">351.0</attribute>
+				<attribute key="y" type="double">15.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -94,8 +94,8 @@
 			<attribute key="id" type="int">4</attribute>
 			<attribute key="label" type="String">regular drinking</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">653.0</attribute>
-				<attribute key="y" type="double">161.0</attribute>
+				<attribute key="x" type="double">600.0</attribute>
+				<attribute key="y" type="double">144.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -115,8 +115,8 @@
 			<attribute key="id" type="int">5</attribute>
 			<attribute key="label" type="String">poor lectures attendance</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">532.0</attribute>
-				<attribute key="y" type="double">176.0</attribute>
+				<attribute key="x" type="double">469.0</attribute>
+				<attribute key="y" type="double">154.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -136,8 +136,8 @@
 			<attribute key="id" type="int">6</attribute>
 			<attribute key="label" type="String">poor performance</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">423.0</attribute>
-				<attribute key="y" type="double">144.0</attribute>
+				<attribute key="x" type="double">351.0</attribute>
+				<attribute key="y" type="double">127.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -157,8 +157,8 @@
 			<attribute key="id" type="int">7</attribute>
 			<attribute key="label" type="String">party</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">634.0</attribute>
-				<attribute key="y" type="double">263.0</attribute>
+				<attribute key="x" type="double">590.0</attribute>
+				<attribute key="y" type="double">256.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -178,8 +178,8 @@
 			<attribute key="id" type="int">8</attribute>
 			<attribute key="label" type="String">pass exams</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">422.0</attribute>
-				<attribute key="y" type="double">300.0</attribute>
+				<attribute key="x" type="double">366.0</attribute>
+				<attribute key="y" type="double">274.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -199,8 +199,8 @@
 			<attribute key="id" type="int">9</attribute>
 			<attribute key="label" type="String">independent work</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">382.0</attribute>
-				<attribute key="y" type="double">506.0</attribute>
+				<attribute key="x" type="double">325.0</attribute>
+				<attribute key="y" type="double">498.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -220,8 +220,8 @@
 			<attribute key="id" type="int">10</attribute>
 			<attribute key="label" type="String">studying in the library</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">550.0</attribute>
-				<attribute key="y" type="double">390.0</attribute>
+				<attribute key="x" type="double">504.0</attribute>
+				<attribute key="y" type="double">381.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -234,15 +234,15 @@
 				<attribute key="fontSize" type="int">14</attribute>
 				<attribute key="fontStyle" type="String">bold</attribute>
 				<attribute key="fontName" type="String">Dialog</attribute>
-				<attribute key="anchor" type="String">c</attribute>
+				<attribute key="anchor" type="String">bl</attribute>
 			</section>
 		</section>
 		<section name="node">
 			<attribute key="id" type="int">11</attribute>
 			<attribute key="label" type="String">study groups</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">524.0</attribute>
-				<attribute key="y" type="double">284.0</attribute>
+				<attribute key="x" type="double">478.0</attribute>
+				<attribute key="y" type="double">266.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -262,8 +262,8 @@
 			<attribute key="id" type="int">12</attribute>
 			<attribute key="label" type="String">fail exams</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">321.0</attribute>
-				<attribute key="y" type="double">184.0</attribute>
+				<attribute key="x" type="double">239.0</attribute>
+				<attribute key="y" type="double">150.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -283,8 +283,8 @@
 			<attribute key="id" type="int">13</attribute>
 			<attribute key="label" type="String">missed deadlines</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">525.0</attribute>
-				<attribute key="y" type="double">74.0</attribute>
+				<attribute key="x" type="double">463.0</attribute>
+				<attribute key="y" type="double">42.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -304,8 +304,8 @@
 			<attribute key="id" type="int">14</attribute>
 			<attribute key="label" type="String">self-motivation</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">343.0</attribute>
-				<attribute key="y" type="double">608.0</attribute>
+				<attribute key="x" type="double">287.0</attribute>
+				<attribute key="y" type="double">610.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -325,8 +325,8 @@
 			<attribute key="id" type="int">15</attribute>
 			<attribute key="label" type="String">many friends</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">627.0</attribute>
-				<attribute key="y" type="double">59.0</attribute>
+				<attribute key="x" type="double">575.0</attribute>
+				<attribute key="y" type="double">32.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -346,8 +346,8 @@
 			<attribute key="id" type="int">16</attribute>
 			<attribute key="label" type="String">hard work</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">117.0</attribute>
-				<attribute key="y" type="double">64.0</attribute>
+				<attribute key="x" type="double">127.0</attribute>
+				<attribute key="y" type="double">122.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -367,8 +367,8 @@
 			<attribute key="id" type="int">17</attribute>
 			<attribute key="label" type="String">relaxed-self</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">320.0</attribute>
-				<attribute key="y" type="double">288.0</attribute>
+				<attribute key="x" type="double">254.0</attribute>
+				<attribute key="y" type="double">266.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -388,8 +388,8 @@
 			<attribute key="id" type="int">18</attribute>
 			<attribute key="label" type="String">meditation</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">211.0</attribute>
-				<attribute key="y" type="double">249.0</attribute>
+				<attribute key="x" type="double">142.0</attribute>
+				<attribute key="y" type="double">262.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -409,8 +409,8 @@
 			<attribute key="id" type="int">19</attribute>
 			<attribute key="label" type="String">low self-esteem</attribute>
 			<section name="graphics">
-				<attribute key="x" type="double">219.0</attribute>
-				<attribute key="y" type="double">118.0</attribute>
+				<attribute key="x" type="double">239.0</attribute>
+				<attribute key="y" type="double">38.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -431,7 +431,7 @@
 			<attribute key="label" type="String">late bed time</attribute>
 			<section name="graphics">
 				<attribute key="x" type="double">15.0</attribute>
-				<attribute key="y" type="double">15.0</attribute>
+				<attribute key="y" type="double">95.0</attribute>
 				<attribute key="w" type="double">30.0</attribute>
 				<attribute key="h" type="double">30.0</attribute>
 				<attribute key="type" type="String">ellipse</attribute>
@@ -679,6 +679,14 @@
 		<section name="edge">
 			<attribute key="source" type="int">16</attribute>
 			<attribute key="target" type="int">20</attribute>
+			<section name="graphics">
+				<attribute key="fill" type="String">#000000</attribute>
+				<attribute key="targetArrow" type="String">standard</attribute>
+			</section>
+		</section>
+		<section name="edge">
+			<attribute key="source" type="int">16</attribute>
+			<attribute key="target" type="int">12</attribute>
 			<section name="graphics">
 				<attribute key="fill" type="String">#000000</attribute>
 				<attribute key="targetArrow" type="String">standard</attribute>
